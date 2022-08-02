@@ -1,0 +1,587 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+}
+
+/**********************************************************************************************/
+/*******************************************HEADER de todos los HTML**********************************************/
+
+.container {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "header header"
+        "iframesyImagenesdelgrupo iframesGrupo"
+        "footer footer";
+}
+
+header {
+    /*width: 60%;*/
+    background-color: #ebbe9b;
+    background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
+    padding: 1.2rem;
+    display: flex;
+    grid-area: header;
+    border-radius: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 300px;
+    border-radius: 20%;
+}
+
+header nav ul {
+    list-style: none;
+    background-color: gray;
+    border-radius: 80px;
+    font-family: 'Baskervville', serif;
+    opacity: 0.9;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+;
+}
+
+header nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+}
+
+header nav li a:hover {
+    background-color: red;
+   /* background-color: #888888;*/
+   border-radius: 80px;
+    font-weight: bold;
+}
+
+header nav li ul li {
+    color: white;
+}
+
+header nav li ul {
+    display: block;
+    position: absolute;
+}
+
+header nav ul ul {
+
+    display: none;
+    text-align: center;
+}
+
+ul li:hover ul {
+    display: block;
+
+}
+
+ul li:hover .submenuContenidoempresas {
+    background-color: gray;
+    width: 6.8%;
+    border-radius: 25px;
+}
+
+ul li:hover .submenuContenidomiembros {
+    background-color: gray;
+    width: 8.46%;
+    border-radius: 25px;
+}
+
+
+
+/***************************************FIN del HEADER DE TODOS LOS HTML*********************************/
+/*******************************************MAIN del INDEX**********************************************/
+.iframesyImagenesdelgrupo {
+    padding: 1.2rem;
+    grid-area: iframesyImagenesdelgrupo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:10%;
+}
+
+.iframesGrupo {
+    padding: 1.2rem;
+    grid-area: iframesGrupo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 6%;
+    bottom: 4%;
+    right: 11%;
+    width: 90%;
+}
+
+/*.iframesyimagenesdelgrupo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}*/
+.tienda{
+    position: relative;
+    top:10%;
+}
+.imagenesGrupo {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.iframesGrupo h1 {
+    text-align: center;
+}
+
+.iframesGrupo iframe {
+
+    width: 450px;
+    height: 335px;
+    margin: 5px;
+    border-radius: 30px;
+    border: dotted blueviolet 3px;
+}
+
+.imagenInicio {
+    width: 450px;
+    height: 335px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.imagenInicio2 {
+    /* width: 70%;*/
+    width: 450px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.imagenesGrupo>h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.iframesGrupo>h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.tienda .boton {
+    position: relative;
+    left: 20%;
+}
+
+.h3 {
+
+    font-family: 'Oswald', sans-serif;
+}
+
+.boton {
+    margin-top: 20px;
+    margin-left: 2%;
+    width: 200px;
+    height: auto;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aquamarine;
+    border-radius: 50px;
+}
+
+/***************************************FIN del MAIN del INDEX****************************************************/
+/*******************************************MAIN de la pagina NJPW******************************************/
+.containerTitulos {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "header header header"
+        "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna"
+        "footer footer footer";
+}
+
+
+
+.titulosPrimeracolumna {
+
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 40%;
+    top: 10%;
+}
+
+.titulosPrimeracolumna img {
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+
+}
+
+.titulosSegundacolumna {
+    width: 40%;
+    position: relative;
+    bottom: 1.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    top: 10%;
+
+}
+
+.titulosSegundacolumna img {
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    position: relative;
+    bottom: 8%;
+
+}
+
+.titulosTerceracolumna {
+
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+
+.titulosTerceracolumna img {
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+}
+
+.titulosPrimeracolumna>a>.iwgpworld {
+    width: 400px;
+    height: 170px;
+    padding: 5px;
+}
+
+.titulosPrimeracolumna>.encabezado {
+    padding-bottom: 20px;
+}
+
+/*******************************************************************************************/
+/******************************MAIN la pagina ROH**********************************************/
+.containerRoh{
+    margin: auto;
+    width: 95%;
+}
+/*******************************************************************************************/
+/******************************MAIN la pagina Otraspromociones**********************************************/
+.containerOtraspromociones{
+    margin: auto;
+    width: 95%;
+}
+/*******************************************************************************************/
+/******************************MAIN la pagina Miembrosactuales**********************************************/
+.containerMiembrosactuales{
+    margin: auto;
+    width: 95%;
+}
+/*******************************************************************************************/
+/******************************MAIN la pagina Miembrosantiguos**********************************************/
+.containerMiembrosantiguos{
+    margin: auto;
+    width: 95%;
+}
+/*******************************************************************************************/
+/******************************MAIN la pagina Subgrupos**********************************************/
+.containerSubgrupos{
+    margin: auto;
+    width: 95%;
+}
+/*******************************************************************************************/
+/******************************MAIN la pagina Contacto**********************************************/
+.containerContacto{
+    margin: auto;
+    width: 95%;
+}
+/*******************************************************************************************/
+/******************************MAIN de la pagina historia**************************************/
+.containerHistoria {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.parrafos {
+    width: 100%;
+    height: auto;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.liderazgoNakamura{
+    position: relative;
+    top:2%;
+}
+.parrafos>h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 33px;
+
+}
+
+.parrafos>h2 {
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+.parrafos>h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.parrafos>h5 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.parrafos>p {
+    text-align: justify-all;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+
+.imagenNakamura {
+    border-radius: 25%;
+    width: 40%;
+    float: right;
+    margin-top: 80px;
+}
+
+.liderOkada {
+    border-radius: 25%;
+    width: 40%;
+    float: right;
+    margin-top: 60px;
+}
+
+.traicionWhite {
+    border-radius: 25%;
+    width: 20%;
+    float: right;
+    margin-top: 60px;
+}
+
+/****************************************MAIN DE LA PAGINA CONTACTO********************/
+form div {
+    padding: 20px;
+}
+
+.text {
+    margin-top: 3px;
+    position: relative;
+    right: 20px;
+}
+
+/***********************************************************************/
+
+/*******************************************FOOTER de todos los HTML**********************************************/
+
+footer {
+    /*margin-left: 500px;
+    display: flex;*/
+    background-color: #e7a977;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 100%;
+    /*display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    text-align: center;*/
+}
+/*++++++++++++++++Footer miembrosantiguos+++++++++++++++++++++++++++++++++*/
+.containerMiembrosantiguos > footer{
+
+    position: relative;
+    top: 65px;
+   
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++Footer miembrosantiguos+++++++++++++++++++++++++++++++++*/
+.containerMiembrosactuales > footer{
+
+    position: relative;
+    top: 65px;
+  
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++Footer miembrosantiguos+++++++++++++++++++++++++++++++++*/
+.containerRoh > footer{
+
+    position: relative;
+    top: 65px;
+    color: white;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.contenedorRedes {
+    display: flex;
+    align-items: center;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.imagen1 {
+    /* margin-top: 10px;*/
+    width: 80px;
+}
+
+.imagen2 {
+    /*margin-top: 10px;*/
+    width: 80px;
+}
+
+
+/******************************FIN del FOOTER de todos los HTML*************************************/
+/************************Media querie para mobile vertical*****************************************/
+@media screen and (max-width:480px) {
+/**********************************HEADER de todos los html*************************************/    
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "iframesyImagenesdelgrupo"
+            "iframesGrupo"
+            "footer";
+    }
+
+    ul li:hover .submenuContenidoempresas {
+        background-color: gray;
+        width: 19%;
+    }
+
+    ul li:hover .submenuContenidomiembros {
+        background-color: gray;
+        width: 24%;
+    }
+    .tienda{
+        position: relative;
+        top:10%;
+    }
+    .iframesyImagenesdelgrupo{
+        position: relative;
+        top: 8%;
+    }
+    .iframesGrupo {
+        padding: 1.2rem;
+        grid-area: iframesGrupo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+   
+        left: 5%;
+        width: 90%;
+        top: 20%;
+    }
+/********************************************************************************************/
+/************************************MAIN de la pagina NJPW**********************************/
+  
+    .containerTitulos {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "titulosPrimeracolumna"
+            "titulosSegundacolumna"
+            "titulosTerceracolumna"
+            "footer";
+    }
+    .titulosPrimeracolumna{
+        position: relative;
+        left: 30%;
+    }
+    .titulosSegundacolumna > h1{
+        position: relative;
+        bottom: 100%;
+    }
+    .titulosSegundacolumna{
+        position: relative;
+
+    }
+    .titulosSegundacolumna > h3{
+       text-align: center;
+    }
+    .titulosTerceracolumna{
+        position: relative;
+        left: 30%;
+    }
+
+/***********************************************************************************************/
+/*******************************MAIN de la pagina Historia**************************************/
+    .containerHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+/************************************************************************************************/
+}
+/***********************************************************************************************/
