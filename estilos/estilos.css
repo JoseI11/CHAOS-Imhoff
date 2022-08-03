@@ -104,7 +104,7 @@ ul li:hover .submenuContenidoempresas {
 ul li:hover .submenuContenidomiembros {
     background-color: gray;
     width: 8.46%;
-    border-radius: 25px;
+    border-radius: 22px;
 }
 
 
@@ -155,9 +155,15 @@ ul li:hover .submenuContenidomiembros {
     align-items: center;
 }
 
-
+.imagenesGrupo h1{
+    text-align: center;
+    font-family: 'Mitr', sans-serif;
+    font-size: 2rem;
+}
 .iframesGrupo h1 {
     text-align: center;
+    font-family: 'Mitr', sans-serif;
+    font-size: 2rem;
 }
 
 .iframesGrupo iframe {
@@ -175,6 +181,11 @@ ul li:hover .submenuContenidomiembros {
     margin: 5px;
     border-radius: 30px;
   
+}
+.imagenInicio:hover{
+    animation-duration: 3s;
+    animation-name: efectoimagenes;
+    animation-iteration-count: infinite;
 }
 /*imagenesGrupo .imagenInicio2{
     transform: rotateX(30deg);
@@ -197,9 +208,9 @@ ul li:hover .submenuContenidomiembros {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
 }
-.iframe1:hover{
+/*.iframe1:hover{
     transform: rotateZ(20deg);
-}
+}*/
 .iframesGrupo>h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -237,7 +248,7 @@ ul li:hover .submenuContenidomiembros {
     }
     50%{
         opacity: 1;
-        color:red;
+        border: solid red 10px;
     }
     100%{
         opacity: 0;
@@ -324,9 +335,14 @@ ul li:hover .submenuContenidomiembros {
 }
 
 .titulosPrimeracolumna>a>.iwgpworld {
-    width: 400px;
+    
+    width: 310px;
+
+    position: relative;
+    bottom: 10%;
+    /*width: 400px;
     height: 170px;
-    padding: 5px;
+    padding: 5px;*/
 }
 
 .titulosPrimeracolumna>.encabezado {
@@ -524,7 +540,7 @@ h5 {
 
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
-/************************Media querie para mobile vertical*****************************************/
+/************************Media query para mobile vertical*****************************************/
 @media screen and (max-width:480px) {
 /**********************************HEADER de todos los html*************************************/    
     .container {
@@ -584,6 +600,8 @@ h5 {
     .titulosPrimeracolumna{
         position: relative;
         left: 30%;
+        top:15%;
+        text-align: center;
     }
     .titulosSegundacolumna > h1{
         position: relative;
