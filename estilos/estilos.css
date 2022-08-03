@@ -499,7 +499,8 @@ footer {
 .containerMiembrosantiguos > footer{
 
     position: relative;
-    top: 65px;
+    top: 130px;
+    height: 130px;
    
 }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -507,8 +508,14 @@ footer {
 .containerMiembrosactuales > footer{
 
     position: relative;
-    top: 65px;
+    top: 130px;
+    height: 130px;
   
+}
+.containerSubgrupos > footer{
+    position: relative;
+    top: 130px;
+    height: 130px;
 }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++Footer miembrosantiguos+++++++++++++++++++++++++++++++++*/
@@ -552,7 +559,35 @@ h5 {
             "iframesGrupo"
             "footer";
     }
+    header nav ul{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 103%;
+        position: relative;
+        right: 1.5%;
+        border-bottom-right-radius:200px;
+        border-bottom-left-radius: 200px;
+        height: 55px;
 
+    }
+    header{
+        width: 579px;
+        height: 194px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        border-bottom-right-radius:70px;
+        border-bottom-left-radius: 70px;
+    }
+
+    /*header > nav{
+        display: flex;
+        position: relative;
+        top: 50%;
+        right: 18%;
+    }*/
     ul li:hover .submenuContenidoempresas {
         background-color: gray;
         width: 19%;
