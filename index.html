@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +49,7 @@
         <section class="iframesyImagenesdelgrupo">
             <div class="imagenesGrupo">
                 <h1>Imagenes del grupo</h1>
-                <img src="./media/chaos-japan-wrestling.png" alt="grupo" class="imagenInicio">
+                <img src="./media/chaos-japan-wrestling.png" alt="grupo" class=" wow animated_animate animate__backInDown imagenInicio">
                 <img src="./media/njpw-chaos-champions.png" alt="campeones" class="imagenInicio2">
             </div>
             <div class="tienda">
@@ -69,7 +70,7 @@
         </section>
 
         <footer>
- 
+
             <div class="tituloFooter">
                 <h3>Sigue a tu facción favorita en:</h3>
             </div>
@@ -82,8 +83,10 @@
         </footer>
 
     </div>
-
-
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

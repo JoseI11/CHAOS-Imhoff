@@ -95,6 +95,7 @@ ul li:hover ul {
 }
 
 ul li:hover .submenuContenidoempresas {
+    
     background-color: gray;
     width: 6.8%;
     border-radius: 25px;
@@ -173,20 +174,32 @@ ul li:hover .submenuContenidomiembros {
     height: 335px;
     margin: 5px;
     border-radius: 30px;
+  
 }
-
+/*imagenesGrupo .imagenInicio2{
+    transform: rotateX(30deg);
+}*/
 .imagenInicio2 {
     /* width: 70%;*/
     width: 450px;
     margin: 5px;
     border-radius: 30px;
 }
-
+.imagenInicio2:hover{
+    /*transform: rotateZ(20deg);
+    border-radius: 30px;
+    border: solid darkblue 1cm;*/
+    animation-duration: 3s;
+    animation-name: efectoimagenes;
+    animation-iteration-count: infinite;
+}
 .imagenesGrupo>h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
 }
-
+.iframe1:hover{
+    transform: rotateZ(20deg);
+}
 .iframesGrupo>h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -216,7 +229,23 @@ ul li:hover .submenuContenidomiembros {
     border-radius: 50px;
 }
 
-/***************************************FIN del MAIN del INDEX****************************************************/
+/************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
+@keyframes efectoimagenes {
+
+     0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        color:red;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/************************++++++++++++++++++++++++++++++++++++++++++++++++++++*******************************/
+/***************************************FIN del MAIN del INDEX**********************************************/
 /*******************************************MAIN de la pagina NJPW******************************************/
 .containerTitulos {
     margin: auto;
