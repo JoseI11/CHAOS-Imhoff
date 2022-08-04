@@ -173,6 +173,7 @@ ul li:hover .submenuContenidomiembros {
     margin: 5px;
     border-radius: 30px;
     border: dotted blueviolet 3px;
+
 }
 
 .imagenInicio {
@@ -182,11 +183,7 @@ ul li:hover .submenuContenidomiembros {
     border-radius: 30px;
   
 }
-.imagenInicio:hover{
-    animation-duration: 3s;
-    animation-name: efectoimagenes;
-    animation-iteration-count: infinite;
-}
+
 /*imagenesGrupo .imagenInicio2{
     transform: rotateX(30deg);
 }*/
@@ -195,22 +192,14 @@ ul li:hover .submenuContenidomiembros {
     width: 450px;
     margin: 5px;
     border-radius: 30px;
+  
 }
-.imagenInicio2:hover{
-    /*transform: rotateZ(20deg);
-    border-radius: 30px;
-    border: solid darkblue 1cm;*/
-    animation-duration: 3s;
-    animation-name: efectoimagenes;
-    animation-iteration-count: infinite;
-}
+
 .imagenesGrupo>h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
 }
-/*.iframe1:hover{
-    transform: rotateZ(20deg);
-}*/
+
 .iframesGrupo>h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -241,19 +230,7 @@ ul li:hover .submenuContenidomiembros {
 }
 
 /************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
-@keyframes efectoimagenes {
 
-     0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-        border: solid red 10px;
-    }
-    100%{
-        opacity: 0;
-    }
-}
 
 /************************++++++++++++++++++++++++++++++++++++++++++++++++++++*******************************/
 /***************************************FIN del MAIN del INDEX**********************************************/
