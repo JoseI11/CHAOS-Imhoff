@@ -302,10 +302,15 @@ ul li:hover .submenuContenidomiembros {
     align-items: center;
     position: relative;
     left: 30%;
-    top: 10%;
+    top: 7%;
 
 }
-
+.titulosSegundacolumna > h1{
+    font-family: 'Mitr', sans-serif;
+    font-size: 2rem;
+    position: relative;
+    bottom: 10px;
+}
 .titulosSegundacolumna img {
     width: 400px;
     height: 200px;
@@ -543,8 +548,9 @@ h5 {
 .imagen2 {
     /*margin-top: 10px;*/
     width: 80px;
+    
 }
-
+ 
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
 /************************Media query para mobile vertical*****************************************/
