@@ -395,7 +395,9 @@ ul li:hover .submenuContenidomiembros {
     margin: auto;
     width: 95%;
 }
-
+.imagenRocky{
+    width: 40%;
+}
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosantiguos**********************************************/
 .containerMiembrosantiguos {
