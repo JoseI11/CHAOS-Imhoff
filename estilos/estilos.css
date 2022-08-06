@@ -601,18 +601,7 @@ h5 {
             "footer";
     }
 
-    header nav ul {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        width: 103%;
-        position: relative;
-        right: 1.5%;
-        border-bottom-right-radius: 200px;
-        border-bottom-left-radius: 200px;
-        height: 55px;
-
-    }
-
+   
     header {
         width: 579px;
         height: 194px;
@@ -643,12 +632,12 @@ h5 {
 
     .tienda {
         position: relative;
-        top: 10%;
+        top: 5%;
     }
 
     .iframesyImagenesdelgrupo {
         position: relative;
-        top: 8%;
+        top: 15%;
     }
 
     .iframesGrupo {
@@ -692,7 +681,7 @@ h5 {
 
         50% {
             opacity: 1;
-            border: solid red 10px;
+            border: red solid  10px;
         }
 
         100% {
@@ -764,11 +753,11 @@ h5 {
 
     .liderazgoNakamura {
         position: relative;
-        top: 50px;
+        top: 130px;
     }
     .parrafos .imagenNakamura{
         position: relative;
-        bottom: 50px;
+        bottom: 70px;
         width: 80%;
     }
     .parrafos .liderOkada{
