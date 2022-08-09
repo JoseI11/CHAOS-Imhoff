@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    /*width: 60%;*/
+
     background-color: #ebbe9b;
     background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
     padding: 1.2rem;
@@ -57,7 +57,7 @@ header nav ul {
 
 header nav ul li {
     font-size: 1.2rem;
-    ;
+    
 }
 
 header nav ul a {
@@ -69,13 +69,15 @@ header nav ul a {
 
 header nav li a:hover {
     background-color: red;
-    /* background-color: #888888;*/
+
     border-radius: 80px;
     font-weight: bold;
 }
 
 header nav li ul li {
     color: white;
+
+    
 }
 
 header nav li ul {
