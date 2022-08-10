@@ -8,38 +8,65 @@
     <title>Miembros actuales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="../media/favicon-chaos.png" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+ 
     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
 <body>
-    <div class="containerMiembrosactuales">
-        <header>
-            <div class="logo">
-                <img src="../media/NewChaoslogo.png" alt="logo">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="/media/NewChaoslogo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item fs-5">
+                            <a class="nav-link active  " aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown fs-5">
+                            <a class="nav-link dropdown-toggle " href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Trofeos
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item " href="njpw.html">NJPW</a></li>
+                                <li><a class="dropdown-item" href="roh.html">ROH</a></li>
+                                <li><a class="dropdown-item" href="otraspromociones.html">Otros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link " href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item dropdown fs-5">
+                            <a class="nav-link dropdown-toggle " href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Miembros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="miembrosactuales.html">Actuales</a></li>
+                                <li><a class="dropdown-item " href="miembrosantiguos.html">Antigüos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link " href="subgrupos.html">Subgrupos</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Trofeos</a>
-                        <ul class="submenuContenidoempresas">
-                            <li><a href="njpw.html">NJPW</a></li>
-                            <li><a href="roh.html">ROH</a></li>
-                            <li><a href="otraspromociones.html">Otros</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="#">Miembros</a>
-                        <ul class="submenuContenidomiembros">
-                            <li><a href="miembrosantiguos.html">Antigüos</a></li>
-                            <li><a href="miembrosactuales.html">Actuales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="subgrupos.html">Subgrupos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        </nav>
+    </div>
+    <div class="containerMiembrosactuales">
         <main>
             <h1> Miembros actuales</h1>
             <section class="nombreMiembroactual">
@@ -64,6 +91,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

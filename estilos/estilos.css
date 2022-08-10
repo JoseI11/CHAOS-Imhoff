@@ -21,17 +21,50 @@ body {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 3fr auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
-        "header header"
         "iframesyImagenesdelgrupo iframesGrupo"
         "footer footer";
 }
 
-header {
-    /*width: 60%;*/
+.menu-bar {
     background-color: #ebbe9b;
     background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
+
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background-color: red;
+    
+   
+}
+.navbar .navbar-nav .nav-link{
+    font-family: 'Baskervville', serif;
+    background-color: gray;
+    text-align: center;
+    color: white;
+   
+}
+.dropdown .dropdown-menu .dropdown-item{
+    color: white;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+    background-color: gray;
+    font-family: 'Baskervville', serif;  
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: red;
+
+}
+.dropdown .dropdown-menu{
+    display: none;
+}
+ 
+/*header {
+
+   
     padding: 1.2rem;
     display: flex;
     grid-area: header;
@@ -57,7 +90,7 @@ header nav ul {
 
 header nav ul li {
     font-size: 1.2rem;
-    ;
+    
 }
 
 header nav ul a {
@@ -69,13 +102,15 @@ header nav ul a {
 
 header nav li a:hover {
     background-color: red;
-    /* background-color: #888888;*/
+
     border-radius: 80px;
     font-weight: bold;
 }
 
 header nav li ul li {
     color: white;
+
+    
 }
 
 header nav li ul {
@@ -105,7 +140,7 @@ ul li:hover .submenuContenidomiembros {
     background-color: gray;
     width: 8.46%;
     border-radius: 22px;
-}
+}*/
 
 
 
@@ -130,9 +165,9 @@ ul li:hover .submenuContenidomiembros {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 6%;
+    top: 4.5%;
     bottom: 4%;
-    right: 11%;
+    right: 2%;
     width: 90%;
 }
 
@@ -395,9 +430,11 @@ ul li:hover .submenuContenidomiembros {
     margin: auto;
     width: 95%;
 }
-.imagenRocky{
+
+.imagenRocky {
     width: 40%;
 }
+
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosantiguos**********************************************/
 .containerMiembrosantiguos {
@@ -426,9 +463,8 @@ ul li:hover .submenuContenidomiembros {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
-        "header"
         "main"
         "footer";
 }
@@ -595,16 +631,26 @@ h5 {
     /**********************************HEADER de todos los html*************************************/
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
-            "header"
             "iframesyImagenesdelgrupo"
             "iframesGrupo"
             "footer";
     }
+    .menu-bar {
+        width: 560px;
+    
+    }
+    .dropdown .dropdown-menu .dropdown-item{
 
-   
-    header {
+        
+     text-align: center;
+    
+    }
+    .dropdown .dropdown-menu .dropdown-item:hover{
+        background-color: red;
+    }
+    /*header {
         width: 579px;
         height: 194px;
         display: flex;
@@ -614,7 +660,7 @@ h5 {
         border-top-right-radius: 70px;
         border-bottom-right-radius: 70px;
         border-bottom-left-radius: 70px;
-    }
+    }*/
 
     /*header > nav{
         display: flex;
@@ -622,7 +668,7 @@ h5 {
         top: 50%;
         right: 18%;
     }*/
-    ul li:hover .submenuContenidoempresas {
+    /*ul li:hover .submenuContenidoempresas {
         background-color: gray;
         width: 19%;
     }
@@ -630,7 +676,7 @@ h5 {
     ul li:hover .submenuContenidomiembros {
         background-color: gray;
         width: 24%;
-    }
+    }*/
 
     .tienda {
         position: relative;
@@ -683,7 +729,7 @@ h5 {
 
         50% {
             opacity: 1;
-            border: red solid  10px;
+            border: red solid 10px;
         }
 
         100% {
@@ -698,9 +744,9 @@ h5 {
     .containerTitulos {
 
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
-            "header"
+
             "titulosPrimeracolumna"
             "titulosSegundacolumna"
             "titulosTerceracolumna"
@@ -737,9 +783,8 @@ h5 {
     /*******************************MAIN de la pagina Historia**************************************/
     .containerHistoria {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto ;
         grid-template-areas:
-            "header"
             "main"
             "footer";
     }
@@ -757,27 +802,31 @@ h5 {
         position: relative;
         top: 130px;
     }
-    .parrafos .imagenNakamura{
+
+    .parrafos .imagenNakamura {
         position: relative;
         bottom: 70px;
         width: 80%;
     }
-    .parrafos .liderOkada{
+
+    .parrafos .liderOkada {
         position: relative;
         bottom: 50px;
         width: 80%;
     }
+
     /*.parrafos img{
 
         position: relative;
         left: 200px; 
         float:none;
     }*/
-    .parrafos .traicionWhite{
-   
-       width: 50%;
+    .parrafos .traicionWhite {
+
+        width: 50%;
 
     }
+
     /************************************************************************************************/
     /**********************************FOOTER de todos los html*************************************/
     footer {
