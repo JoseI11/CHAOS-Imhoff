@@ -50,10 +50,11 @@ body {
 }
 .dropdown:hover .dropdown-menu{
     display: block;
-    margin-top: 0;
+    
     background-color: gray;
     font-family: 'Baskervville', serif;  
 }
+
 .dropdown .dropdown-menu .dropdown-item:hover{
     background-color: red;
 
@@ -456,6 +457,30 @@ ul li:hover .submenuContenidomiembros {
     width: 95%;
 }
 
+.tituloContacto{
+    display: flex;
+    justify-content: center;
+}
+.label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.form-control{
+    background-color: plum;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+.opinion{
+    background-color: plum;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+.btn .btn-primary{
+    width: 50%;
+}
+form{
+    margin-bottom: 10px;
+}
 /*******************************************************************************************/
 /******************************MAIN de la pagina historia**************************************/
 .containerHistoria {
