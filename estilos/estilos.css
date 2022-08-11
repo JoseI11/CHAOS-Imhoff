@@ -180,7 +180,7 @@ ul li:hover .submenuContenidomiembros {
 }*/
 .tienda {
     position: relative;
-    top: 10%;
+    top: 5%;
 }
 
 .imagenesGrupo {
@@ -653,25 +653,23 @@ form div {
 footer {
     /*margin-left: 500px;
     display: flex;*/
-
-    background-color: #e7a977;
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    grid-area: footer;
-
-    text-align: center;
-    align-items: center;
-    position: relative;
-    top: 100%;
-    /*display: flex;
-    justify-content: space-between;
-    grid-area: footer;
-    text-align: center;*/
+        background-color: #e7a977;
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 3rem;
+        align-items: center;
+        position: relative;
+        top: 100%;
 }
-.container footer{
+.container>footer{
     position: relative;
-    top:200px
+    top: 140px;
+    height: 130px;
+  
 }
 /*++++++++++++++++Footer miembrosantiguos+++++++++++++++++++++++++++++++++*/
 .containerMiembrosantiguos>footer {
@@ -703,11 +701,32 @@ footer {
 .containerRoh>footer {
 
     position: relative;
-    top: 65px;
-    color: white;
+    top: 130px;
+    height: 130px;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.containerHistoria > footer{
+    position: relative;
+    top: 130px;
+    height: 130px;
+}
+.containerTitulos> footer{
+    position: relative;
+    top: 130px;
+    height: 130px;
+}
+.containerOtraspromociones > footer{
+    position: relative;
+    top: 130px;
+    height: 130px;
+    padding: 1rem;
+}
+.containerContacto > footer{
+    position: relative;
+    top: 130px;
+    height: 130px;
+}
 .contenedorRedes {
     display: flex;
     align-items: center;
