@@ -307,8 +307,8 @@ ul li:hover .submenuContenidomiembros {
     margin: auto;
     width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 3fr auto;
+    grid-template-columns: 2fr 2fr 3fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "header header header"
         "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna"
@@ -327,9 +327,16 @@ ul li:hover .submenuContenidomiembros {
     align-items: center;
     position: relative;
     left: 40%;
-    top: 9.5%;
+    top: 8%;
 }
-
+.titulosPrimeracolumna .titulosRetirados{
+    position: relative;
+    bottom: 2%;
+}
+.titulosPrimeracolumna .trofeosRetirados{
+    position: relative;
+    bottom: 15%;
+}
 .titulosPrimeracolumna img {
     width: 400px;
     height: 200px;
@@ -346,16 +353,14 @@ ul li:hover .submenuContenidomiembros {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 30%;
+    left: 40%;
     top: 7%;
 
 }
 
-.titulosSegundacolumna>h1 {
-    font-family: 'Mitr', sans-serif;
-    font-size: 2rem;
-    position: relative;
-    bottom: 10px;
+.empresaTitulos{
+    display: flex;
+    justify-content: center;
 }
 
 .titulosSegundacolumna img {
@@ -369,7 +374,7 @@ ul li:hover .submenuContenidomiembros {
 
 .titulosSegundacolumna .tituloNeverops {
     position: relative;
-    top: 6px;
+    top: 5px;
 }
 
 .titulosSegundacolumna .neverOps {
@@ -386,7 +391,7 @@ ul li:hover .submenuContenidomiembros {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 20%;
+    left: 30%;
     top: 8%;
 }
 
@@ -416,15 +421,85 @@ ul li:hover .submenuContenidomiembros {
 .containerRoh {
     margin: auto;
     width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        
+        "titulosrohPrimeracolumna titulosrohSegundacolumna"
+        "footer footer";
 }
-
+.titulosrohPrimeracolumna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulosrohSegundacolumna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titularRoh{
+    display: flex;
+    justify-content: center;
+}
 /*******************************************************************************************/
 /******************************MAIN la pagina Otraspromociones**********************************************/
 .containerOtraspromociones {
-    margin: auto;
-    width: 95%;
+    margin-left: auto;
+    width: 100%;
+    display: grid;
+    position: relative;
+   
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-template-areas:
+        "titulosOtrosprimeracolumna titulosOtrossegundacolumna titulosOtrosterceracolumna"
+        "footer footer footer";
 }
-
+.titulosOtrosprimeracolumna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.titulosOtrosprimeracolumna h3{
+    text-align: center;
+}
+.titulosOtrossegundacolumna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.titulosOtrossegundacolumna h3{
+    text-align: center;
+}
+.titulosOtrosterceracolumna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.titulosOtrosterceracolumna h3{
+    text-align: center;
+}
+.titularOtraspromociones{
+    display: flex;
+    justify-content: center;
+    
+}
+.containerOtraspromociones footer{
+    position: relative;
+    right: 2px;
+}
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosactuales**********************************************/
 .containerMiembrosactuales {
@@ -578,11 +653,13 @@ form div {
 footer {
     /*margin-left: 500px;
     display: flex;*/
+
     background-color: #e7a977;
     padding: 3rem;
     display: flex;
     justify-content: space-between;
     grid-area: footer;
+
     text-align: center;
     align-items: center;
     position: relative;
@@ -592,14 +669,17 @@ footer {
     grid-area: footer;
     text-align: center;*/
 }
-
+.container footer{
+    position: relative;
+    top:200px
+}
 /*++++++++++++++++Footer miembrosantiguos+++++++++++++++++++++++++++++++++*/
 .containerMiembrosantiguos>footer {
 
     position: relative;
     top: 130px;
     height: 130px;
-
+  
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -663,7 +743,7 @@ h5 {
             "footer";
     }
     .menu-bar {
-        width: 560px;
+        width: 600px;
     
     }
     .dropdown .dropdown-menu .dropdown-item{
@@ -776,8 +856,13 @@ h5 {
             "titulosSegundacolumna"
             "titulosTerceracolumna"
             "footer";
+        position: relative;
+        left: 15%;
     }
-
+    .empresaTitulos{
+    position: relative;
+    left: 15%;
+    }
     .titulosPrimeracolumna {
         position: relative;
         left: 30%;
@@ -792,7 +877,8 @@ h5 {
 
     .titulosSegundacolumna {
         position: relative;
-
+        left: 30%;
+        top: 10%;
     }
 
     .titulosSegundacolumna>h3 {
