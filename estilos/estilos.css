@@ -466,6 +466,10 @@ ul li:hover .submenuContenidomiembros {
     position: relative;
     top: 50px;
 }
+.titulosOtrosprimeracolumna img{
+    width: 390px;
+    height: 190px;
+}
 .titulosOtrosprimeracolumna h3{
     text-align: center;
 }
@@ -663,7 +667,7 @@ footer {
         padding: 3rem;
         align-items: center;
         position: relative;
-        top: 100%;
+        top: 150px;
 }
 .container>footer{
     position: relative;
@@ -755,11 +759,11 @@ h5 {
     /**********************************HEADER de todos los html*************************************/
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto;
         grid-template-areas:
             "iframesyImagenesdelgrupo"
             "iframesGrupo"
-            "footer";
+ 
     }
     .menu-bar {
         width: 600px;
@@ -962,6 +966,9 @@ h5 {
     footer {
         display: flex;
         flex-direction: column;
+        position: relative;
+        top: 210px;
+        width: 600px;
     }
 
     footer .contenedorRedes {
