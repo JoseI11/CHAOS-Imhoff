@@ -531,11 +531,34 @@ ul li:hover .submenuContenidomiembros {
 
 /*******************************************************************************************/
 /******************************MAIN la pagina Subgrupos**********************************************/
-.containerSubgrupos {
-    margin: auto;
-    width: 95%;
+audio::-webkit-media-controls-panel {
+    background-color: #56AEFF;
+}
+audio::-webkit-media-controls-mute-button {
+    background-color: #B1D4E0;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(177,212,224, .7);
 }
 
+th{
+    text-align: center;
+}
+tr{
+    text-align: center; 
+    
+}
+
+audio{
+    display: flex;
+    justify-content: center;
+
+   
+}
+.prueba{
+    width: 50%;
+}
 /*******************************************************************************************/
 /******************************MAIN la pagina Contacto**********************************************/
 .containerContacto {
@@ -718,7 +741,7 @@ footer {
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.containerHistoria > footer{
+/*.containerHistoria > footer{
     position: relative;
     top: 130px;
     height: 130px;
@@ -738,7 +761,7 @@ footer {
     position: relative;
     top: 130px;
     height: 130px;
-}
+}*/
 .contenedorRedes {
     display: flex;
     align-items: center;
@@ -921,6 +944,46 @@ footer {
     }
 
     /***********************************************************************************************/
+    /*******************************MAIN de la pagina Roh******************************/
+    .titularRoh{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15%;
+    }
+    .containerRoh {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "titulosrohPrimeracolumna"
+            "titulosrohSegundacolumna";
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+    }
+    /***********************************************************************************************/
+    /*******************MAIN de la pagina otraspeomociones******************************************/
+    .containerOtraspromociones{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "titulosOtrosprimeracolumna"
+            "titulosOtrossegundaacolumna"
+            "titulosOtrosterceracolumna";
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+    }
+    .titularOtraspromociones{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15%;
+    }
+    /***********************************************************************************************/
     /*******************************MAIN de la pagina Historia**************************************/
     .containerHistoria {
         grid-template-columns: 1fr;
@@ -977,11 +1040,26 @@ footer {
     .card {
         position: relative;
         left: 200px;
-        background-color: aquamarine;
+        background-color: black;
     }
     .card-title{
         font-size: 1.2rem;
         font-weight: bold;
+    }
+    /**************************************************************************************************/
+    table.table-dark.table-striped{
+       width: 600px; 
+    }
+    /**************************MAIN de la pagina Contacto**********************************************/
+    .tituloContacto{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15%
+    }
+    form{
+        position: relative;
+        right: 47px;
     }
     /**************************************************************************************************/
     /**********************************FOOTER de todos los html*************************************/
@@ -997,7 +1075,8 @@ footer {
         position: relative;
         top: 10px;
     }
-
+    
+  
     /***********************************************************************/
 }
 
