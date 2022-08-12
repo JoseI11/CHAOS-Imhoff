@@ -506,20 +506,28 @@ ul li:hover .submenuContenidomiembros {
 }
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosactuales**********************************************/
-.containerMiembrosactuales {
+/*.containerMiembrosactuales {
     margin: auto;
     width: 95%;
-}
+}*/
 .tituloJuegos{
     display: flex;
     justify-content: center;
 }
+.card{
+    background-color: black;
+}
+.card-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosantiguos**********************************************/
-.containerMiembrosantiguos {
+/*.containerMiembrosantiguos {
     margin: auto;
     width: 95%;
-}
+}*/
 
 /*******************************************************************************************/
 /******************************MAIN la pagina Subgrupos**********************************************/
@@ -668,6 +676,7 @@ footer {
         position: relative;
         top: 150px;
 }
+
 .container>footer{
     position: relative;
     top: 140px;
@@ -735,9 +744,7 @@ footer {
     align-items: center;
 }
 
-h5 {
-    font-size: 1rem;
-}
+
 
 .imagen1 {
     /* margin-top: 10px;*/
@@ -749,6 +756,7 @@ h5 {
     width: 80px;
 
 }
+/****************************FOOTER de la pagina contacto*******************************************/
 
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
@@ -961,16 +969,21 @@ h5 {
     }
 
     /************************************************************************************************/
-    /*********************************MAIN de la pagina miembros actuales****************************/
+    /**************************MAIN de la pagina miembros actuales y antiguos****************************/
     .tituloJuegos{
         position: relative;
-        left: 220px;
+        left: 100px;
     }
     .card {
         position: relative;
         left: 200px;
         background-color: aquamarine;
     }
+    .card-title{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    /**************************************************************************************************/
     /**********************************FOOTER de todos los html*************************************/
     footer {
         display: flex;
