@@ -510,11 +510,10 @@ ul li:hover .submenuContenidomiembros {
     margin: auto;
     width: 95%;
 }
-
-.imagenRocky {
-    width: 40%;
+.tituloJuegos{
+    display: flex;
+    justify-content: center;
 }
-
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosantiguos**********************************************/
 .containerMiembrosantiguos {
@@ -962,6 +961,16 @@ h5 {
     }
 
     /************************************************************************************************/
+    /*********************************MAIN de la pagina miembros actuales****************************/
+    .tituloJuegos{
+        position: relative;
+        left: 220px;
+    }
+    .card {
+        position: relative;
+        left: 200px;
+        background-color: aquamarine;
+    }
     /**********************************FOOTER de todos los html*************************************/
     footer {
         display: flex;
