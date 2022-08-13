@@ -13,7 +13,7 @@ body {
     background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
 }
 
-/****************HEADER de todos las paginas******************************/
+/****************NAVBAR de todos las paginas******************************/
 .menu-bar {
     background-color: #ebbe9b;
     background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
@@ -510,44 +510,52 @@ form {
 
             align-items: center;
             justify-content: center;
-            h1{
+
+            h1 {
                 text-align: center;
                 margin-top: 10px;
                 font-size: 33px;
             }
+
             h2 {
                 margin-top: 11px;
                 margin-left: 10px;
             }
+
             h3 {
                 margin-top: 5px;
                 margin-left: 10px;
             }
+
             h5 {
                 margin-top: 5px;
                 margin-left: 10px;
                 font-size: 16px;
                 font-weight: bold;
             }
+
             p {
                 text-align: justify-all;
                 margin-top: 10px;
                 font-size: 16px;
                 margin-left: 10px;
-            
+
             }
+
             .imagenNakamura {
                 border-radius: 25%;
                 width: 40%;
                 float: right;
                 margin-top: 80px;
             }
+
             .liderOkada {
                 border-radius: 25%;
                 width: 40%;
                 float: right;
                 margin-top: 60px;
             }
+
             .traicionWhite {
                 border-radius: 25%;
                 width: 20%;
@@ -558,6 +566,7 @@ form {
     }
 }
 
+/******************************************************************/
 /*********************FOOTER de todas las paginas web****************************/
 footer {
     background-color: #e7a977;
@@ -589,4 +598,271 @@ footer {
     }
 }
 
-/******************************************************************************/
+/******************************FIN del FOOTER de todos los HTML*************************************/
+
+@media screen and (max-width:480px) {
+
+    /****************NAVBAR de todos las paginas******************************/
+    .menu-bar {
+        width: 600px;
+
+        .dropdown {
+            .dropdown-menu {
+                .dropdown-item {
+                    text-align: center;
+
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+
+    /**********************************************************************/
+
+    /*************Container del INDEX*************************************/
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "iframesyImagenesdelgrupo"
+            "iframesGrupo";
+
+        .iframesyImagenesdelgrupo {
+            position: relative;
+            top: 15%;
+
+            .imagenInicio {
+                &:hover {
+                    animation-duration: 3s;
+                    animation-name: efectoimagenes;
+                    animation-iteration-count: infinite;
+                }
+
+            }
+
+            .imagenInicio2 {
+                animation-duration: 3s;
+                animation-name: efectoimagenes;
+                animation-iteration-count: infinite;
+            }
+        }
+
+        /************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
+        @keyframes efectoimagenes {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                border: red solid 10px;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /********************+++++++++++++++++++++++++++++++++++++++++++++++*************************/
+        .iframesGrupo {
+            padding: 1.2rem;
+            grid-area: iframesGrupo;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            left: 5%;
+            width: 90%;
+            top: 20%;
+        }
+
+    }
+
+    /**********************************************************/
+    /************************************MAIN de la pagina NJPW**********************************/
+    .containerTitulos {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+
+            "titulosPrimeracolumna"
+            "titulosSegundacolumna"
+            "titulosTerceracolumna";
+
+        position: relative;
+        left: 15%;
+
+        .empresaTitulos {
+            position: relative;
+            left: 15%;
+        }
+
+        .titulosPrimeracolumna {
+            position: relative;
+            left: 30%;
+            top: 15%;
+            text-align: center;
+        }
+
+        .titulosSegundacolumna {
+            position: relative;
+            left: 30%;
+            top: 10%;
+
+            h1 {
+                position: relative;
+                bottom: 100%;
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .titulosTerceracolumna {
+            position: relative;
+            left: 30%;
+        }
+    }
+
+    /***********************************************************************************************/
+    /*******************************MAIN de la pagina ROH******************************/
+    .titularRoh {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15%;
+    }
+
+    .containerRoh {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "titulosrohPrimeracolumna"
+            "titulosrohSegundacolumna";
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+    }
+
+    /***********************************************************************************************/
+    /*******************MAIN de la pagina otraspromociones******************************************/
+    .titularOtraspromociones {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15%;
+    }
+
+    .containerOtraspromociones {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "titulosOtrosprimeracolumna"
+            "titulosOtrossegundaacolumna"
+            "titulosOtrosterceracolumna";
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+    }
+
+    /***********************************************************************************************/
+    /*******************************MAIN de la pagina Historia**************************************/
+    .containerHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "main"
+            "footer";
+
+        .liderazgoNakamura {
+            position: relative;
+            top: 130px;
+
+            .parrafos {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-weight: bold;
+                }
+
+                .imagenNakamura {
+                    position: relative;
+                    bottom: 70px;
+                    width: 80%;
+                }
+
+                .liderOkada {
+                    position: relative;
+                    bottom: 50px;
+                    width: 80%;
+                }
+
+                .traicionWhite {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    /************************************************************************************************/
+    /**************************MAIN de la pagina miembros actuales y antiguos****************************/
+    .tituloGrupo {
+        position: relative;
+        left: 100px;
+    }
+
+    .card {
+        position: relative;
+        left: 200px;
+        background-color: black;
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    /**************************************************************************************************/
+    /**************************MAIN de la pagina subgrupos*********************************/
+    table.table-dark.table-striped {
+        width: 600px;
+    }
+     /**************************************************************************************************/
+    /**************************MAIN de la pagina Contacto**********************************************/
+    .tituloContacto{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 15%
+    }
+    form{
+        position: relative;
+        right: 10px;
+    }
+    /**************************************************************************************************/
+    /**********************************FOOTER de todos los html*************************************/
+    footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 210px;
+        width: 600px;
+        .contenedorRedes {
+        position: relative;
+        top: 10px;
+        }
+    }
+    
+    /***********************************************************************/
+}
