@@ -140,8 +140,8 @@ body {
   width: 95%;
   display: grid;
   grid-template-columns: 2fr 2fr 3fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "header header header" "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna" "footer footer footer"; }
+  grid-template-rows: auto;
+  grid-template-areas: "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna"; }
   .containerTitulos .titulosPrimeracolumna {
     width: 40%;
     display: flex;
@@ -205,7 +205,7 @@ body {
       height: 200px;
       padding: 5px; }
 
-/***********************************************************************/
+/************************************************************************/
 /*********************Main de la pagina ROH****************************/
 .titularRoh {
   display: flex;
@@ -314,12 +314,12 @@ audio {
 form .form-control {
   margin-bottom: 10px;
   background-color: plum;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.2rem; }
 
 form .opinion {
   background-color: plum;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.2rem; }
 
 form .btn .btn-primary {
