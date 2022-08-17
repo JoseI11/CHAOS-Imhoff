@@ -178,6 +178,7 @@
     .containerHistoria {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+      
         grid-template-areas:
             "main"
             "footer";
@@ -186,14 +187,16 @@
             position: relative;
             top: 130px;
             left: 50px;
+               
             .parrafos {
                 display: flex;
                 flex-direction: column;
-
+             
                 h5 {
                     font-weight: bold;
                     position: relative;
                     top: 10px;
+            
                 }
 
                 .imagenNakamura {
