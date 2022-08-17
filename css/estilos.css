@@ -337,7 +337,13 @@ form .btn .btn-primary {
       width: 100%;
       height: auto;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      /*.traicionWhite {
+                 border-radius: 25%;
+                 width: 20%;
+                 float: right;
+                 margin-top: 60px;
+             }*/ }
       .containerHistoria .liderazgoNakamura .parrafos h1 {
         text-align: center;
         margin-top: 10px;
@@ -368,11 +374,39 @@ form .btn .btn-primary {
         width: 40%;
         float: right;
         margin-top: 60px; }
-      .containerHistoria .liderazgoNakamura .parrafos .traicionWhite {
-        border-radius: 25%;
-        width: 20%;
+      .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo {
+        width: 500px;
+        height: 270px;
+        margin: 5px;
         float: right;
-        margin-top: 60px; }
+        border-radius: 30px;
+        border: dotted blueviolet 3px; }
+      .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
+        width: 500px;
+        height: 270px;
+        margin: 5px;
+        float: right;
+        border-radius: 30px;
+        border: dotted blueviolet 3px; }
+      .containerHistoria .liderazgoNakamura .parrafos .iframeSHO {
+        width: 500px;
+        height: 270px;
+        position: relative;
+        top: 25px;
+        float: right;
+        border-radius: 30px;
+        border: dotted blueviolet 3px; }
+      .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
+        width: 500px;
+        height: 250px;
+        position: relative;
+        top: 10px;
+        float: right;
+        border-radius: 30px;
+        border: dotted blueviolet 3px; }
+      .containerHistoria .liderazgoNakamura .parrafos .divBestfriends {
+        position: relative;
+        top: 22px; }
 
 /******************************************************************/
 /*********************FOOTER de todas las paginas web****************************/
@@ -511,12 +545,15 @@ footer {
     grid-template-areas: "main" "footer"; }
     .containerHistoria .liderazgoNakamura {
       position: relative;
-      top: 130px; }
+      top: 130px;
+      left: 50px; }
       .containerHistoria .liderazgoNakamura .parrafos {
         display: flex;
         flex-direction: column; }
         .containerHistoria .liderazgoNakamura .parrafos h5 {
-          font-weight: bold; }
+          font-weight: bold;
+          position: relative;
+          top: 10px; }
         .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura {
           position: relative;
           bottom: 70px;
@@ -525,8 +562,9 @@ footer {
           position: relative;
           bottom: 50px;
           width: 80%; }
-        .containerHistoria .liderazgoNakamura .parrafos .traicionWhite {
-          width: 50%; }
+        .containerHistoria .liderazgoNakamura .parrafos .iframeSHO {
+          position: relative;
+          top: 2px; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembros actuales y antiguos****************************/
   .tituloGrupo {

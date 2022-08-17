@@ -185,13 +185,15 @@
         .liderazgoNakamura {
             position: relative;
             top: 130px;
-
+            left: 50px;
             .parrafos {
                 display: flex;
                 flex-direction: column;
 
                 h5 {
                     font-weight: bold;
+                    position: relative;
+                    top: 10px;
                 }
 
                 .imagenNakamura {
@@ -206,8 +208,9 @@
                     width: 80%;
                 }
 
-                .traicionWhite {
-                    width: 50%;
+                .iframeSHO{
+                    position: relative;
+                    top: 2px;
                 }
             }
         }
