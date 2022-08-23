@@ -1,8 +1,8 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width:320px) {
 
     /****************NAVBAR de todos las paginas******************************/
     .menu-bar {
-        width: 600px;
+        width: 179%;
 
         .dropdown {
             .dropdown-menu {
@@ -30,21 +30,37 @@
         .iframesyImagenesdelgrupo {
             position: relative;
             top: 15%;
+            right: 7%;
+            grid-area: iframesyImagenesdelgrupo;
 
-            .imagenInicio {
-                &:hover {
-                    animation-duration: 3s;
-                    animation-name: efectoimagenes;
-                    animation-iteration-count: infinite;
+            .imagenesGrupo {
+
+
+                .imagenInicio {
+                    width: 90%;
+                    height: 335px;
+
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenes;
+                        animation-iteration-count: infinite;
+                    }
+
                 }
 
+                .imagenInicio2 {
+                    width: 90%;
+                    height: 335px;
+
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenes;
+                        animation-iteration-count: infinite;
+                    }
+
+                }
             }
 
-            .imagenInicio2 {
-                animation-duration: 3s;
-                animation-name: efectoimagenes;
-                animation-iteration-count: infinite;
-            }
         }
 
         /************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
@@ -74,16 +90,98 @@
             align-items: center;
             position: relative;
 
-            left: 5%;
+            right: 2%;
             width: 90%;
             top: 20%;
         }
 
     }
 
+
     /**********************************************************/
     /************************************MAIN de la pagina NJPW**********************************/
+    .menu-bar-njpw {
+        width: 432px;
+
+        .dropdown {
+            .dropdown-menu {
+                .dropdown-item {
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $bg-color-rojo;
+                    }
+                }
+            }
+        }
+    }
+
+    .empresaTitulos {
+        h1 {
+            position: relative;
+            left: 30%;
+        }
+
+    }
+
     .containerTitulos {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+
+            "titulosPrimeracolumna"
+            "titulosSegundacolumna"
+            "titulosTerceracolumna";
+        width: 120%;
+
+        .titulosPrimeracolumna {
+            grid-area: titulosPrimeracolumna;
+            position: relative;
+            left: 30%;
+            top: 15%;
+
+            text-align: center;
+
+        }
+
+        .titulosSegundacolumna {
+            position: relative;
+            left: 30%;
+            top: 5%;
+            margin-top: 30%;
+
+            grid-area: titulosSegundacolumna;
+
+            h1 {
+                position: relative;
+                bottom: 100%;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+
+        }
+
+        .titulosTerceracolumna {
+            position: relative;
+            left: 30%;
+
+            grid-area: titulosTerceracolumna;
+
+        }
+
+    }
+
+
+
+    .footer-njpw {
+        width: 432px;
+    }
+
+    /*.containerTitulos {
 
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -94,7 +192,8 @@
             "titulosTerceracolumna";
 
         position: relative;
-        left: 15%;
+        left: 50%;
+    
 
         .empresaTitulos {
             position: relative;
@@ -123,11 +222,8 @@
             }
         }
 
-        .titulosTerceracolumna {
-            position: relative;
-            left: 30%;
-        }
-    }
+        
+    }*/
 
     /***********************************************************************************************/
     /*******************************MAIN de la pagina ROH******************************/
@@ -135,7 +231,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        left: 15%;
+        left: 40%;
     }
 
     .containerRoh {
@@ -148,7 +244,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 15%;
+        left: 40%;
     }
 
     /***********************************************************************************************/
@@ -178,7 +274,7 @@
     .containerHistoria {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-      
+
         grid-template-areas:
             "main"
             "footer";
@@ -187,33 +283,56 @@
             position: relative;
             top: 130px;
             left: 50px;
-               
+
             .parrafos {
                 display: flex;
                 flex-direction: column;
-             
+
                 h5 {
                     font-weight: bold;
                     position: relative;
                     top: 10px;
-            
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
                 }
 
                 .imagenNakamura {
                     position: relative;
                     bottom: 70px;
-                    width: 80%;
+                    width: 300px;
                 }
 
                 .liderOkada {
                     position: relative;
                     bottom: 50px;
-                    width: 80%;
+                    width: 300px;
                 }
 
-                .iframeSHO{
+                .iframeJaygedo {
                     position: relative;
                     top: 2px;
+                    left: 25%;
+                }
+
+                .iframeWill {
+                    position: relative;
+                    top: 2px;
+                    left: 25%;
+                }
+
+                .iframeSHO {
+                    position: relative;
+                    top: 2px;
+                    left: 25%;
+                }
+
+                .iframeBestfriends {
+                    position: relative;
+                    top: 2px;
+                    left: 25%;
                 }
             }
         }
@@ -226,47 +345,90 @@
         left: 100px;
     }
 
-    .card {
-        position: relative;
-        left: 200px;
-        background-color: $bg-color-card;
+    main {
+        .contenedor {
+            display: block;
+            .row {
+                .col {
+                    .card {
+                        /*position: relative;
+                        left: 50%;*/
+                        background-color: $bg-color-card;
 
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: bold;
+
+
+                        .card-title {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
         }
     }
+
+
+
 
     /**************************************************************************************************/
     /**************************MAIN de la pagina subgrupos*********************************/
     table.table-dark.table-striped {
-        width: 600px;
+        width: 500px;
+
     }
-     /**************************************************************************************************/
+
+    /**************************************************************************************************/
     /**************************MAIN de la pagina Contacto**********************************************/
-    .tituloContacto{
+
+    .tituloContacto {
         display: flex;
         justify-content: center;
         position: relative;
         left: 15%
     }
-    form{
-        position: relative;
-        right: 10px;
+
+    form {
+        .form-group {
+            .form-control {
+                margin-bottom: 10px;
+                background-color: plum;
+                font-family: $letra-campo-formulario;
+                font-size: 1.2rem;
+                width: 500px;
+
+            }
+
+            .opinion {
+                background-color: plum;
+                font-family: $letra-campo-formulario;
+                font-size: 1.2rem;
+
+            }
+        }
+
+        .btn {
+            .btn-primary {
+                width: 50%;
+            }
+        }
     }
+
     /**************************************************************************************************/
     /**********************************FOOTER de todos los html*************************************/
     footer {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 210px;
-        width: 600px;
+        top: 150px;
+        width: 179%;
+
         .contenedorRedes {
-        position: relative;
-        top: 10px;
+            position: relative;
+            top: 10px;
         }
     }
-    
+
+
+
     /***********************************************************************/
 }

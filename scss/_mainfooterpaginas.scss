@@ -3,10 +3,12 @@
      height: 270px;
      margin: 5px;
      float: right;
-     border-radius: 30px;
-     border: dotted blueviolet 3px;
+   
  }
-
+.bordesiframes{
+    border-radius: 30px;
+    border: dotted blueviolet 3px;
+}
  /*******************MAIN del index*********************/
  .container {
      margin: auto;
@@ -160,16 +162,15 @@
      margin: auto;
      width: 95%;
      display: grid;
-     grid-template-columns: 2fr 2fr 3fr;
-     grid-template-rows: auto;
+     grid-template-columns: 2fr 2fr 2fr;
+     grid-template-rows: 100% 100% 100%;
      grid-template-areas:
-
-         "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
-
+     "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
+    
 
      .titulosPrimeracolumna {
          width: 40%;
-
+         grid-area: titulosPrimeracolumna;
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -193,7 +194,7 @@
              }
          }
 
-         a {
+         /*a {
              .iwgpworld {
 
                  width: 310px;
@@ -211,11 +212,12 @@
                  position: relative;
                  bottom: 5%;
              }
-         }
+         }*/
      }
 
      .titulosSegundacolumna {
          width: 40%;
+         grid-area: titulosSegundacolumna;
          position: relative;
          bottom: 1.7%;
          display: flex;
@@ -249,22 +251,29 @@
      }
 
      .titulosTerceracolumna {
+        width: 40%;
+        grid-area: titulosTerceracolumna;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-         width: 40%;
-
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         left: 30%;
-         top: 8%;
-
-         img {
+        position: relative;
+        left: 30%;
+        top: 7%;
+        
+        /*img {
+            width: 400px;
+            height: 200px;
+            
+            position: relative;
+            bottom: 8%;
+        }*/
+         /*img {
              width: 400px;
              height: 200px;
              padding: 5px;
-         }
+         }*/
      }
 
  }
@@ -369,7 +378,7 @@
 
  .card {
      background-color: $bg-color-card;
-
+       
      .card-title {
          font-size: 1.2rem;
          font-weight: bold;
@@ -379,20 +388,25 @@
 
  /*******************************************************************************************/
  /******************************MAIN la pagina Subgrupos**********************************************/
- table {
-     tr {
-         text-align: center;
 
-         th {
+
+   
+     table {
+         tr {
              text-align: center;
+
+             th {
+                 text-align: center;
+             }
+
+             .prueba {
+                 width: 50%;
+             }
          }
 
-         .prueba {
-             width: 50%;
-         }
      }
+ 
 
- }
 
  audio {
      display: flex;
@@ -499,6 +513,7 @@
                  width: 40%;
                  float: right;
                  margin-top: 80px;
+                 @extend .bordesiframes;
              }
 
              .liderOkada {
@@ -506,6 +521,7 @@
                  width: 40%;
                  float: right;
                  margin-top: 60px;
+                 @extend .bordesiframes;
              }
 
              /*.traicionWhite {
@@ -517,33 +533,37 @@
 
              .iframeJaygedo {
                  @include iframes();
+                 @extend .bordesiframes;
              }
 
              .iframeWill {
                  @include iframes();
+                 @extend .bordesiframes;
              }
 
              .iframeSHO {
-                width: 500px;
-                height: 270px;
-                position: relative;
-                top: 25px;
-                float: right;
-                border-radius: 30px;
-                border: dotted blueviolet 3px;
+                 width: 500px;
+                 height: 270px;
+                 position: relative;
+                 top: 25px;
+                 float: right;
+                 border-radius: 30px;
+                 border: dotted blueviolet 3px;
              }
-             .iframeBestfriends{
-                width: 500px;
-                height: 250px;
-                position: relative;
-                top: 10px;
-                float: right;
-                border-radius: 30px;
-                border: dotted blueviolet 3px;
+
+             .iframeBestfriends {
+                 width: 500px;
+                 height: 250px;
+                 position: relative;
+                 top: 10px;
+                 float: right;
+                 border-radius: 30px;
+                 border: dotted blueviolet 3px;
              }
-             .divBestfriends{
-               position: relative;
-               top: 22px; 
+
+             .divBestfriends {
+                 position: relative;
+                 top: 22px;
              }
          }
      }

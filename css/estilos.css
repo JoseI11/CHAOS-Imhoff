@@ -1,3 +1,22 @@
+/*$anchoindexquery:151px;
+$anchocontactoquery:130px;
+@mixin navbarindex ($valor){
+    .menu-bar {
+        width: $valor;
+
+        .dropdown {
+            .dropdown-menu {
+                .dropdown-item {
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $bg-color-rojo;
+                    }
+                }
+            }
+        }
+    }
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +49,31 @@ body {
       .menu-bar .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item:hover {
         background-color: red; }
 
+.menu-bar-njpw {
+  background-color: #ebbe9b;
+  background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%); }
+  .menu-bar-njpw .navbar .navbar-nav .nav-link {
+    font-family: 'Baskervville', serif;
+    background-color: gray;
+    text-align: center;
+    color: white; }
+    .menu-bar-njpw .navbar .navbar-nav .nav-link:hover {
+      background-color: red; }
+  .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: gray;
+    font-family: 'Baskervville', serif; }
+    .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item {
+      color: white;
+      text-align: center; }
+      .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item:hover {
+        background-color: red; }
+
 /*******************************************************/
+.bordesiframes, .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura, .containerHistoria .liderazgoNakamura .parrafos .liderOkada, .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo, .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
+  border-radius: 30px;
+  border: dotted blueviolet 3px; }
+
 /*******************MAIN del index*********************/
 .container {
   margin: auto;
@@ -139,18 +182,38 @@ body {
   margin: auto;
   width: 95%;
   display: grid;
-  grid-template-columns: 2fr 2fr 3fr;
-  grid-template-rows: auto;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 100% 100% 100%;
   grid-template-areas: "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna"; }
   .containerTitulos .titulosPrimeracolumna {
     width: 40%;
+    grid-area: titulosPrimeracolumna;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     left: 40%;
-    top: 8%; }
+    top: 8%;
+    /*a {
+             .iwgpworld {
+
+                 width: 310px;
+
+                 position: relative;
+                 bottom: 20%;
+             }
+
+             .trofeosRetirados {
+                 position: relative;
+                 bottom: 15%;
+             }
+
+             .trofeosRetiradosinter {
+                 position: relative;
+                 bottom: 5%;
+             }
+         }*/ }
     .containerTitulos .titulosPrimeracolumna .encabezado {
       padding-bottom: 20px;
       position: relative;
@@ -158,18 +221,9 @@ body {
     .containerTitulos .titulosPrimeracolumna .titulosRetirados h3 {
       position: relative;
       bottom: 22%; }
-    .containerTitulos .titulosPrimeracolumna a .iwgpworld {
-      width: 310px;
-      position: relative;
-      bottom: 20%; }
-    .containerTitulos .titulosPrimeracolumna a .trofeosRetirados {
-      position: relative;
-      bottom: 15%; }
-    .containerTitulos .titulosPrimeracolumna a .trofeosRetiradosinter {
-      position: relative;
-      bottom: 5%; }
   .containerTitulos .titulosSegundacolumna {
     width: 40%;
+    grid-area: titulosSegundacolumna;
     position: relative;
     bottom: 1.7%;
     display: flex;
@@ -193,17 +247,26 @@ body {
       bottom: 8%; }
   .containerTitulos .titulosTerceracolumna {
     width: 40%;
+    grid-area: titulosTerceracolumna;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     left: 30%;
-    top: 8%; }
-    .containerTitulos .titulosTerceracolumna img {
-      width: 400px;
-      height: 200px;
-      padding: 5px; }
+    top: 7%;
+    /*img {
+            width: 400px;
+            height: 200px;
+            
+            position: relative;
+            bottom: 8%;
+        }*/
+    /*img {
+             width: 400px;
+             height: 200px;
+             padding: 5px;
+         }*/ }
 
 /************************************************************************/
 /*********************Main de la pagina ROH****************************/
@@ -378,16 +441,12 @@ form .btn .btn-primary {
         width: 500px;
         height: 270px;
         margin: 5px;
-        float: right;
-        border-radius: 30px;
-        border: dotted blueviolet 3px; }
+        float: right; }
       .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
         width: 500px;
         height: 270px;
         margin: 5px;
-        float: right;
-        border-radius: 30px;
-        border: dotted blueviolet 3px; }
+        float: right; }
       .containerHistoria .liderazgoNakamura .parrafos .iframeSHO {
         width: 500px;
         height: 270px;
@@ -433,10 +492,10 @@ footer {
       width: 80px; }
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   /****************NAVBAR de todos las paginas******************************/
   .menu-bar {
-    width: 600px; }
+    width: 179%; }
     .menu-bar .dropdown .dropdown-menu .dropdown-item {
       text-align: center; }
       .menu-bar .dropdown .dropdown-menu .dropdown-item:hover {
@@ -451,15 +510,23 @@ footer {
     /********************+++++++++++++++++++++++++++++++++++++++++++++++*************************/ }
     .container .iframesyImagenesdelgrupo {
       position: relative;
-      top: 15%; }
-      .container .iframesyImagenesdelgrupo .imagenInicio:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenes;
-        animation-iteration-count: infinite; }
-      .container .iframesyImagenesdelgrupo .imagenInicio2 {
-        animation-duration: 3s;
-        animation-name: efectoimagenes;
-        animation-iteration-count: infinite; }
+      top: 15%;
+      right: 7%;
+      grid-area: iframesyImagenesdelgrupo; }
+      .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio {
+        width: 90%;
+        height: 335px; }
+        .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenes;
+          animation-iteration-count: infinite; }
+      .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2 {
+        width: 90%;
+        height: 335px; }
+        .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenes;
+          animation-iteration-count: infinite; }
   @keyframes efectoimagenes {
     0% {
       opacity: 0; }
@@ -476,21 +543,27 @@ footer {
       justify-content: center;
       align-items: center;
       position: relative;
-      left: 5%;
+      right: 2%;
       width: 90%;
       top: 20%; }
   /**********************************************************/
   /************************************MAIN de la pagina NJPW**********************************/
+  .menu-bar-njpw {
+    width: 432px; }
+    .menu-bar-njpw .dropdown .dropdown-menu .dropdown-item {
+      text-align: center; }
+      .menu-bar-njpw .dropdown .dropdown-menu .dropdown-item:hover {
+        background-color: red; }
+  .empresaTitulos h1 {
+    position: relative;
+    left: 30%; }
   .containerTitulos {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "titulosPrimeracolumna" "titulosSegundacolumna" "titulosTerceracolumna";
-    position: relative;
-    left: 15%; }
-    .containerTitulos .empresaTitulos {
-      position: relative;
-      left: 15%; }
+    width: 120%; }
     .containerTitulos .titulosPrimeracolumna {
+      grid-area: titulosPrimeracolumna;
       position: relative;
       left: 30%;
       top: 15%;
@@ -498,7 +571,9 @@ footer {
     .containerTitulos .titulosSegundacolumna {
       position: relative;
       left: 30%;
-      top: 10%; }
+      top: 5%;
+      margin-top: 30%;
+      grid-area: titulosSegundacolumna; }
       .containerTitulos .titulosSegundacolumna h1 {
         position: relative;
         bottom: 100%; }
@@ -506,14 +581,60 @@ footer {
         text-align: center; }
     .containerTitulos .titulosTerceracolumna {
       position: relative;
-      left: 30%; }
+      left: 30%;
+      grid-area: titulosTerceracolumna; }
+  .footer-njpw {
+    width: 432px; }
+  /*.containerTitulos {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+
+            "titulosPrimeracolumna"
+            "titulosSegundacolumna"
+            "titulosTerceracolumna";
+
+        position: relative;
+        left: 50%;
+    
+
+        .empresaTitulos {
+            position: relative;
+            left: 15%;
+        }
+
+        .titulosPrimeracolumna {
+            position: relative;
+            left: 30%;
+            top: 15%;
+            text-align: center;
+        }
+
+        .titulosSegundacolumna {
+            position: relative;
+            left: 30%;
+            top: 10%;
+
+            h1 {
+                position: relative;
+                bottom: 100%;
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        
+    }*/
   /***********************************************************************************************/
   /*******************************MAIN de la pagina ROH******************************/
   .titularRoh {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 15%; }
+    left: 40%; }
   .containerRoh {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -521,7 +642,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 15%; }
+    left: 40%; }
   /***********************************************************************************************/
   /*******************MAIN de la pagina otraspromociones******************************************/
   .titularOtraspromociones {
@@ -553,34 +674,52 @@ footer {
         .containerHistoria .liderazgoNakamura .parrafos h5 {
           font-weight: bold;
           position: relative;
-          top: 10px; }
+          top: 10px;
+          font-size: 1.2rem; }
+        .containerHistoria .liderazgoNakamura .parrafos p {
+          font-size: 1.2rem; }
         .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura {
           position: relative;
           bottom: 70px;
-          width: 80%; }
+          width: 300px; }
         .containerHistoria .liderazgoNakamura .parrafos .liderOkada {
           position: relative;
           bottom: 50px;
-          width: 80%; }
+          width: 300px; }
+        .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo {
+          position: relative;
+          top: 2px;
+          left: 25%; }
+        .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
+          position: relative;
+          top: 2px;
+          left: 25%; }
         .containerHistoria .liderazgoNakamura .parrafos .iframeSHO {
           position: relative;
-          top: 2px; }
+          top: 2px;
+          left: 25%; }
+        .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
+          position: relative;
+          top: 2px;
+          left: 25%; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembros actuales y antiguos****************************/
   .tituloGrupo {
     position: relative;
     left: 100px; }
-  .card {
-    position: relative;
-    left: 200px;
-    background-color: black; }
-    .card .card-title {
-      font-size: 1.2rem;
-      font-weight: bold; }
+  main .contenedor {
+    display: block; }
+    main .contenedor .row .col .card {
+      /*position: relative;
+                        left: 50%;*/
+      background-color: black; }
+      main .contenedor .row .col .card .card-title {
+        font-size: 1.2rem;
+        font-weight: bold; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   table.table-dark.table-striped {
-    width: 600px; }
+    width: 500px; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina Contacto**********************************************/
   .tituloContacto {
@@ -588,17 +727,26 @@ footer {
     justify-content: center;
     position: relative;
     left: 15%; }
-  form {
-    position: relative;
-    right: 10px; }
+  form .form-group .form-control {
+    margin-bottom: 10px;
+    background-color: plum;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    width: 500px; }
+  form .form-group .opinion {
+    background-color: plum;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem; }
+  form .btn .btn-primary {
+    width: 50%; }
   /**************************************************************************************************/
   /**********************************FOOTER de todos los html*************************************/
   footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 210px;
-    width: 600px; }
+    top: 150px;
+    width: 179%; }
     footer .contenedorRedes {
       position: relative;
       top: 10px; }
