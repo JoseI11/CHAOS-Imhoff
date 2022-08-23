@@ -257,16 +257,13 @@
     }
 
     .containerOtraspromociones {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "titulosOtrosprimeracolumna"
-            "titulosOtrossegundaacolumna"
-            "titulosOtrosterceracolumna";
+        grid-template-rows: repeat(3,1fr);
         display: flex;
         flex-direction: column;
         position: relative;
         left: 15%;
+
+       
     }
 
     /***********************************************************************************************/
@@ -340,19 +337,19 @@
 
     /************************************************************************************************/
     /**************************MAIN de la pagina miembros actuales y antiguos****************************/
-    .tituloGrupo {
+    /*.tituloGrupo {
         position: relative;
         left: 100px;
-    }
-
-    main {
+    }*/
+         /*position: relative;
+                        left: 50%;*/
+   /* main {
         .contenedor {
-            display: block;
+          
             .row {
                 .col {
                     .card {
-                        /*position: relative;
-                        left: 50%;*/
+               
                         background-color: $bg-color-card;
 
 
@@ -365,7 +362,7 @@
                 }
             }
         }
-    }
+    }*/
 
 
 

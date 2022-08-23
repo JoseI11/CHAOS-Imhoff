@@ -1,9 +1,8 @@
  @mixin iframes {
-    width: 500px;
-     height: 270px;
+     width: 3125%;
+     height: 2000%;
      margin: 5px;
      float: right;
-
    
  }
  $estiloflex: (
@@ -50,7 +49,7 @@
              }
 
              .imagenInicio {
-                 width: 90%;
+                 width: 450px;
                  height: 335px;
                  margin: 5px;
                  border-radius: 30px;
@@ -64,7 +63,7 @@
              }
 
              .imagenInicio2 {
-                 width: 90%;
+                 width: 450px;
                  margin: 5px;
                  border-radius: 30px;
 
@@ -548,7 +547,15 @@
                  @extend .bordesiframes;
              }
 
-     
+             .iframeSHO {
+                 width: 500px;
+                 height: 270px;
+                 position: relative;
+                 top: 25px;
+                 float: right;
+                 border-radius: 30px;
+                 border: dotted blueviolet 3px;
+             }
 
              .iframeBestfriends {
                  width: 500px;
@@ -556,7 +563,8 @@
                  position: relative;
                  top: 10px;
                  float: right;
-                 @extend .bordesiframes;
+                 border-radius: 30px;
+                 border: dotted blueviolet 3px;
              }
 
              .divBestfriends {

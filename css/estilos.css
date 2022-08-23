@@ -70,7 +70,7 @@ body {
         background-color: red; }
 
 /*******************************************************/
-.bordesiframes, .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura, .containerHistoria .liderazgoNakamura .parrafos .liderOkada, .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo, .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
+.bordesiframes, .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura, .containerHistoria .liderazgoNakamura .parrafos .liderOkada, .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo, .containerHistoria .liderazgoNakamura .parrafos .iframeWill, .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
   border-radius: 30px;
   border: dotted blueviolet 3px; }
 
@@ -102,7 +102,7 @@ body {
         font-family: 'Mitr', sans-serif;
         font-size: 2rem; }
       .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio {
-        width: 450px;
+        width: 90%;
         height: 335px;
         margin: 5px;
         border-radius: 30px; }
@@ -111,7 +111,7 @@ body {
           animation-name: efectoimagenes;
           animation-iteration-count: infinite; }
       .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2 {
-        width: 450px;
+        width: 90%;
         margin: 5px;
         border-radius: 30px;
         /* width: 70%;*/ }
@@ -300,8 +300,7 @@ body {
   margin-left: auto;
   width: 100%;
   display: grid;
-  position: relative;
-  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: auto;
   grid-column-gap: 10px;
   grid-template-areas: "titulosOtrosprimeracolumna titulosOtrossegundacolumna titulosOtrosterceracolumna"; }
@@ -447,22 +446,12 @@ form .btn .btn-primary {
         height: 270px;
         margin: 5px;
         float: right; }
-      .containerHistoria .liderazgoNakamura .parrafos .iframeSHO {
-        width: 500px;
-        height: 270px;
-        position: relative;
-        top: 25px;
-        float: right;
-        border-radius: 30px;
-        border: dotted blueviolet 3px; }
       .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
         width: 500px;
         height: 250px;
         position: relative;
         top: 10px;
-        float: right;
-        border-radius: 30px;
-        border: dotted blueviolet 3px; }
+        float: right; }
       .containerHistoria .liderazgoNakamura .parrafos .divBestfriends {
         position: relative;
         top: 22px; }
@@ -651,9 +640,7 @@ footer {
     position: relative;
     left: 15%; }
   .containerOtraspromociones {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "titulosOtrosprimeracolumna" "titulosOtrossegundaacolumna" "titulosOtrosterceracolumna";
+    grid-template-rows: repeat(3, 1fr);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -704,18 +691,32 @@ footer {
           left: 25%; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembros actuales y antiguos****************************/
-  .tituloGrupo {
-    position: relative;
-    left: 100px; }
-  main .contenedor {
-    display: block; }
-    main .contenedor .row .col .card {
-      /*position: relative;
+  /*.tituloGrupo {
+        position: relative;
+        left: 100px;
+    }*/
+  /*position: relative;
                         left: 50%;*/
-      background-color: black; }
-      main .contenedor .row .col .card .card-title {
-        font-size: 1.2rem;
-        font-weight: bold; }
+  /* main {
+        .contenedor {
+          
+            .row {
+                .col {
+                    .card {
+               
+                        background-color: $bg-color-card;
+
+
+
+                        .card-title {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }*/
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   table.table-dark.table-striped {
