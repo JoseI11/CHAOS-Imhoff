@@ -5,6 +5,12 @@
      float: right;
    
  }
+ $estiloflex: (
+  desplegar: flex,
+  direccion: column,
+  alineacion: center
+);
+
 .bordesiframes{
     border-radius: 30px;
     border: dotted blueviolet 3px;
@@ -295,15 +301,15 @@
          "titulosrohPrimeracolumna titulosrohSegundacolumna";
 
      .titulosrohPrimeracolumna {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+         display: map-get($estiloflex, desplegar);
+         flex-direction:  map-get($estiloflex, direccion);
+         align-items: map-get($estiloflex, alineacion);
      }
 
      .titulosrohSegundacolumna {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+         display:  map-get($estiloflex, desplegar);
+         flex-direction: map-get($estiloflex, direccion);
+         align-items: map-get($estiloflex, alineacion);
      }
 
  }
