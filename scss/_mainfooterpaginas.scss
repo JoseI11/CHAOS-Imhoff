@@ -1,21 +1,23 @@
  @mixin iframes {
-    width: 500px;
+     width: 500px;
      height: 270px;
      margin: 5px;
      float: right;
 
-   
- }
- $estiloflex: (
-  desplegar: flex,
-  direccion: column,
-  alineacion: center
-);
 
-.bordesiframes{
-    border-radius: 30px;
-    border: dotted blueviolet 3px;
-}
+ }
+
+ $estiloflex: (
+     desplegar: flex,
+     direccion: column,
+     alineacion: center
+ );
+
+ .bordesiframes {
+     border-radius: 30px;
+     border: dotted blueviolet 3px;
+ }
+
  /*******************MAIN del index*********************/
  .container {
      margin: auto;
@@ -167,13 +169,13 @@
 
  .containerTitulos {
      margin: auto;
-     width: 95%;
+     width: 100%;
      display: grid;
      grid-template-columns: 2fr 2fr 2fr;
      grid-template-rows: 100% 100% 100%;
      grid-template-areas:
-     "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
-    
+         "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
+
 
      .titulosPrimeracolumna {
          width: 40%;
@@ -258,18 +260,18 @@
      }
 
      .titulosTerceracolumna {
-        width: 40%;
-        grid-area: titulosTerceracolumna;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+         width: 40%;
+         grid-area: titulosTerceracolumna;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
 
-        position: relative;
-        left: 30%;
-        top: 7%;
-        
-        /*img {
+         position: relative;
+         left: 30%;
+         top: 7%;
+
+         /*img {
             width: 400px;
             height: 200px;
             
@@ -303,12 +305,12 @@
 
      .titulosrohPrimeracolumna {
          display: map-get($estiloflex, desplegar);
-         flex-direction:  map-get($estiloflex, direccion);
+         flex-direction: map-get($estiloflex, direccion);
          align-items: map-get($estiloflex, alineacion);
      }
 
      .titulosrohSegundacolumna {
-         display:  map-get($estiloflex, desplegar);
+         display: map-get($estiloflex, desplegar);
          flex-direction: map-get($estiloflex, direccion);
          align-items: map-get($estiloflex, alineacion);
      }
@@ -383,36 +385,69 @@
      justify-content: center;
  }
 
- .card {
-     background-color: $bg-color-card;
-       
-     .card-title {
-         font-size: 1.2rem;
-         font-weight: bold;
-         color: white;
+ .contenedor {
+     display: flex;
+     flex-direction: row;
+
+     .card {
+         background-color: $bg-color-card;
+
+         .card-title {
+             font-size: 1.2rem;
+             font-weight: bold;
+             color: white;
+         }
      }
  }
+ .contenedor1 {
+    display: flex;
+    flex-direction: row;
+
+    .card {
+        background-color: $bg-color-card;
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+
+    .card {
+        background-color: $bg-color-card;
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
 
  /*******************************************************************************************/
  /******************************MAIN la pagina Subgrupos**********************************************/
 
 
-   
-     table {
-         tr {
+
+ table {
+     tr {
+         text-align: center;
+
+         th {
              text-align: center;
-
-             th {
-                 text-align: center;
-             }
-
-             .prueba {
-                 width: 50%;
-             }
          }
 
+         .prueba {
+             width: 50%;
+         }
      }
- 
+
+ }
+
 
 
  audio {
@@ -548,7 +583,7 @@
                  @extend .bordesiframes;
              }
 
-     
+
 
              .iframeBestfriends {
                  width: 500px;
