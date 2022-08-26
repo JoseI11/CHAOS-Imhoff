@@ -9,7 +9,7 @@
 
  $estiloflex: (
      desplegar: flex,
-     direccion: column,
+     direccion: row,
      alineacion: center
  );
 
@@ -159,142 +159,204 @@
 
  /*****************************************************************************/
  /*******************************************MAIN de la pagina NJPW******************************************/
- .empresaTitulos {
-     h1 {
-         display: flex;
-         justify-content: center;
+ main {
+     .empresaTitulos {
+         h1 {
+             display: flex;
+             justify-content: center;
+         }
+
      }
 
- }
-
- .containerTitulos {
-     margin: auto;
-     width: 100%;
-     display: grid;
-     grid-template-columns: 2fr 2fr 2fr;
-     grid-template-rows: 100% 100% 100%;
-     grid-template-areas:
-         "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
-
-
      .titulosPrimeracolumna {
-         width: 40%;
-         grid-area: titulosPrimeracolumna;
          display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         left: 40%;
-         top: 8%;
+         flex-direction: row;
 
-         .encabezado {
+         .card {
+             background-color: $bg-color-card;
 
-             padding-bottom: 20px;
-             position: relative;
-             bottom: 2%;
-
-         }
-
-         .titulosRetirados {
-             h3 {
-                 position: relative;
-                 bottom: 22%;
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
              }
          }
-
-         /*a {
-             .iwgpworld {
-
-                 width: 310px;
-
-                 position: relative;
-                 bottom: 20%;
-             }
-
-             .trofeosRetirados {
-                 position: relative;
-                 bottom: 15%;
-             }
-
-             .trofeosRetiradosinter {
-                 position: relative;
-                 bottom: 5%;
-             }
-         }*/
      }
 
      .titulosSegundacolumna {
-         width: 40%;
-         grid-area: titulosSegundacolumna;
-         position: relative;
-         bottom: 1.7%;
          display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         left: 40%;
-         top: 7%;
+         flex-direction: row;
 
-         .tituloNeverops {
+         .card {
+             background-color: $bg-color-card;
 
-             position: relative;
-             top: 5px;
-
-         }
-
-         .neverOps {
-
-             position: relative;
-             bottom: 2px;
-         }
-
-         img {
-             width: 400px;
-             height: 200px;
-             padding: 5px;
-             position: relative;
-             bottom: 8%;
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
          }
      }
 
      .titulosTerceracolumna {
-         width: 40%;
-         grid-area: titulosTerceracolumna;
          display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
+         flex-direction: row;
 
-         position: relative;
-         left: 30%;
-         top: 7%;
+         .card {
+             background-color: $bg-color-card;
 
-         /*img {
-            width: 400px;
-            height: 200px;
-            
-            position: relative;
-            bottom: 8%;
-        }*/
-         /*img {
-             width: 400px;
-             height: 200px;
-             padding: 5px;
-         }*/
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
      }
 
+     /* margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 100% 100% 100%;
+        grid-template-areas:
+            "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
+   
+   
+        .titulosPrimeracolumna {
+            width: 40%;
+            grid-area: titulosPrimeracolumna;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 40%;
+            top: 8%;
+   
+            .encabezado {
+   
+                padding-bottom: 20px;
+                position: relative;
+                bottom: 2%;
+   
+            }
+   
+            .titulosRetirados {
+                h3 {
+                    position: relative;
+                    bottom: 22%;
+                }
+            }
+   
+            /*a {
+                .iwgpworld {
+   
+                    width: 310px;
+   
+                    position: relative;
+                    bottom: 20%;
+                }
+   
+                .trofeosRetirados {
+                    position: relative;
+                    bottom: 15%;
+                }
+   
+                .trofeosRetiradosinter {
+                    position: relative;
+                    bottom: 5%;
+                }
+            }*/
+     /*}
+   
+        .titulosSegundacolumna {
+            width: 40%;
+            grid-area: titulosSegundacolumna;
+            position: relative;
+            bottom: 1.7%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 40%;
+            top: 7%;
+   
+            .tituloNeverops {
+   
+                position: relative;
+                top: 5px;
+   
+            }
+   
+            .neverOps {
+   
+                position: relative;
+                bottom: 2px;
+            }
+   
+            img {
+                width: 400px;
+                height: 200px;
+                padding: 5px;
+                position: relative;
+                bottom: 8%;
+            }
+        }
+   
+        .titulosTerceracolumna {
+            width: 40%;
+            grid-area: titulosTerceracolumna;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+   
+            position: relative;
+            left: 30%;
+            top: 7%;
+   
+            /*img {
+               width: 400px;
+               height: 200px;
+               
+               position: relative;
+               bottom: 8%;
+           }*/
+     /*img {
+                width: 400px;
+                height: 200px;
+                padding: 5px;
+            }*/
+     /*}*/
+
  }
+
+
 
  /************************************************************************/
  /*********************Main de la pagina ROH****************************/
- .titularRoh {
-     display: flex;
-     justify-content: center;
+
+ main {
+     .titularRoh {
+         display: flex;
+         justify-content: center;
+     }
+
+     .titulosrohPrimeracolumna {
+         display: map-get($estiloflex, desplegar);
+         flex-direction: map-get($estiloflex, direccion);
+
+     }
+
+     .titulosrohSegundacolumna {
+         display: map-get($estiloflex, desplegar);
+         flex-direction: map-get($estiloflex, direccion);
+
+     }
  }
 
- .containerRoh {
+ /*.containerRoh {
      margin: auto;
      width: 95%;
      display: grid;
@@ -315,17 +377,38 @@
          align-items: map-get($estiloflex, alineacion);
      }
 
- }
+ }*/
 
  /***************************************************************/
  /*************************MAIN de la pagina otras promociones************************/
- .titularOtraspromociones {
-     display: flex;
-     justify-content: center;
+ main {
+     .titularOtraspromociones {
+         display: flex;
+         justify-content: center;
 
+     }
+
+     .titulosOtrosprimeracolumna {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: #B1D4E0;
+
+             .card-title {
+                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             }
+         }
+     }
+
+     .titulosOtrossegundacolumna {
+         display: flex;
+         flex-direction: row;
+     }
  }
 
- .containerOtraspromociones {
+
+ /*.containerOtraspromociones {
      margin-left: auto;
      width: 100%;
      display: grid;
@@ -376,58 +459,148 @@
          }
      }
 
- }
+ }*/
 
  /*******************************************************************************************/
  /******************************MAIN la pagina Miembrosactuales y antiguos**********************************************/
- .tituloGrupo {
-     display: flex;
-     justify-content: center;
- }
+ main {
+     .tituloGrupo {
+         display: flex;
+         justify-content: center;
+     }
 
- .contenedor {
-     display: flex;
-     flex-direction: row;
+     .contenedor {
+         display: flex;
+         flex-direction: row;
 
-     .card {
-         background-color: $bg-color-card;
+         .card {
+             background-color: $bg-color-card;
 
-         .card-title {
-             font-size: 1.2rem;
-             font-weight: bold;
-             color: white;
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
          }
      }
+
+     .contenedor1 {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: $bg-color-card;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
+
+     .contenedor2 {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: $bg-color-card;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
+     .contenedor3 {
+        display: flex;
+        flex-direction: row;
+
+        .card {
+            background-color: $bg-color-card;
+
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
  }
- .contenedor1 {
-    display: flex;
-    flex-direction: row;
 
-    .card {
-        background-color: $bg-color-card;
 
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: white;
+ 
+
+ /*************************************************************************************************/
+ /*********************************MAIN de la pagina miembros actuales*******************************/
+ main{
+    .primeraFila {
+        display: flex;
+        flex-direction: row;
+   
+        .card {
+            background-color: $bg-color-card;
+            width: 15rem;
+   
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+            }
         }
     }
-}
-.contenedor2 {
-    display: flex;
-    flex-direction: row;
-
-    .card {
-        background-color: $bg-color-card;
-
-        .card-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: white;
+   
+    .segundaFila {
+        display: flex;
+        flex-direction: row;
+   
+        .card {
+            background-color: $bg-color-card;
+            width: 15rem;
+   
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+            }
         }
     }
-}
+   
+    .terceraFila {
+        display: flex;
+        flex-direction: row;
+   
+        .card {
+            background-color: $bg-color-card;
+            width: 15rem;
+   
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
+    .cuartaFila {
+        display: flex;
+        flex-direction: row;
+        width: 15rem;
+        .card {
+            background-color: $bg-color-card;
+            width: 15rem;
+   
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
+ }
+ 
 
+ /***************************************************************************************************/
  /*******************************************************************************************/
  /******************************MAIN la pagina Subgrupos**********************************************/
 

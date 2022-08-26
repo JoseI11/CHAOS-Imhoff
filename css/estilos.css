@@ -174,200 +174,354 @@ body {
 
 /*****************************************************************************/
 /*******************************************MAIN de la pagina NJPW******************************************/
-.empresaTitulos h1 {
-  display: flex;
-  justify-content: center; }
-
-.containerTitulos {
-  margin: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 100% 100% 100%;
-  grid-template-areas: "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna"; }
-  .containerTitulos .titulosPrimeracolumna {
-    width: 40%;
-    grid-area: titulosPrimeracolumna;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 40%;
-    top: 8%;
-    /*a {
-             .iwgpworld {
-
-                 width: 310px;
-
-                 position: relative;
-                 bottom: 20%;
-             }
-
-             .trofeosRetirados {
-                 position: relative;
-                 bottom: 15%;
-             }
-
-             .trofeosRetiradosinter {
-                 position: relative;
-                 bottom: 5%;
-             }
-         }*/ }
-    .containerTitulos .titulosPrimeracolumna .encabezado {
-      padding-bottom: 20px;
-      position: relative;
-      bottom: 2%; }
-    .containerTitulos .titulosPrimeracolumna .titulosRetirados h3 {
-      position: relative;
-      bottom: 22%; }
-  .containerTitulos .titulosSegundacolumna {
-    width: 40%;
-    grid-area: titulosSegundacolumna;
-    position: relative;
-    bottom: 1.7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 40%;
-    top: 7%; }
-    .containerTitulos .titulosSegundacolumna .tituloNeverops {
-      position: relative;
-      top: 5px; }
-    .containerTitulos .titulosSegundacolumna .neverOps {
-      position: relative;
-      bottom: 2px; }
-    .containerTitulos .titulosSegundacolumna img {
-      width: 400px;
-      height: 200px;
-      padding: 5px;
-      position: relative;
-      bottom: 8%; }
-  .containerTitulos .titulosTerceracolumna {
-    width: 40%;
-    grid-area: titulosTerceracolumna;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 30%;
-    top: 7%;
-    /*img {
-            width: 400px;
-            height: 200px;
-            
+main {
+  /* margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 100% 100% 100%;
+        grid-template-areas:
+            "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
+   
+   
+        .titulosPrimeracolumna {
+            width: 40%;
+            grid-area: titulosPrimeracolumna;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            bottom: 8%;
-        }*/
-    /*img {
-             width: 400px;
-             height: 200px;
-             padding: 5px;
-         }*/ }
+            left: 40%;
+            top: 8%;
+   
+            .encabezado {
+   
+                padding-bottom: 20px;
+                position: relative;
+                bottom: 2%;
+   
+            }
+   
+            .titulosRetirados {
+                h3 {
+                    position: relative;
+                    bottom: 22%;
+                }
+            }
+   
+            /*a {
+                .iwgpworld {
+   
+                    width: 310px;
+   
+                    position: relative;
+                    bottom: 20%;
+                }
+   
+                .trofeosRetirados {
+                    position: relative;
+                    bottom: 15%;
+                }
+   
+                .trofeosRetiradosinter {
+                    position: relative;
+                    bottom: 5%;
+                }
+            }*/
+  /*}
+   
+        .titulosSegundacolumna {
+            width: 40%;
+            grid-area: titulosSegundacolumna;
+            position: relative;
+            bottom: 1.7%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 40%;
+            top: 7%;
+   
+            .tituloNeverops {
+   
+                position: relative;
+                top: 5px;
+   
+            }
+   
+            .neverOps {
+   
+                position: relative;
+                bottom: 2px;
+            }
+   
+            img {
+                width: 400px;
+                height: 200px;
+                padding: 5px;
+                position: relative;
+                bottom: 8%;
+            }
+        }
+   
+        .titulosTerceracolumna {
+            width: 40%;
+            grid-area: titulosTerceracolumna;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+   
+            position: relative;
+            left: 30%;
+            top: 7%;
+   
+            /*img {
+               width: 400px;
+               height: 200px;
+               
+               position: relative;
+               bottom: 8%;
+           }*/
+  /*img {
+                width: 400px;
+                height: 200px;
+                padding: 5px;
+            }*/
+  /*}*/ }
+  main .empresaTitulos h1 {
+    display: flex;
+    justify-content: center; }
+  main .titulosPrimeracolumna {
+    display: flex;
+    flex-direction: row; }
+    main .titulosPrimeracolumna .card {
+      background-color: black; }
+      main .titulosPrimeracolumna .card .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white; }
+  main .titulosSegundacolumna {
+    display: flex;
+    flex-direction: row; }
+    main .titulosSegundacolumna .card {
+      background-color: black; }
+      main .titulosSegundacolumna .card .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white; }
+  main .titulosTerceracolumna {
+    display: flex;
+    flex-direction: row; }
+    main .titulosTerceracolumna .card {
+      background-color: black; }
+      main .titulosTerceracolumna .card .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white; }
 
 /************************************************************************/
 /*********************Main de la pagina ROH****************************/
-.titularRoh {
+main .titularRoh {
   display: flex;
   justify-content: center; }
 
-.containerRoh {
-  margin: auto;
-  width: 95%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "titulosrohPrimeracolumna titulosrohSegundacolumna"; }
-  .containerRoh .titulosrohPrimeracolumna {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .containerRoh .titulosrohSegundacolumna {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+main .titulosrohPrimeracolumna {
+  display: flex;
+  flex-direction: row; }
 
+main .titulosrohSegundacolumna {
+  display: flex;
+  flex-direction: row; }
+
+/*.containerRoh {
+     margin: auto;
+     width: 95%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+     grid-template-areas:
+         "titulosrohPrimeracolumna titulosrohSegundacolumna";
+
+     .titulosrohPrimeracolumna {
+         display: map-get($estiloflex, desplegar);
+         flex-direction: map-get($estiloflex, direccion);
+         align-items: map-get($estiloflex, alineacion);
+     }
+
+     .titulosrohSegundacolumna {
+         display: map-get($estiloflex, desplegar);
+         flex-direction: map-get($estiloflex, direccion);
+         align-items: map-get($estiloflex, alineacion);
+     }
+
+ }*/
 /***************************************************************/
 /*************************MAIN de la pagina otras promociones************************/
-.titularOtraspromociones {
+main .titularOtraspromociones {
   display: flex;
   justify-content: center; }
 
-.containerOtraspromociones {
-  margin-left: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-template-areas: "titulosOtrosprimeracolumna titulosOtrossegundacolumna titulosOtrosterceracolumna"; }
-  .containerOtraspromociones .titulosOtrosprimeracolumna {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 50px; }
-    .containerOtraspromociones .titulosOtrosprimeracolumna h3 {
-      text-align: center; }
-  .containerOtraspromociones .titulosOtrossegundacolumna {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 50px; }
-    .containerOtraspromociones .titulosOtrossegundacolumna h3 {
-      text-align: center; }
-  .containerOtraspromociones .titulosOtrosterceracolumna {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 50px; }
-    .containerOtraspromociones .titulosOtrosterceracolumna h3 {
-      text-align: center; }
+main .titulosOtrosprimeracolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosOtrosprimeracolumna .card {
+    background-color: #B1D4E0; }
+    main .titulosOtrosprimeracolumna .card .card-title {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
+main .titulosOtrossegundacolumna {
+  display: flex;
+  flex-direction: row; }
+
+/*.containerOtraspromociones {
+     margin-left: auto;
+     width: 100%;
+     display: grid;
+
+
+     grid-template-columns: 2fr 2fr 2fr;
+     grid-template-rows: auto;
+     grid-column-gap: 10px;
+     grid-template-areas:
+         "titulosOtrosprimeracolumna titulosOtrossegundacolumna titulosOtrosterceracolumna";
+
+     .titulosOtrosprimeracolumna {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         top: 50px;
+
+         h3 {
+             text-align: center;
+         }
+     }
+
+     .titulosOtrossegundacolumna {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         top: 50px;
+
+         h3 {
+             text-align: center;
+         }
+     }
+
+     .titulosOtrosterceracolumna {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+         top: 50px;
+
+         h3 {
+             text-align: center;
+         }
+     }
+
+ }*/
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembrosactuales y antiguos**********************************************/
-.tituloGrupo {
+main .tituloGrupo {
   display: flex;
   justify-content: center; }
 
-.contenedor {
+main .contenedor {
   display: flex;
   flex-direction: row; }
-  .contenedor .card {
+  main .contenedor .card {
     background-color: black; }
-    .contenedor .card .card-title {
+    main .contenedor .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
-.contenedor1 {
+main .contenedor1 {
   display: flex;
   flex-direction: row; }
-  .contenedor1 .card {
+  main .contenedor1 .card {
     background-color: black; }
-    .contenedor1 .card .card-title {
+    main .contenedor1 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
-.contenedor2 {
+main .contenedor2 {
   display: flex;
   flex-direction: row; }
-  .contenedor2 .card {
+  main .contenedor2 .card {
     background-color: black; }
-    .contenedor2 .card .card-title {
+    main .contenedor2 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
+main .contenedor3 {
+  display: flex;
+  flex-direction: row; }
+  main .contenedor3 .card {
+    background-color: black; }
+    main .contenedor3 .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+/*************************************************************************************************/
+/*********************************MAIN de la pagina miembros actuales*******************************/
+main .primeraFila {
+  display: flex;
+  flex-direction: row; }
+  main .primeraFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .primeraFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+main .segundaFila {
+  display: flex;
+  flex-direction: row; }
+  main .segundaFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .segundaFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+main .terceraFila {
+  display: flex;
+  flex-direction: row; }
+  main .terceraFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .terceraFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+main .cuartaFila {
+  display: flex;
+  flex-direction: row;
+  width: 15rem; }
+  main .cuartaFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .cuartaFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+/***************************************************************************************************/
 /*******************************************************************************************/
 /******************************MAIN la pagina Subgrupos**********************************************/
 table tr {
@@ -560,167 +714,56 @@ footer {
       top: 20%; }
   /**********************************************************/
   /************************************MAIN de la pagina NJPW**********************************/
-  .menu-bar-njpw {
-    background-color: #ebbe9b;
-    background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
-    width: 100%; }
-    .menu-bar-njpw img {
-      width: 80%; }
-    .menu-bar-njpw .navbar .navbar-nav .nav-link {
-      font-family: 'Baskervville', serif;
-      background-color: gray;
-      text-align: center;
-      color: white;
-      font-size: 1rem;
-      width: 50%; }
-      .menu-bar-njpw .navbar .navbar-nav .nav-link:hover {
-        background-color: red; }
-    .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu {
-      display: block;
-      background-color: gray;
-      width: 50%;
-      font-family: 'Baskervville', serif;
-      font-size: 1rem; }
-      .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item {
-        color: white;
-        text-align: center; }
-        .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item:hover {
-          background-color: red; }
-  /*.menu-bar-njpw {
-        width: 100%;
-        img{
-            width: 80%;
-        }
-        .dropdown {
-  
-            .dropdown-menu {
-                
-                .dropdown-item {
-                    text-align: center;
-
-                    &:hover {
-                        background-color: $bg-color-rojo;
-                    }
-                }
-            }
-        }
-    }*/
-  .empresaTitulos h1 {
+  main .empresaTitulos h1 {
     position: relative;
     left: 30%; }
-  .containerTitulos {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "titulosPrimeracolumna" "titulosSegundacolumna" "titulosTerceracolumna"; }
-    .containerTitulos .titulosPrimeracolumna {
-      grid-area: titulosPrimeracolumna;
-      position: relative;
-      left: 30%;
-      top: 15%;
-      align-items: stretch;
-      text-align: center; }
-      .containerTitulos .titulosPrimeracolumna img {
-        width: 100%; }
-    .containerTitulos .titulosSegundacolumna {
-      position: relative;
-      left: 30%;
-      top: 5%;
-      margin-top: 30%;
-      grid-area: titulosSegundacolumna; }
-      .containerTitulos .titulosSegundacolumna h1 {
-        position: relative;
-        bottom: 100%; }
-      .containerTitulos .titulosSegundacolumna h3 {
-        text-align: center; }
-      .containerTitulos .titulosSegundacolumna a img {
-        width: 100%;
-        height: 100%; }
-    .containerTitulos .titulosTerceracolumna {
-      position: relative;
-      left: 30%;
-      grid-area: titulosTerceracolumna; }
-      .containerTitulos .titulosTerceracolumna img {
-        width: 100%; }
-  .footer-njpw {
-    width: 100%; }
-    .footer-njpw .contenedorRedes .face {
-      font-size: 1rem; }
-    .footer-njpw .contenedorRedes .twitter {
-      font-size: 1rem; }
-    .footer-njpw .contenedorRedes img {
-      width: 20%; }
-  /*.containerTitulos {
-
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-
-            "titulosPrimeracolumna"
-            "titulosSegundacolumna"
-            "titulosTerceracolumna";
-
-        position: relative;
-        left: 50%;
-    
-
-        .empresaTitulos {
-            position: relative;
-            left: 15%;
-        }
-
-        .titulosPrimeracolumna {
-            position: relative;
-            left: 30%;
-            top: 15%;
-            text-align: center;
-        }
-
-        .titulosSegundacolumna {
-            position: relative;
-            left: 30%;
-            top: 10%;
-
-            h1 {
-                position: relative;
-                bottom: 100%;
-            }
-
-            h3 {
-                text-align: center;
-            }
-        }
-
-        
-    }*/
+  main .titulosPrimeracolumna {
+    display: flex;
+    flex-direction: column; }
+  main .titulosSegundacolumna {
+    display: flex;
+    flex-direction: column; }
+  main .titulosTerceracolumna {
+    display: flex;
+    flex-direction: column; }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina ROH******************************/
-  .titularRoh {
+  main .titularRoh {
     display: flex;
     justify-content: center;
     position: relative;
     left: 40%; }
-  .containerRoh {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "titulosrohPrimeracolumna" "titulosrohSegundacolumna";
+  main .titulosrohPrimeracolumna {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 40%; }
+    flex-direction: column; }
+  main .titulosrohSegundacolumna {
+    display: flex;
+    flex-direction: column; }
   /***********************************************************************************************/
   /*******************MAIN de la pagina otraspromociones******************************************/
-  .titularOtraspromociones {
+  main .titularOtraspromociones {
     display: flex;
     justify-content: center;
     position: relative;
     left: 15%; }
-  .containerOtraspromociones {
-    grid-template-rows: repeat(3, 1fr);
+  main .titulosOtrosprimeracolumna {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 15%; }
+    flex-direction: column; }
+    main .titulosOtrosprimeracolumna img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenes;
+      animation-iteration-count: infinite; }
+  main .titulosOtrossegundacolumna {
+    display: flex;
+    flex-direction: column; }
+  @keyframes efectoimagenes {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 1;
+      border: red solid 10px; }
+    100% {
+      opacity: 0; } }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina Historia**************************************/
   .containerHistoria {
@@ -766,45 +809,47 @@ footer {
           top: 2px;
           left: 25%; }
   /************************************************************************************************/
-  /**************************MAIN de la pagina miembros actuales y antiguos****************************/
+  /**************************MAIN de la pagina miembrosantiguos****************************/
   /*.tituloGrupo {
         position: relative;
         left: 100px;
     }*/
   /*position: relative;
                         left: 50%;*/
-  .contenedor {
+  main .contenedor {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .contenedor1 {
+  main .contenedor1 {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .contenedor2 {
+  main .contenedor2 {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  /* main {
-        .contenedor {
-          
-            .row {
-                .col {
-                    .card {
-               
-                        background-color: $bg-color-card;
-
-
-
-                        .card-title {
-                            font-size: 1.2rem;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-        }
-    }*/
+  main .contenedor3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /**************************************************************************************************/
+  /**************************MAIN de la pagina miembros actuales****************************/
+  main .primeraFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main .segundaFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main .terceraFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main .cuartaFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   table.table-dark.table-striped {
