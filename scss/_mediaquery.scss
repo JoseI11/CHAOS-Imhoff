@@ -107,7 +107,7 @@
         .empresaTitulos {
             h1 {
                 position: relative;
-                left: 30%;
+                left: 40%;
             }
 
         }
@@ -115,16 +115,84 @@
         .titulosPrimeracolumna {
             display: flex;
             flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
         }
 
         .titulosSegundacolumna {
             display: flex;
             flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
         }
 
         .titulosTerceracolumna {
             display: flex;
             flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
+        .titulosCuartacolumna {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
+        .titulosQuintacolumna {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
         }
     }
 
@@ -142,11 +210,35 @@
         .titulosrohPrimeracolumna {
             display: flex;
             flex-direction: column;
+            position: relative;
+            left: 32%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
         }
 
         .titulosrohSegundacolumna {
             display: flex;
             flex-direction: column;
+            position: relative;
+            left: 32%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
         }
     }
 
@@ -157,30 +249,62 @@
             display: flex;
             justify-content: center;
             position: relative;
-            left: 15%;
+            left: 40%;
         }
 
         .titulosOtrosprimeracolumna {
             display: flex;
             flex-direction: column;
-
-            img {
-                &:hover {
-                    animation-duration: 3s;
-                    animation-name: efectoimagenes;
-                    animation-iteration-count: infinite;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
                 }
             }
+
         }
 
         .titulosOtrossegundacolumna {
             display: flex;
             flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
         }
-
+        .titulosOtrosterceracolumna {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 30%;
+            .card {
+             
+                img {
+                    &:hover {
+                        animation-duration: 3s;
+                        animation-name: efectoimagenestrofeos;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
     }
 
-    @keyframes efectoimagenes {
+    @keyframes efectoimagenestrofeos {
 
         0% {
             opacity: 0;
@@ -188,7 +312,7 @@
 
         50% {
             opacity: 1;
-            border: $bg-color-rojo solid 10px;
+            border: rgb(98, 196, 199) solid 10px;
         }
 
         100% {
@@ -267,10 +391,10 @@
 
     /************************************************************************************************/
     /**************************MAIN de la pagina miembrosantiguos****************************/
-    /*.tituloGrupo {
+    .tituloGrupo {
         position: relative;
-        left: 100px;
-    }*/
+        left: 40%
+    }
     /*position: relative;
                         left: 50%;*/
     main {
@@ -279,23 +403,57 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+                
+            }
         }
 
         .contenedor1 {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
 
         .contenedor2 {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
+
         .contenedor3 {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
@@ -307,26 +465,56 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
+
         .segundaFila {
             display: flex;
             flex-direction: column;
             align-items: center;
-      
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
 
         .terceraFila {
             display: flex;
             flex-direction: column;
             align-items: center;
-          
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
+
         .cuartaFila {
             display: flex;
             flex-direction: column;
             align-items: center;
-          
+            position: relative;
+            left: 40%;
+            .card{
+                width: 25rem;
+                .card-title{
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
