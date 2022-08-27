@@ -173,12 +173,13 @@
          flex-direction: row;
 
          .card {
-             background-color: $bg-color-card;
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
 
              .card-title {
                  font-size: 1.2rem;
                  font-weight: bold;
-                 color: white;
+                 color: black;
              }
          }
      }
@@ -188,12 +189,13 @@
          flex-direction: row;
 
          .card {
-             background-color: $bg-color-card;
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
 
              .card-title {
                  font-size: 1.2rem;
                  font-weight: bold;
-                 color: white;
+                 color: black;
              }
          }
      }
@@ -203,132 +205,49 @@
          flex-direction: row;
 
          .card {
-             background-color: $bg-color-card;
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
 
              .card-title {
                  font-size: 1.2rem;
                  font-weight: bold;
-                 color: white;
+                 color: black;
              }
          }
      }
 
-     /* margin: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-template-rows: 100% 100% 100%;
-        grid-template-areas:
-            "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
-   
-   
-        .titulosPrimeracolumna {
-            width: 40%;
-            grid-area: titulosPrimeracolumna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            top: 8%;
-   
-            .encabezado {
-   
-                padding-bottom: 20px;
-                position: relative;
-                bottom: 2%;
-   
-            }
-   
-            .titulosRetirados {
-                h3 {
-                    position: relative;
-                    bottom: 22%;
-                }
-            }
-   
-            /*a {
-                .iwgpworld {
-   
-                    width: 310px;
-   
-                    position: relative;
-                    bottom: 20%;
-                }
-   
-                .trofeosRetirados {
-                    position: relative;
-                    bottom: 15%;
-                }
-   
-                .trofeosRetiradosinter {
-                    position: relative;
-                    bottom: 5%;
-                }
-            }*/
-     /*}
-   
-        .titulosSegundacolumna {
-            width: 40%;
-            grid-area: titulosSegundacolumna;
-            position: relative;
-            bottom: 1.7%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            top: 7%;
-   
-            .tituloNeverops {
-   
-                position: relative;
-                top: 5px;
-   
-            }
-   
-            .neverOps {
-   
-                position: relative;
-                bottom: 2px;
-            }
-   
-            img {
-                width: 400px;
-                height: 200px;
-                padding: 5px;
-                position: relative;
-                bottom: 8%;
-            }
-        }
-   
-        .titulosTerceracolumna {
-            width: 40%;
-            grid-area: titulosTerceracolumna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-   
-            position: relative;
-            left: 30%;
-            top: 7%;
-   
-            /*img {
-               width: 400px;
-               height: 200px;
-               
-               position: relative;
-               bottom: 8%;
-           }*/
-     /*img {
-                width: 400px;
-                height: 200px;
-                padding: 5px;
-            }*/
-     /*}*/
+     .titulosCuartacolumna {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: black;
+             }
+         }
+     }
+
+     .titulosQuintacolumna {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: black;
+             }
+         }
+     }
+
 
  }
 
@@ -347,37 +266,23 @@
          display: map-get($estiloflex, desplegar);
          flex-direction: map-get($estiloflex, direccion);
 
+         .card {
+             background-color: $bg-color-card-trofeos;
+         }
+
      }
 
      .titulosrohSegundacolumna {
          display: map-get($estiloflex, desplegar);
          flex-direction: map-get($estiloflex, direccion);
+
+         .card {
+             background-color: $bg-color-card-trofeos;
+         }
 
      }
  }
 
- /*.containerRoh {
-     margin: auto;
-     width: 95%;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: auto;
-     grid-template-areas:
-         "titulosrohPrimeracolumna titulosrohSegundacolumna";
-
-     .titulosrohPrimeracolumna {
-         display: map-get($estiloflex, desplegar);
-         flex-direction: map-get($estiloflex, direccion);
-         align-items: map-get($estiloflex, alineacion);
-     }
-
-     .titulosrohSegundacolumna {
-         display: map-get($estiloflex, desplegar);
-         flex-direction: map-get($estiloflex, direccion);
-         align-items: map-get($estiloflex, alineacion);
-     }
-
- }*/
 
  /***************************************************************/
  /*************************MAIN de la pagina otras promociones************************/
@@ -393,7 +298,8 @@
          flex-direction: row;
 
          .card {
-             background-color: #B1D4E0;
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
 
              .card-title {
                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -404,65 +310,27 @@
      .titulosOtrossegundacolumna {
          display: flex;
          flex-direction: row;
-     }
- }
 
-
- /*.containerOtraspromociones {
-     margin-left: auto;
-     width: 100%;
-     display: grid;
-
-
-     grid-template-columns: 2fr 2fr 2fr;
-     grid-template-rows: auto;
-     grid-column-gap: 10px;
-     grid-template-areas:
-         "titulosOtrosprimeracolumna titulosOtrossegundacolumna titulosOtrosterceracolumna";
-
-     .titulosOtrosprimeracolumna {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         top: 50px;
-
-         h3 {
-             text-align: center;
-         }
-     }
-
-     .titulosOtrossegundacolumna {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         top: 50px;
-
-         h3 {
-             text-align: center;
+         .card {
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
          }
      }
 
      .titulosOtrosterceracolumna {
          display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         top: 50px;
+         flex-direction: row;
 
-         h3 {
-             text-align: center;
+         .card {
+             background-color: $bg-color-card-trofeos;
+             width: 25rem;
          }
      }
+ }
 
- }*/
 
  /*******************************************************************************************/
- /******************************MAIN la pagina Miembrosactuales y antiguos**********************************************/
+ /******************************MAIN la pagina Miembros antiguos**********************************************/
  main {
      .tituloGrupo {
          display: flex;
@@ -474,7 +342,8 @@
          flex-direction: row;
 
          .card {
-             background-color: $bg-color-card;
+             background-color: black;
+             width: 20rem;
 
              .card-title {
                  font-size: 1.2rem;
@@ -489,7 +358,8 @@
          flex-direction: row;
 
          .card {
-             background-color: $bg-color-card;
+             background-color: black;
+             width: 20rem;
 
              .card-title {
                  font-size: 1.2rem;
@@ -504,7 +374,8 @@
          flex-direction: row;
 
          .card {
-             background-color: $bg-color-card;
+             background-color: black;
+             width: 20rem;
 
              .card-title {
                  font-size: 1.2rem;
@@ -513,92 +384,95 @@
              }
          }
      }
+
      .contenedor3 {
-        display: flex;
-        flex-direction: row;
+         display: flex;
+         flex-direction: row;
 
-        .card {
-            background-color: $bg-color-card;
+         .card {
+             background-color: black;
+             width: 20rem;
 
-            .card-title {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: white;
-            }
-        }
-    }
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
  }
 
 
- 
+
 
  /*************************************************************************************************/
  /*********************************MAIN de la pagina miembros actuales*******************************/
- main{
-    .primeraFila {
-        display: flex;
-        flex-direction: row;
-   
-        .card {
-            background-color: $bg-color-card;
-            width: 15rem;
-   
-            .card-title {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: white;
-            }
-        }
-    }
-   
-    .segundaFila {
-        display: flex;
-        flex-direction: row;
-   
-        .card {
-            background-color: $bg-color-card;
-            width: 15rem;
-   
-            .card-title {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: white;
-            }
-        }
-    }
-   
-    .terceraFila {
-        display: flex;
-        flex-direction: row;
-   
-        .card {
-            background-color: $bg-color-card;
-            width: 15rem;
-   
-            .card-title {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: white;
-            }
-        }
-    }
-    .cuartaFila {
-        display: flex;
-        flex-direction: row;
-        width: 15rem;
-        .card {
-            background-color: $bg-color-card;
-            width: 15rem;
-   
-            .card-title {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: white;
-            }
-        }
-    }
+ main {
+     .primeraFila {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: black;
+             width: 25rem;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
+
+     .segundaFila {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: black;
+             width: 25rem;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
+
+     .terceraFila {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: black;
+             width: 25rem;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
+
+     .cuartaFila {
+         display: flex;
+         flex-direction: row;
+
+         .card {
+             background-color: black;
+             width: 25rem;
+
+             .card-title {
+                 font-size: 1.2rem;
+                 font-weight: bold;
+                 color: white;
+             }
+         }
+     }
  }
- 
+
 
  /***************************************************************************************************/
  /*******************************************************************************************/
@@ -677,9 +551,68 @@
 
  /*******************************************************************************************/
  /******************************MAIN de la pagina historia**************************************/
+
  .containerHistoria {
      margin: auto;
      width: 95%;
+
+     .accordion {
+         .accordion-body {
+             .Nacimiento {
+                 .imagenNakamura {
+                     border-radius: 25%;
+                     width: 40%;
+                     float: right;
+                     margin-top: 50px;
+                     @extend .bordesiframes;
+                 }
+             }
+
+         }
+     }
+
+     .accordion {
+         .accordion-body {
+             .accordionSalida {
+                 .liderOkada {
+                     border-radius: 25%;
+                     width: 40%;
+                     float: right;
+                     margin-top: 60px;
+                     @extend .bordesiframes;
+                 }
+
+             }
+
+             .accordionJay {
+                 .iframeJaygedo {
+
+                     @include iframes();
+                     @extend .bordesiframes;
+                 }
+             }
+
+             .accordionWill {
+                 .iframeWill {
+
+                     @include iframes();
+                     position: relative;
+                     bottom: 15px;
+                     @extend .bordesiframes;
+                 }
+             }
+
+             .accordionBestfriends {
+                height: 300px;
+                 .iframeBestfriends {
+                     @include iframes();
+                     @extend .bordesiframes;
+                 }
+
+             }
+
+         }
+     }
 
      .liderazgoNakamura {
          position: relative;

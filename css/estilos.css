@@ -70,7 +70,7 @@ body {
         background-color: red; }
 
 /*******************************************************/
-.bordesiframes, .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura, .containerHistoria .liderazgoNakamura .parrafos .liderOkada, .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo, .containerHistoria .liderazgoNakamura .parrafos .iframeWill, .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
+.bordesiframes, .containerHistoria .accordion .accordion-body .Nacimiento .imagenNakamura, .containerHistoria .accordion .accordion-body .accordionSalida .liderOkada, .containerHistoria .accordion .accordion-body .accordionJay .iframeJaygedo, .containerHistoria .accordion .accordion-body .accordionWill .iframeWill, .containerHistoria .accordion .accordion-body .accordionBestfriends .iframeBestfriends, .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura, .containerHistoria .liderazgoNakamura .parrafos .liderOkada, .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo, .containerHistoria .liderazgoNakamura .parrafos .iframeWill, .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
   border-radius: 30px;
   border: dotted blueviolet 3px; }
 
@@ -174,153 +174,64 @@ body {
 
 /*****************************************************************************/
 /*******************************************MAIN de la pagina NJPW******************************************/
-main {
-  /* margin: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-template-rows: 100% 100% 100%;
-        grid-template-areas:
-            "titulosPrimeracolumna titulosSegundacolumna titulosTerceracolumna";
-   
-   
-        .titulosPrimeracolumna {
-            width: 40%;
-            grid-area: titulosPrimeracolumna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            top: 8%;
-   
-            .encabezado {
-   
-                padding-bottom: 20px;
-                position: relative;
-                bottom: 2%;
-   
-            }
-   
-            .titulosRetirados {
-                h3 {
-                    position: relative;
-                    bottom: 22%;
-                }
-            }
-   
-            /*a {
-                .iwgpworld {
-   
-                    width: 310px;
-   
-                    position: relative;
-                    bottom: 20%;
-                }
-   
-                .trofeosRetirados {
-                    position: relative;
-                    bottom: 15%;
-                }
-   
-                .trofeosRetiradosinter {
-                    position: relative;
-                    bottom: 5%;
-                }
-            }*/
-  /*}
-   
-        .titulosSegundacolumna {
-            width: 40%;
-            grid-area: titulosSegundacolumna;
-            position: relative;
-            bottom: 1.7%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            top: 7%;
-   
-            .tituloNeverops {
-   
-                position: relative;
-                top: 5px;
-   
-            }
-   
-            .neverOps {
-   
-                position: relative;
-                bottom: 2px;
-            }
-   
-            img {
-                width: 400px;
-                height: 200px;
-                padding: 5px;
-                position: relative;
-                bottom: 8%;
-            }
-        }
-   
-        .titulosTerceracolumna {
-            width: 40%;
-            grid-area: titulosTerceracolumna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-   
-            position: relative;
-            left: 30%;
-            top: 7%;
-   
-            /*img {
-               width: 400px;
-               height: 200px;
-               
-               position: relative;
-               bottom: 8%;
-           }*/
-  /*img {
-                width: 400px;
-                height: 200px;
-                padding: 5px;
-            }*/
-  /*}*/ }
-  main .empresaTitulos h1 {
-    display: flex;
-    justify-content: center; }
-  main .titulosPrimeracolumna {
-    display: flex;
-    flex-direction: row; }
-    main .titulosPrimeracolumna .card {
-      background-color: black; }
-      main .titulosPrimeracolumna .card .card-title {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: white; }
-  main .titulosSegundacolumna {
-    display: flex;
-    flex-direction: row; }
-    main .titulosSegundacolumna .card {
-      background-color: black; }
-      main .titulosSegundacolumna .card .card-title {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: white; }
-  main .titulosTerceracolumna {
-    display: flex;
-    flex-direction: row; }
-    main .titulosTerceracolumna .card {
-      background-color: black; }
-      main .titulosTerceracolumna .card .card-title {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: white; }
+main .empresaTitulos h1 {
+  display: flex;
+  justify-content: center; }
+
+main .titulosPrimeracolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosPrimeracolumna .card {
+    background-color: transparent;
+    width: 25rem; }
+    main .titulosPrimeracolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
+
+main .titulosSegundacolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosSegundacolumna .card {
+    background-color: transparent;
+    width: 25rem; }
+    main .titulosSegundacolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
+
+main .titulosTerceracolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosTerceracolumna .card {
+    background-color: transparent;
+    width: 25rem; }
+    main .titulosTerceracolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
+
+main .titulosCuartacolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosCuartacolumna .card {
+    background-color: transparent;
+    width: 25rem; }
+    main .titulosCuartacolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
+
+main .titulosQuintacolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosQuintacolumna .card {
+    background-color: transparent;
+    width: 25rem; }
+    main .titulosQuintacolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
 
 /************************************************************************/
 /*********************Main de la pagina ROH****************************/
@@ -331,33 +242,15 @@ main .titularRoh {
 main .titulosrohPrimeracolumna {
   display: flex;
   flex-direction: row; }
+  main .titulosrohPrimeracolumna .card {
+    background-color: transparent; }
 
 main .titulosrohSegundacolumna {
   display: flex;
   flex-direction: row; }
+  main .titulosrohSegundacolumna .card {
+    background-color: transparent; }
 
-/*.containerRoh {
-     margin: auto;
-     width: 95%;
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: auto;
-     grid-template-areas:
-         "titulosrohPrimeracolumna titulosrohSegundacolumna";
-
-     .titulosrohPrimeracolumna {
-         display: map-get($estiloflex, desplegar);
-         flex-direction: map-get($estiloflex, direccion);
-         align-items: map-get($estiloflex, alineacion);
-     }
-
-     .titulosrohSegundacolumna {
-         display: map-get($estiloflex, desplegar);
-         flex-direction: map-get($estiloflex, direccion);
-         align-items: map-get($estiloflex, alineacion);
-     }
-
- }*/
 /***************************************************************/
 /*************************MAIN de la pagina otras promociones************************/
 main .titularOtraspromociones {
@@ -368,68 +261,27 @@ main .titulosOtrosprimeracolumna {
   display: flex;
   flex-direction: row; }
   main .titulosOtrosprimeracolumna .card {
-    background-color: #B1D4E0; }
+    background-color: transparent;
+    width: 25rem; }
     main .titulosOtrosprimeracolumna .card .card-title {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 main .titulosOtrossegundacolumna {
   display: flex;
   flex-direction: row; }
+  main .titulosOtrossegundacolumna .card {
+    background-color: transparent;
+    width: 25rem; }
 
-/*.containerOtraspromociones {
-     margin-left: auto;
-     width: 100%;
-     display: grid;
+main .titulosOtrosterceracolumna {
+  display: flex;
+  flex-direction: row; }
+  main .titulosOtrosterceracolumna .card {
+    background-color: transparent;
+    width: 25rem; }
 
-
-     grid-template-columns: 2fr 2fr 2fr;
-     grid-template-rows: auto;
-     grid-column-gap: 10px;
-     grid-template-areas:
-         "titulosOtrosprimeracolumna titulosOtrossegundacolumna titulosOtrosterceracolumna";
-
-     .titulosOtrosprimeracolumna {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         top: 50px;
-
-         h3 {
-             text-align: center;
-         }
-     }
-
-     .titulosOtrossegundacolumna {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         top: 50px;
-
-         h3 {
-             text-align: center;
-         }
-     }
-
-     .titulosOtrosterceracolumna {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         position: relative;
-         top: 50px;
-
-         h3 {
-             text-align: center;
-         }
-     }
-
- }*/
 /*******************************************************************************************/
-/******************************MAIN la pagina Miembrosactuales y antiguos**********************************************/
+/******************************MAIN la pagina Miembros antiguos**********************************************/
 main .tituloGrupo {
   display: flex;
   justify-content: center; }
@@ -438,7 +290,8 @@ main .contenedor {
   display: flex;
   flex-direction: row; }
   main .contenedor .card {
-    background-color: black; }
+    background-color: black;
+    width: 20rem; }
     main .contenedor .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -448,7 +301,8 @@ main .contenedor1 {
   display: flex;
   flex-direction: row; }
   main .contenedor1 .card {
-    background-color: black; }
+    background-color: black;
+    width: 20rem; }
     main .contenedor1 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -458,7 +312,8 @@ main .contenedor2 {
   display: flex;
   flex-direction: row; }
   main .contenedor2 .card {
-    background-color: black; }
+    background-color: black;
+    width: 20rem; }
     main .contenedor2 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -468,7 +323,8 @@ main .contenedor3 {
   display: flex;
   flex-direction: row; }
   main .contenedor3 .card {
-    background-color: black; }
+    background-color: black;
+    width: 20rem; }
     main .contenedor3 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -481,7 +337,7 @@ main .primeraFila {
   flex-direction: row; }
   main .primeraFila .card {
     background-color: black;
-    width: 15rem; }
+    width: 25rem; }
     main .primeraFila .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -492,7 +348,7 @@ main .segundaFila {
   flex-direction: row; }
   main .segundaFila .card {
     background-color: black;
-    width: 15rem; }
+    width: 25rem; }
     main .segundaFila .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -503,7 +359,7 @@ main .terceraFila {
   flex-direction: row; }
   main .terceraFila .card {
     background-color: black;
-    width: 15rem; }
+    width: 25rem; }
     main .terceraFila .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -511,11 +367,10 @@ main .terceraFila {
 
 main .cuartaFila {
   display: flex;
-  flex-direction: row;
-  width: 15rem; }
+  flex-direction: row; }
   main .cuartaFila .card {
     background-color: black;
-    width: 15rem; }
+    width: 25rem; }
     main .cuartaFila .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -569,6 +424,35 @@ form .btn .btn-primary {
 .containerHistoria {
   margin: auto;
   width: 95%; }
+  .containerHistoria .accordion .accordion-body .Nacimiento .imagenNakamura {
+    border-radius: 25%;
+    width: 40%;
+    float: right;
+    margin-top: 50px; }
+  .containerHistoria .accordion .accordion-body .accordionSalida .liderOkada {
+    border-radius: 25%;
+    width: 40%;
+    float: right;
+    margin-top: 60px; }
+  .containerHistoria .accordion .accordion-body .accordionJay .iframeJaygedo {
+    width: 500px;
+    height: 270px;
+    margin: 5px;
+    float: right; }
+  .containerHistoria .accordion .accordion-body .accordionWill .iframeWill {
+    width: 500px;
+    height: 270px;
+    margin: 5px;
+    float: right;
+    position: relative;
+    bottom: 15px; }
+  .containerHistoria .accordion .accordion-body .accordionBestfriends {
+    height: 300px; }
+    .containerHistoria .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
+      width: 500px;
+      height: 270px;
+      margin: 5px;
+      float: right; }
   .containerHistoria .liderazgoNakamura {
     position: relative;
     top: 2%; }
@@ -716,16 +600,52 @@ footer {
   /************************************MAIN de la pagina NJPW**********************************/
   main .empresaTitulos h1 {
     position: relative;
-    left: 30%; }
+    left: 40%; }
   main .titulosPrimeracolumna {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosPrimeracolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
   main .titulosSegundacolumna {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosSegundacolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
   main .titulosTerceracolumna {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosTerceracolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
+  main .titulosCuartacolumna {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosCuartacolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
+  main .titulosQuintacolumna {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosQuintacolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina ROH******************************/
   main .titularRoh {
@@ -735,33 +655,62 @@ footer {
     left: 40%; }
   main .titulosrohPrimeracolumna {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    left: 32%; }
+    main .titulosrohPrimeracolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
   main .titulosrohSegundacolumna {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    left: 32%; }
+    main .titulosrohSegundacolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
   /***********************************************************************************************/
   /*******************MAIN de la pagina otraspromociones******************************************/
   main .titularOtraspromociones {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 15%; }
+    left: 40%; }
   main .titulosOtrosprimeracolumna {
     display: flex;
-    flex-direction: column; }
-    main .titulosOtrosprimeracolumna img:hover {
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosOtrosprimeracolumna .card img:hover {
       animation-duration: 3s;
-      animation-name: efectoimagenes;
+      animation-name: efectoimagenestrofeos;
       animation-iteration-count: infinite; }
   main .titulosOtrossegundacolumna {
     display: flex;
-    flex-direction: column; }
-  @keyframes efectoimagenes {
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosOtrossegundacolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
+  main .titulosOtrosterceracolumna {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30%; }
+    main .titulosOtrosterceracolumna .card img:hover {
+      animation-duration: 3s;
+      animation-name: efectoimagenestrofeos;
+      animation-iteration-count: infinite; }
+  @keyframes efectoimagenestrofeos {
     0% {
       opacity: 0; }
     50% {
       opacity: 1;
-      border: red solid 10px; }
+      border: #62c4c7 solid 10px; }
     100% {
       opacity: 0; } }
   /***********************************************************************************************/
@@ -810,46 +759,93 @@ footer {
           left: 25%; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembrosantiguos****************************/
-  /*.tituloGrupo {
-        position: relative;
-        left: 100px;
-    }*/
+  .tituloGrupo {
+    position: relative;
+    left: 40%; }
   /*position: relative;
                         left: 50%;*/
   main .contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .contenedor .card {
+      width: 25rem; }
+      main .contenedor .card .card-title {
+        font-size: 2rem; }
   main .contenedor1 {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .contenedor1 .card {
+      width: 25rem; }
+      main .contenedor1 .card .card-title {
+        font-size: 2rem; }
   main .contenedor2 {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .contenedor2 .card {
+      width: 25rem; }
+      main .contenedor2 .card .card-title {
+        font-size: 2rem; }
   main .contenedor3 {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .contenedor3 .card {
+      width: 25rem; }
+      main .contenedor3 .card .card-title {
+        font-size: 2rem; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina miembros actuales****************************/
   main .primeraFila {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .primeraFila .card {
+      width: 25rem; }
+      main .primeraFila .card .card-title {
+        font-size: 2rem; }
   main .segundaFila {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .segundaFila .card {
+      width: 25rem; }
+      main .segundaFila .card .card-title {
+        font-size: 2rem; }
   main .terceraFila {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .terceraFila .card {
+      width: 25rem; }
+      main .terceraFila .card .card-title {
+        font-size: 2rem; }
   main .cuartaFila {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    left: 40%; }
+    main .cuartaFila .card {
+      width: 25rem; }
+      main .cuartaFila .card .card-title {
+        font-size: 2rem; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   table.table-dark.table-striped {
