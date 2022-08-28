@@ -1,13 +1,23 @@
-@media screen and (max-width:320px) {
+@media screen and (max-width:480px) {
 
     /****************NAVBAR de todos las paginas******************************/
     .menu-bar {
         width: 179%;
 
+        .navbar {
+            .navbar-nav {
+                .nav-link {
+                    font-size: 2rem;
+                }
+            }
+        }
+
         .dropdown {
             .dropdown-menu {
+
                 .dropdown-item {
                     text-align: center;
+                    font-size: 2rem;
 
                     &:hover {
                         background-color: $bg-color-rojo;
@@ -30,14 +40,14 @@
         .iframesyImagenesdelgrupo {
             position: relative;
             top: 15%;
-            right: 7%;
+            left: 40%;
             grid-area: iframesyImagenesdelgrupo;
 
             .imagenesGrupo {
 
 
                 .imagenInicio {
-                    width: 90%;
+                    width: 100%;
                     height: 335px;
 
                     &:hover {
@@ -49,7 +59,7 @@
                 }
 
                 .imagenInicio2 {
-                    width: 90%;
+                    width: 100%;
                     height: 335px;
 
                     &:hover {
@@ -90,7 +100,7 @@
             align-items: center;
             position: relative;
 
-            right: 2%;
+            left: 40%;
             width: 90%;
             top: 20%;
         }
@@ -116,9 +126,12 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            /* left: 30%; medida de 320px*/
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -126,16 +139,29 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
         }
 
         .titulosSegundacolumna {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -143,16 +169,30 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
+
         }
 
         .titulosTerceracolumna {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -160,15 +200,30 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
+
         }
+
         .titulosCuartacolumna {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -176,15 +231,30 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
+
         }
+
         .titulosQuintacolumna {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -192,7 +262,19 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
+
         }
     }
 
@@ -211,9 +293,11 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 32%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -221,24 +305,51 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
+
         }
 
         .titulosrohSegundacolumna {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 32%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
+
                     &:hover {
                         animation-duration: 3s;
                         animation-name: efectoimagenestrofeos;
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
+
+
         }
     }
 
@@ -256,15 +367,27 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
                         animation-name: efectoimagenestrofeos;
                         animation-iteration-count: infinite;
                     }
+                }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
                 }
             }
 
@@ -274,9 +397,11 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
@@ -284,21 +409,44 @@
                         animation-iteration-count: infinite;
                     }
                 }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
+                }
             }
         }
+
         .titulosOtrosterceracolumna {
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 30%;
+            left: 40%;
+
             .card {
-             
+                border: transparent;
+
                 img {
                     &:hover {
                         animation-duration: 3s;
                         animation-name: efectoimagenestrofeos;
                         animation-iteration-count: infinite;
                     }
+                }
+
+                .card-title {
+                    font-size: 2rem;
+                }
+
+                .btn-primary {
+                    width: 50%;
+                    font-size: 2rem;
+
                 }
             }
         }
@@ -322,237 +470,343 @@
 
     /***********************************************************************************************/
     /*******************************MAIN de la pagina Historia**************************************/
+    .tituloHistoria {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 40%;
+    }
+
     .containerHistoria {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        position: relative;
+        left: 50px;
 
-        grid-template-areas:
-            "main"
-            "footer";
+        p {
+            font-size: 1.5rem;
+        }
 
-        .liderazgoNakamura {
-            position: relative;
-            top: 130px;
-            left: 50px;
+        .acordeonShinsukenakamura {
+            .accordion {
+                width: 45rem;
 
-            .parrafos {
-                display: flex;
-                flex-direction: column;
+                .accordion-body {
+                    .Nacimiento {
+                        .imagenNakamura {
+                            width: 100%;
+                            position: relative;
+                            bottom: 50px;
+                            float: none;
+                        }
 
-                h5 {
-                    font-weight: bold;
-                    position: relative;
-                    top: 10px;
-                    font-size: 1.2rem;
-                }
-
-                p {
-                    font-size: 1.2rem;
-                }
-
-                .imagenNakamura {
-                    position: relative;
-                    bottom: 70px;
-                    width: 300px;
-                }
-
-                .liderOkada {
-                    position: relative;
-                    bottom: 50px;
-                    width: 300px;
-                }
-
-                .iframeJaygedo {
-                    position: relative;
-                    top: 2px;
-                    left: 25%;
-                }
-
-                .iframeWill {
-                    position: relative;
-                    top: 2px;
-                    left: 25%;
-                }
-
-                .iframeSHO {
-                    position: relative;
-                    top: 2px;
-                    left: 25%;
-                }
-
-                .iframeBestfriends {
-                    position: relative;
-                    top: 2px;
-                    left: 25%;
+                    }
                 }
             }
         }
+
+        .acordeonOkada {
+            .accordion {
+                width: 45rem;
+
+                .accordion-body {
+
+                    .Nacimiento {
+                        .imagenNakamura {
+                            width: 100%;
+                            position: relative;
+                            bottom: 50px;
+                            float: none;
+                        }
+
+                    }
+
+                    .accordionSalida {
+                        .liderOkada {
+                            width: 100%;
+                            position: relative;
+                            bottom: 50px;
+                            float: none;
+                        }
+                    }
+
+                    .accordionJay {
+                        .iframeJaygedo {
+                            width: 100%;
+                            margin-bottom: 30px;
+                            height: 335px;
+                        }
+                    }
+
+                    .accordionWill {
+                        .iframeWill {
+                            width: 100%;
+                            margin-bottom: 30px;
+                            height: 335px;
+                        }
+                    }
+
+                    .accordionBestfriends {
+                        height: 500px;
+
+                        .iframeBestfriends {
+                            width: 100%;
+                            margin-bottom: 30px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+            }
+        }
+
     }
 
     /************************************************************************************************/
     /**************************MAIN de la pagina miembrosantiguos****************************/
-    .tituloGrupo {
-        position: relative;
-        left: 40%
-    }
-    /*position: relative;
-                        left: 50%;*/
+
+
     main {
-        .contenedor {
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
-                }
-                
+        .tituloGrupoantiguo {
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 5rem;
+                   font-family: 'Playfair Display', serif;
             }
         }
 
-        .contenedor1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .accordion {
             position: relative;
             left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
+
+            .accordion-body {
+                .contenedor {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+
+                    }
+                }
+
+                .contenedor1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .contenedor2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .contenedor3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+                    }
                 }
             }
         }
 
-        .contenedor2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        .contenedor3 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
-                }
-            }
-        }
     }
 
 
     /**************************************************************************************************/
     /**************************MAIN de la pagina miembros actuales****************************/
     main {
-        .primeraFila {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
+        .tituloGrupoactivo {
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 5rem;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+
+        .accordion {
+
+            .accordion-body {
+                .primeraFila {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .segundaFila {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+
+                        }
+                    }
+                }
+
+                .terceraFila {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .cuartaFila {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .card {
+                        width: 20rem;
+
+                        .card-title {
+                            font-size: 2rem;
+                        }
+                    }
                 }
             }
         }
 
-        .segundaFila {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
-                }
-            }
-        }
 
-        .terceraFila {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        .cuartaFila {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            left: 40%;
-            .card{
-                width: 25rem;
-                .card-title{
-                    font-size: 2rem;
-                }
-            }
-        }
     }
 
 
     /**************************************************************************************************/
     /**************************MAIN de la pagina subgrupos*********************************/
-    table.table-dark.table-striped {
-        width: 500px;
+    main {
+        .tituloSubgrupo {
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 5rem;
+                font-family: 'Playfair Display', serif;
+            }
+        }
 
+        .table-dark {
+            width: 700px;
+            height: 800px;
+            position: relative;
+            left: 20%;
+
+            thead {
+                th {
+                    font-size: 1.6rem;
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        font-size: 1.4rem;
+
+                        h3 {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
     }
+
 
     /**************************************************************************************************/
     /**************************MAIN de la pagina Contacto**********************************************/
+    .containerContacto {
+        .tituloContacto {
+            display: flex;
+            justify-content: center;
 
-    .tituloContacto {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        left: 15%
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            left: 40%;
+        }
     }
 
+
     form {
+        position: relative;
+        left: 40%;
+
         .form-group {
+            .label {
+                font-size: 2rem;
+            }
+
             .form-control {
                 margin-bottom: 10px;
                 background-color: plum;
                 font-family: $letra-campo-formulario;
                 font-size: 1.2rem;
-                width: 500px;
+
 
             }
 
             .opinion {
                 background-color: plum;
                 font-family: $letra-campo-formulario;
-                font-size: 1.2rem;
+                font-size: 2rem;
 
             }
+
         }
 
         .btn {
@@ -579,5 +833,5 @@
 
 
 
-    /***********************************************************************/
+    /******************************************************************************************/
 }
