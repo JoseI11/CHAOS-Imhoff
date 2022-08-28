@@ -1,22 +1,3 @@
-/*$anchoindexquery:151px;
-$anchocontactoquery:130px;
-@mixin navbarindex ($valor){
-    .menu-bar {
-        width: $valor;
-
-        .dropdown {
-            .dropdown-menu {
-                .dropdown-item {
-                    text-align: center;
-
-                    &:hover {
-                        background-color: $bg-color-rojo;
-                    }
-                }
-            }
-        }
-    }
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -49,32 +30,32 @@ body {
       .menu-bar .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item:hover {
         background-color: red; }
 
-.menu-bar-njpw {
-  background-color: #ebbe9b;
-  background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%); }
-  .menu-bar-njpw .navbar .navbar-nav .nav-link {
-    font-family: 'Baskervville', serif;
-    background-color: gray;
-    text-align: center;
-    color: white; }
-    .menu-bar-njpw .navbar .navbar-nav .nav-link:hover {
-      background-color: red; }
-  .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
-    background-color: gray;
-    font-family: 'Baskervville', serif; }
-    .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item {
-      color: white;
-      text-align: center; }
-      .menu-bar-njpw .navbar .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item:hover {
-        background-color: red; }
-
 /*******************************************************/
-.bordesiframes, .containerHistoria .accordion .accordion-body .Nacimiento .imagenNakamura, .containerHistoria .accordion .accordion-body .accordionSalida .liderOkada, .containerHistoria .accordion .accordion-body .accordionJay .iframeJaygedo, .containerHistoria .accordion .accordion-body .accordionWill .iframeWill, .containerHistoria .accordion .accordion-body .accordionBestfriends .iframeBestfriends, .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura, .containerHistoria .liderazgoNakamura .parrafos .liderOkada, .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo, .containerHistoria .liderazgoNakamura .parrafos .iframeWill, .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
+.bordesiframes, .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
   border-radius: 30px;
   border: dotted blueviolet 3px; }
 
 /*******************MAIN del index*********************/
+.tituloInicio h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  color: #f5e504; }
+
+@keyframes inicio {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1;
+    background-color: aquamarine; }
+  100% {
+    opacity: 0;
+    background-color: tomato; } }
+
 .container {
   margin: auto;
   width: 95%;
@@ -176,14 +157,18 @@ body {
 /*******************************************MAIN de la pagina NJPW******************************************/
 main .empresaTitulos h1 {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif; }
 
 main .titulosPrimeracolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosPrimeracolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
     main .titulosPrimeracolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -191,10 +176,12 @@ main .titulosPrimeracolumna {
 
 main .titulosSegundacolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosSegundacolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
     main .titulosSegundacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -202,10 +189,12 @@ main .titulosSegundacolumna {
 
 main .titulosTerceracolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosTerceracolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
     main .titulosTerceracolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -213,10 +202,12 @@ main .titulosTerceracolumna {
 
 main .titulosCuartacolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosCuartacolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
     main .titulosCuartacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -224,10 +215,12 @@ main .titulosCuartacolumna {
 
 main .titulosQuintacolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosQuintacolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
     main .titulosQuintacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -235,21 +228,27 @@ main .titulosQuintacolumna {
 
 /************************************************************************/
 /*********************Main de la pagina ROH****************************/
-main .titularRoh {
+main .titularRoh h1 {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif; }
 
 main .titulosrohPrimeracolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosrohPrimeracolumna .card {
-    background-color: transparent; }
+    background-color: transparent;
+    border: transparent; }
 
 main .titulosrohSegundacolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosrohSegundacolumna .card {
-    background-color: transparent; }
+    background-color: transparent;
+    border: transparent; }
 
 /***************************************************************/
 /*************************MAIN de la pagina otras promociones************************/
@@ -259,82 +258,110 @@ main .titularOtraspromociones {
 
 main .titulosOtrosprimeracolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosOtrosprimeracolumna .card {
     background-color: transparent;
-    width: 25rem; }
-    main .titulosOtrosprimeracolumna .card .card-title {
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    width: 25rem;
+    border: transparent; }
 
 main .titulosOtrossegundacolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosOtrossegundacolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
 
 main .titulosOtrosterceracolumna {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-left: 15%; }
   main .titulosOtrosterceracolumna .card {
     background-color: transparent;
-    width: 25rem; }
+    width: 25rem;
+    border: transparent; }
 
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembros antiguos**********************************************/
-main .tituloGrupo {
+main .tituloGrupoantiguo h1 {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif; }
 
-main .contenedor {
+main .accordion .accordion-button {
+  background-color: bisque; }
+  main .accordion .accordion-button h3 {
+    display: flex;
+    justify-content: center; }
+
+main .accordion .accordion-body .contenedor {
   display: flex;
-  flex-direction: row; }
-  main .contenedor .card {
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
+  main .accordion .accordion-body .contenedor .card {
     background-color: black;
-    width: 20rem; }
-    main .contenedor .card .card-title {
+    width: 15rem; }
+    main .accordion .accordion-body .contenedor .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
-main .contenedor1 {
+main .accordion .accordion-body .contenedor1 {
   display: flex;
-  flex-direction: row; }
-  main .contenedor1 .card {
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
+  main .accordion .accordion-body .contenedor1 .card {
     background-color: black;
-    width: 20rem; }
-    main .contenedor1 .card .card-title {
+    width: 15rem; }
+    main .accordion .accordion-body .contenedor1 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
-main .contenedor2 {
+main .accordion .accordion-body .contenedor2 {
   display: flex;
-  flex-direction: row; }
-  main .contenedor2 .card {
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
+  main .accordion .accordion-body .contenedor2 .card {
     background-color: black;
-    width: 20rem; }
-    main .contenedor2 .card .card-title {
+    width: 15rem; }
+    main .accordion .accordion-body .contenedor2 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
-main .contenedor3 {
+main .accordion .accordion-body .contenedor3 {
   display: flex;
-  flex-direction: row; }
-  main .contenedor3 .card {
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
+  main .accordion .accordion-body .contenedor3 .card {
     background-color: black;
-    width: 20rem; }
-    main .contenedor3 .card .card-title {
+    width: 15rem; }
+    main .accordion .accordion-body .contenedor3 .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: white; }
 
 /*************************************************************************************************/
 /*********************************MAIN de la pagina miembros actuales*******************************/
+main .tituloGrupoactivo h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif; }
+
 main .primeraFila {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
   main .primeraFila .card {
     background-color: black;
     width: 25rem; }
@@ -345,7 +372,9 @@ main .primeraFila {
 
 main .segundaFila {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
   main .segundaFila .card {
     background-color: black;
     width: 25rem; }
@@ -356,7 +385,9 @@ main .segundaFila {
 
 main .terceraFila {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
   main .terceraFila .card {
     background-color: black;
     width: 25rem; }
@@ -367,7 +398,9 @@ main .terceraFila {
 
 main .cuartaFila {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative;
+  left: 20px; }
   main .cuartaFila .card {
     background-color: black;
     width: 25rem; }
@@ -379,6 +412,12 @@ main .cuartaFila {
 /***************************************************************************************************/
 /*******************************************************************************************/
 /******************************MAIN la pagina Subgrupos**********************************************/
+main .tituloSubgrupo h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif; }
+
 table tr {
   text-align: center; }
   table tr th {
@@ -403,119 +442,76 @@ audio {
   width: 95%; }
   .containerContacto .tituloContacto {
     display: flex;
-    justify-content: center; }
-
-form .form-control {
-  margin-bottom: 10px;
-  background-color: plum;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem; }
-
-form .opinion {
-  background-color: plum;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2rem; }
-
-form .btn .btn-primary {
-  width: 50%; }
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif; }
+  .containerContacto .container form .form-control {
+    margin-bottom: 10px;
+    background-color: plum;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem; }
+  .containerContacto .container form .opinion {
+    background-color: plum;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem; }
+  .containerContacto .container form .btn .btn-primary {
+    width: 50%; }
 
 /*******************************************************************************************/
 /******************************MAIN de la pagina historia**************************************/
+.tituloHistoria h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif; }
+
 .containerHistoria {
   margin: auto;
   width: 95%; }
-  .containerHistoria .accordion .accordion-body .Nacimiento .imagenNakamura {
-    border-radius: 25%;
-    width: 40%;
-    float: right;
-    margin-top: 50px; }
-  .containerHistoria .accordion .accordion-body .accordionSalida .liderOkada {
-    border-radius: 25%;
-    width: 40%;
-    float: right;
-    margin-top: 60px; }
-  .containerHistoria .accordion .accordion-body .accordionJay .iframeJaygedo {
-    width: 500px;
-    height: 270px;
-    margin: 5px;
-    float: right; }
-  .containerHistoria .accordion .accordion-body .accordionWill .iframeWill {
-    width: 500px;
-    height: 270px;
-    margin: 5px;
-    float: right;
-    position: relative;
-    bottom: 15px; }
-  .containerHistoria .accordion .accordion-body .accordionBestfriends {
-    height: 300px; }
-    .containerHistoria .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
+  .containerHistoria .acordeonShinsukenakamura .accordion .accordion-button {
+    background-color: bisque; }
+    .containerHistoria .acordeonShinsukenakamura .accordion .accordion-button h3 {
+      display: flex;
+      justify-content: center; }
+  .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body {
+    background-color: #B1D4E0; }
+    .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura {
+      border-radius: 25%;
+      width: 40%;
+      float: right;
+      margin-top: 50px;
+      margin-left: 5px; }
+  .containerHistoria .acordeonOkada .accordion .accordion-button {
+    background-color: bisque; }
+    .containerHistoria .acordeonOkada .accordion .accordion-button h3 {
+      display: flex;
+      justify-content: center; }
+  .containerHistoria .acordeonOkada .accordion .accordion-body {
+    background-color: #B1D4E0; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada {
+      border-radius: 25%;
+      width: 40%;
+      float: right;
+      margin-top: 60px; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo {
       width: 500px;
       height: 270px;
       margin: 5px;
       float: right; }
-  .containerHistoria .liderazgoNakamura {
-    position: relative;
-    top: 2%; }
-    .containerHistoria .liderazgoNakamura .parrafos {
-      width: 100%;
-      height: auto;
-      align-items: center;
-      justify-content: center;
-      /*.traicionWhite {
-                 border-radius: 25%;
-                 width: 20%;
-                 float: right;
-                 margin-top: 60px;
-             }*/ }
-      .containerHistoria .liderazgoNakamura .parrafos h1 {
-        text-align: center;
-        margin-top: 10px;
-        font-size: 33px; }
-      .containerHistoria .liderazgoNakamura .parrafos h2 {
-        margin-top: 11px;
-        margin-left: 10px; }
-      .containerHistoria .liderazgoNakamura .parrafos h3 {
-        margin-top: 5px;
-        margin-left: 10px; }
-      .containerHistoria .liderazgoNakamura .parrafos h5 {
-        margin-top: 5px;
-        margin-left: 10px;
-        font-size: 16px;
-        font-weight: bold; }
-      .containerHistoria .liderazgoNakamura .parrafos p {
-        text-align: justify-all;
-        margin-top: 10px;
-        font-size: 16px;
-        margin-left: 10px; }
-      .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura {
-        border-radius: 25%;
-        width: 40%;
-        float: right;
-        margin-top: 80px; }
-      .containerHistoria .liderazgoNakamura .parrafos .liderOkada {
-        border-radius: 25%;
-        width: 40%;
-        float: right;
-        margin-top: 60px; }
-      .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo {
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill {
+      width: 500px;
+      height: 270px;
+      margin: 5px;
+      float: right;
+      position: relative;
+      bottom: 15px; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends {
+      height: 300px; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
         width: 500px;
         height: 270px;
         margin: 5px;
         float: right; }
-      .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
-        width: 500px;
-        height: 270px;
-        margin: 5px;
-        float: right; }
-      .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
-        width: 500px;
-        height: 250px;
-        position: relative;
-        top: 10px;
-        float: right; }
-      .containerHistoria .liderazgoNakamura .parrafos .divBestfriends {
-        position: relative;
-        top: 22px; }
 
 /******************************************************************/
 /*********************FOOTER de todas las paginas web****************************/
@@ -542,12 +538,15 @@ footer {
       width: 80px; }
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   /****************NAVBAR de todos las paginas******************************/
   .menu-bar {
     width: 179%; }
+    .menu-bar .navbar .navbar-nav .nav-link {
+      font-size: 2rem; }
     .menu-bar .dropdown .dropdown-menu .dropdown-item {
-      text-align: center; }
+      text-align: center;
+      font-size: 2rem; }
       .menu-bar .dropdown .dropdown-menu .dropdown-item:hover {
         background-color: red; }
   /**********************************************************************/
@@ -561,17 +560,17 @@ footer {
     .container .iframesyImagenesdelgrupo {
       position: relative;
       top: 15%;
-      right: 7%;
+      left: 40%;
       grid-area: iframesyImagenesdelgrupo; }
       .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio {
-        width: 90%;
+        width: 100%;
         height: 335px; }
         .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio:hover {
           animation-duration: 3s;
           animation-name: efectoimagenes;
           animation-iteration-count: infinite; }
       .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2 {
-        width: 90%;
+        width: 100%;
         height: 335px; }
         .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2:hover {
           animation-duration: 3s;
@@ -593,7 +592,7 @@ footer {
       justify-content: center;
       align-items: center;
       position: relative;
-      right: 2%;
+      left: 40%;
       width: 90%;
       top: 20%; }
   /**********************************************************/
@@ -605,47 +604,83 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosPrimeracolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    /* left: 30%; medida de 320px*/
+    left: 40%; }
+    main .titulosPrimeracolumna .card {
+      border: transparent; }
+      main .titulosPrimeracolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosPrimeracolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosPrimeracolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosSegundacolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosSegundacolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosSegundacolumna .card {
+      border: transparent; }
+      main .titulosSegundacolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosSegundacolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosSegundacolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosTerceracolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosTerceracolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosTerceracolumna .card {
+      border: transparent; }
+      main .titulosTerceracolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosTerceracolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosTerceracolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosCuartacolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosCuartacolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosCuartacolumna .card {
+      border: transparent; }
+      main .titulosCuartacolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosCuartacolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosCuartacolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosQuintacolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosQuintacolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosQuintacolumna .card {
+      border: transparent; }
+      main .titulosQuintacolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosQuintacolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosQuintacolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina ROH******************************/
   main .titularRoh {
@@ -657,20 +692,34 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 32%; }
-    main .titulosrohPrimeracolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosrohPrimeracolumna .card {
+      border: transparent; }
+      main .titulosrohPrimeracolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosrohPrimeracolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosrohPrimeracolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosrohSegundacolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 32%; }
-    main .titulosrohSegundacolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosrohSegundacolumna .card {
+      border: transparent; }
+      main .titulosrohSegundacolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosrohSegundacolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosrohSegundacolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   /***********************************************************************************************/
   /*******************MAIN de la pagina otraspromociones******************************************/
   main .titularOtraspromociones {
@@ -682,29 +731,50 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosOtrosprimeracolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosOtrosprimeracolumna .card {
+      border: transparent; }
+      main .titulosOtrosprimeracolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosOtrosprimeracolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosOtrosprimeracolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosOtrossegundacolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosOtrossegundacolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosOtrossegundacolumna .card {
+      border: transparent; }
+      main .titulosOtrossegundacolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosOtrossegundacolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosOtrossegundacolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .titulosOtrosterceracolumna {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 30%; }
-    main .titulosOtrosterceracolumna .card img:hover {
-      animation-duration: 3s;
-      animation-name: efectoimagenestrofeos;
-      animation-iteration-count: infinite; }
+    left: 40%; }
+    main .titulosOtrosterceracolumna .card {
+      border: transparent; }
+      main .titulosOtrosterceracolumna .card img:hover {
+        animation-duration: 3s;
+        animation-name: efectoimagenestrofeos;
+        animation-iteration-count: infinite; }
+      main .titulosOtrosterceracolumna .card .card-title {
+        font-size: 2rem; }
+      main .titulosOtrosterceracolumna .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   @keyframes efectoimagenestrofeos {
     0% {
       opacity: 0; }
@@ -715,160 +785,173 @@ footer {
       opacity: 0; } }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina Historia**************************************/
-  .containerHistoria {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "main" "footer"; }
-    .containerHistoria .liderazgoNakamura {
-      position: relative;
-      top: 130px;
-      left: 50px; }
-      .containerHistoria .liderazgoNakamura .parrafos {
-        display: flex;
-        flex-direction: column; }
-        .containerHistoria .liderazgoNakamura .parrafos h5 {
-          font-weight: bold;
-          position: relative;
-          top: 10px;
-          font-size: 1.2rem; }
-        .containerHistoria .liderazgoNakamura .parrafos p {
-          font-size: 1.2rem; }
-        .containerHistoria .liderazgoNakamura .parrafos .imagenNakamura {
-          position: relative;
-          bottom: 70px;
-          width: 300px; }
-        .containerHistoria .liderazgoNakamura .parrafos .liderOkada {
-          position: relative;
-          bottom: 50px;
-          width: 300px; }
-        .containerHistoria .liderazgoNakamura .parrafos .iframeJaygedo {
-          position: relative;
-          top: 2px;
-          left: 25%; }
-        .containerHistoria .liderazgoNakamura .parrafos .iframeWill {
-          position: relative;
-          top: 2px;
-          left: 25%; }
-        .containerHistoria .liderazgoNakamura .parrafos .iframeSHO {
-          position: relative;
-          top: 2px;
-          left: 25%; }
-        .containerHistoria .liderazgoNakamura .parrafos .iframeBestfriends {
-          position: relative;
-          top: 2px;
-          left: 25%; }
-  /************************************************************************************************/
-  /**************************MAIN de la pagina miembrosantiguos****************************/
-  .tituloGrupo {
-    position: relative;
-    left: 40%; }
-  /*position: relative;
-                        left: 50%;*/
-  main .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .contenedor .card {
-      width: 25rem; }
-      main .contenedor .card .card-title {
-        font-size: 2rem; }
-  main .contenedor1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .contenedor1 .card {
-      width: 25rem; }
-      main .contenedor1 .card .card-title {
-        font-size: 2rem; }
-  main .contenedor2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .contenedor2 .card {
-      width: 25rem; }
-      main .contenedor2 .card .card-title {
-        font-size: 2rem; }
-  main .contenedor3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .contenedor3 .card {
-      width: 25rem; }
-      main .contenedor3 .card .card-title {
-        font-size: 2rem; }
-  /**************************************************************************************************/
-  /**************************MAIN de la pagina miembros actuales****************************/
-  main .primeraFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .primeraFila .card {
-      width: 25rem; }
-      main .primeraFila .card .card-title {
-        font-size: 2rem; }
-  main .segundaFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .segundaFila .card {
-      width: 25rem; }
-      main .segundaFila .card .card-title {
-        font-size: 2rem; }
-  main .terceraFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .terceraFila .card {
-      width: 25rem; }
-      main .terceraFila .card .card-title {
-        font-size: 2rem; }
-  main .cuartaFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 40%; }
-    main .cuartaFila .card {
-      width: 25rem; }
-      main .cuartaFila .card .card-title {
-        font-size: 2rem; }
-  /**************************************************************************************************/
-  /**************************MAIN de la pagina subgrupos*********************************/
-  table.table-dark.table-striped {
-    width: 500px; }
-  /**************************************************************************************************/
-  /**************************MAIN de la pagina Contacto**********************************************/
-  .tituloContacto {
+  .tituloHistoria {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 15%; }
-  form .form-group .form-control {
-    margin-bottom: 10px;
-    background-color: plum;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.2rem;
-    width: 500px; }
-  form .form-group .opinion {
-    background-color: plum;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.2rem; }
-  form .btn .btn-primary {
-    width: 50%; }
+    left: 40%; }
+  .containerHistoria {
+    position: relative;
+    left: 50px; }
+    .containerHistoria p {
+      font-size: 1.5rem; }
+    .containerHistoria .acordeonShinsukenakamura .accordion {
+      width: 45rem; }
+      .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura {
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+        float: none; }
+    .containerHistoria .acordeonOkada .accordion {
+      width: 45rem; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .Nacimiento .imagenNakamura {
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+        float: none; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada {
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+        float: none; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 335px; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 335px; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends {
+        height: 500px; }
+        .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
+          width: 100%;
+          margin-bottom: 30px;
+          height: 200px; }
+  /************************************************************************************************/
+  /**************************MAIN de la pagina miembrosantiguos****************************/
+  main .tituloGrupoantiguo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif; }
+  main .accordion {
+    position: relative;
+    left: 40%; }
+    main .accordion .accordion-body .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .contenedor .card {
+        width: 20rem; }
+        main .accordion .accordion-body .contenedor .card .card-title {
+          font-size: 2rem; }
+    main .accordion .accordion-body .contenedor1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .contenedor1 .card {
+        width: 20rem; }
+        main .accordion .accordion-body .contenedor1 .card .card-title {
+          font-size: 2rem; }
+    main .accordion .accordion-body .contenedor2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .contenedor2 .card {
+        width: 20rem; }
+        main .accordion .accordion-body .contenedor2 .card .card-title {
+          font-size: 2rem; }
+    main .accordion .accordion-body .contenedor3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .contenedor3 .card {
+        width: 20rem; }
+        main .accordion .accordion-body .contenedor3 .card .card-title {
+          font-size: 2rem; }
+  /**************************************************************************************************/
+  /**************************MAIN de la pagina miembros actuales****************************/
+  main .tituloGrupoactivo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif; }
+  main .accordion .accordion-body .primeraFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .accordion .accordion-body .primeraFila .card {
+      width: 20rem; }
+      main .accordion .accordion-body .primeraFila .card .card-title {
+        font-size: 2rem; }
+  main .accordion .accordion-body .segundaFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .accordion .accordion-body .segundaFila .card {
+      width: 20rem; }
+      main .accordion .accordion-body .segundaFila .card .card-title {
+        font-size: 2rem; }
+  main .accordion .accordion-body .terceraFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .accordion .accordion-body .terceraFila .card {
+      width: 20rem; }
+      main .accordion .accordion-body .terceraFila .card .card-title {
+        font-size: 2rem; }
+  main .accordion .accordion-body .cuartaFila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .accordion .accordion-body .cuartaFila .card {
+      width: 20rem; }
+      main .accordion .accordion-body .cuartaFila .card .card-title {
+        font-size: 2rem; }
+  /**************************************************************************************************/
+  /**************************MAIN de la pagina subgrupos*********************************/
+  main .tituloSubgrupo h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif; }
+  main .table-dark {
+    width: 700px;
+    height: 800px;
+    position: relative;
+    left: 20%; }
+    main .table-dark thead th {
+      font-size: 1.6rem; }
+    main .table-dark tbody tr td {
+      font-size: 1.4rem; }
+      main .table-dark tbody tr td h3 {
+        font-size: 1.4rem; }
+  /**************************************************************************************************/
+  /**************************MAIN de la pagina Contacto**********************************************/
+  .containerContacto .tituloContacto {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 40%; }
+  form {
+    position: relative;
+    left: 40%; }
+    form .form-group .label {
+      font-size: 2rem; }
+    form .form-group .form-control {
+      margin-bottom: 10px;
+      background-color: plum;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.2rem; }
+    form .form-group .opinion {
+      background-color: plum;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2rem; }
+    form .btn .btn-primary {
+      width: 50%; }
   /**************************************************************************************************/
   /**********************************FOOTER de todos los html*************************************/
   footer {
@@ -880,4 +963,4 @@ footer {
     footer .contenedorRedes {
       position: relative;
       top: 10px; }
-  /***********************************************************************/ }
+  /******************************************************************************************/ }
