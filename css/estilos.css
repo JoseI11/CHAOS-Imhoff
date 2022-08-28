@@ -579,10 +579,8 @@ footer {
     display: flex;
     align-items: center; }
     footer .contenedorRedes .imagen1 {
-      /* margin-top: 10px;*/
       width: 80px; }
     footer .contenedorRedes .imagen2 {
-      /*margin-top: 10px;*/
       width: 80px; }
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
@@ -661,7 +659,6 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* left: 30%; medida de 320px*/
     left: 40%; }
     main .titulosPrimeracolumna .card {
       border: transparent; }
