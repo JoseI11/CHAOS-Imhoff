@@ -30,6 +30,18 @@
     /**********************************************************************/
 
     /*************Container del INDEX*************************************/
+    .tituloInicio {
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            left: 50%;
+   
+        }
+    }
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -118,6 +130,7 @@
             h1 {
                 position: relative;
                 left: 40%;
+                font-size: 3rem;
             }
 
         }
@@ -287,6 +300,7 @@
             justify-content: center;
             position: relative;
             left: 40%;
+            font-size: 3rem;
         }
 
         .titulosrohPrimeracolumna {
@@ -361,6 +375,8 @@
             justify-content: center;
             position: relative;
             left: 40%;
+            text-align: center;
+            font-size: 3rem;
         }
 
         .titulosOtrosprimeracolumna {
@@ -475,6 +491,8 @@
         justify-content: center;
         position: relative;
         left: 40%;
+        text-align: center;
+        font-size: 3rem;
     }
 
     .containerHistoria {
@@ -566,11 +584,15 @@
 
     main {
         .tituloGrupoantiguo {
+            display: inline;
+            margin: 0;
             h1 {
-                display: flex;
-                justify-content: center;
-                font-size: 5rem;
-                   font-family: 'Playfair Display', serif;
+                
+                font-size: 3rem;
+                font-family: 'Playfair Display', serif;
+                position: relative;
+                left: 40%;
+                text-align: center;
             }
         }
 
@@ -593,7 +615,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
-
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
 
@@ -608,6 +634,11 @@
 
                         .card-title {
                             font-size: 2rem;
+                        }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
                         }
                     }
                 }
@@ -624,6 +655,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
 
@@ -638,6 +674,11 @@
 
                         .card-title {
                             font-size: 2rem;
+                        }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
                         }
                     }
                 }
@@ -654,8 +695,11 @@
             h1 {
                 display: flex;
                 justify-content: center;
-                font-size: 5rem;
+                font-size: 3rem;
                 font-family: 'Playfair Display', serif;
+                position: relative;
+                left: 40%;
+                text-align: center;
             }
         }
 
@@ -673,6 +717,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
 
@@ -689,6 +738,11 @@
                             font-size: 2rem;
 
                         }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
 
@@ -704,6 +758,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
 
@@ -718,6 +777,11 @@
 
                         .card-title {
                             font-size: 2rem;
+                        }
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
                         }
                     }
                 }
@@ -735,8 +799,12 @@
             h1 {
                 display: flex;
                 justify-content: center;
-                font-size: 5rem;
+                align-items: center;
+                font-size: 3rem;
                 font-family: 'Playfair Display', serif;
+                position: relative;
+                left: 40%;
+                text-align: center;
             }
         }
 
@@ -769,15 +837,17 @@
 
     /**************************************************************************************************/
     /**************************MAIN de la pagina Contacto**********************************************/
+    
     .containerContacto {
         .tituloContacto {
             display: flex;
             justify-content: center;
 
-            font-size: 2rem;
+            font-size: 3rem;
             font-family: 'Playfair Display', serif;
             position: relative;
             left: 40%;
+
         }
     }
 
@@ -799,7 +869,11 @@
 
 
             }
-
+            .form-check{
+                .form-check-label{
+                    font-size: 1.8rem;
+                }
+            }
             .opinion {
                 background-color: plum;
                 font-family: $letra-campo-formulario;

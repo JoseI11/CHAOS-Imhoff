@@ -290,6 +290,7 @@
  .titularRoh {
      display: flex;
      justify-content: center;
+     
  }
 
  .containerRoh {
@@ -321,6 +322,10 @@
      display: flex;
      justify-content: center;
 
+    h1{
+            font-size: 4rem;
+    }
+    
  }
 
  .containerOtraspromociones {

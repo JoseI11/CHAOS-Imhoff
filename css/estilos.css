@@ -40,11 +40,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 60px;
-  font-size: 3rem;
-  font-family: 'Playfair Display', serif;
-  color: #f5e504; }
+  font-size: 5rem;
+  animation-duration: 3s;
+  animation-name: inicio;
+  animation-iteration-count: infinite;
+  font-family: 'Playfair Display', serif; }
 
 @keyframes inicio {
   0% {
@@ -78,7 +78,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .container .iframesyImagenesdelgrupo .imagenesGrupo h1 {
+      .container .iframesyImagenesdelgrupo .imagenesGrupo h2 {
         text-align: center;
         font-family: 'Mitr', sans-serif;
         font-size: 2rem; }
@@ -132,7 +132,7 @@ body {
     bottom: 4%;
     right: 2%;
     width: 90%; }
-    .container .iframesGrupo h1 {
+    .container .iframesGrupo h2 {
       text-align: center;
       font-family: 'Mitr', sans-serif;
       font-size: 2rem; }
@@ -255,6 +255,9 @@ main .titulosrohSegundacolumna {
 main .titularOtraspromociones {
   display: flex;
   justify-content: center; }
+  main .titularOtraspromociones h1 {
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif; }
 
 main .titulosOtrosprimeracolumna {
   display: flex;
@@ -351,6 +354,51 @@ main .accordion .accordion-body .contenedor3 {
 
 /*************************************************************************************************/
 /*********************************MAIN de la pagina miembros actuales*******************************/
+main .primeraFila {
+  display: flex;
+  flex-direction: row; }
+  main .primeraFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .primeraFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+main .segundaFila {
+  display: flex;
+  flex-direction: row; }
+  main .segundaFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .segundaFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+main .terceraFila {
+  display: flex;
+  flex-direction: row; }
+  main .terceraFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .terceraFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
+main .cuartaFila {
+  display: flex;
+  flex-direction: row;
+  width: 15rem; }
+  main .cuartaFila .card {
+    background-color: black;
+    width: 15rem; }
+    main .cuartaFila .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white; }
+
 main .tituloGrupoactivo h1 {
   display: flex;
   justify-content: center;
@@ -551,6 +599,14 @@ footer {
         background-color: red; }
   /**********************************************************************/
   /*************Container del INDEX*************************************/
+  .tituloInicio h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 50%; }
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -599,7 +655,8 @@ footer {
   /************************************MAIN de la pagina NJPW**********************************/
   main .empresaTitulos h1 {
     position: relative;
-    left: 40%; }
+    left: 40%;
+    font-size: 3rem; }
   main .titulosPrimeracolumna {
     display: flex;
     flex-direction: column;
@@ -687,7 +744,8 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 40%; }
+    left: 40%;
+    font-size: 3rem; }
   main .titulosrohPrimeracolumna {
     display: flex;
     flex-direction: column;
@@ -726,7 +784,9 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 40%; }
+    left: 40%;
+    text-align: center;
+    font-size: 3rem; }
   main .titulosOtrosprimeracolumna {
     display: flex;
     flex-direction: column;
@@ -789,7 +849,9 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 40%; }
+    left: 40%;
+    text-align: center;
+    font-size: 3rem; }
   .containerHistoria {
     position: relative;
     left: 50px; }
@@ -830,11 +892,15 @@ footer {
           height: 200px; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembrosantiguos****************************/
-  main .tituloGrupoantiguo h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    font-family: 'Playfair Display', serif; }
+  main .tituloGrupoantiguo {
+    display: inline;
+    margin: 0; }
+    main .tituloGrupoantiguo h1 {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      left: 40%;
+      text-align: center; }
   main .accordion {
     position: relative;
     left: 40%; }
@@ -846,6 +912,9 @@ footer {
         width: 20rem; }
         main .accordion .accordion-body .contenedor .card .card-title {
           font-size: 2rem; }
+        main .accordion .accordion-body .contenedor .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
     main .accordion .accordion-body .contenedor1 {
       display: flex;
       flex-direction: column;
@@ -853,6 +922,9 @@ footer {
       main .accordion .accordion-body .contenedor1 .card {
         width: 20rem; }
         main .accordion .accordion-body .contenedor1 .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .contenedor1 .card .btn-primary {
+          width: 50%;
           font-size: 2rem; }
     main .accordion .accordion-body .contenedor2 {
       display: flex;
@@ -862,6 +934,9 @@ footer {
         width: 20rem; }
         main .accordion .accordion-body .contenedor2 .card .card-title {
           font-size: 2rem; }
+        main .accordion .accordion-body .contenedor2 .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
     main .accordion .accordion-body .contenedor3 {
       display: flex;
       flex-direction: column;
@@ -870,13 +945,19 @@ footer {
         width: 20rem; }
         main .accordion .accordion-body .contenedor3 .card .card-title {
           font-size: 2rem; }
+        main .accordion .accordion-body .contenedor3 .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina miembros actuales****************************/
   main .tituloGrupoactivo h1 {
     display: flex;
     justify-content: center;
-    font-size: 5rem;
-    font-family: 'Playfair Display', serif; }
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 40%;
+    text-align: center; }
   main .accordion .accordion-body .primeraFila {
     display: flex;
     flex-direction: column;
@@ -884,6 +965,9 @@ footer {
     main .accordion .accordion-body .primeraFila .card {
       width: 20rem; }
       main .accordion .accordion-body .primeraFila .card .card-title {
+        font-size: 2rem; }
+      main .accordion .accordion-body .primeraFila .card .btn-primary {
+        width: 50%;
         font-size: 2rem; }
   main .accordion .accordion-body .segundaFila {
     display: flex;
@@ -893,6 +977,9 @@ footer {
       width: 20rem; }
       main .accordion .accordion-body .segundaFila .card .card-title {
         font-size: 2rem; }
+      main .accordion .accordion-body .segundaFila .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   main .accordion .accordion-body .terceraFila {
     display: flex;
     flex-direction: column;
@@ -900,6 +987,9 @@ footer {
     main .accordion .accordion-body .terceraFila .card {
       width: 20rem; }
       main .accordion .accordion-body .terceraFila .card .card-title {
+        font-size: 2rem; }
+      main .accordion .accordion-body .terceraFila .card .btn-primary {
+        width: 50%;
         font-size: 2rem; }
   main .accordion .accordion-body .cuartaFila {
     display: flex;
@@ -909,13 +999,20 @@ footer {
       width: 20rem; }
       main .accordion .accordion-body .cuartaFila .card .card-title {
         font-size: 2rem; }
+      main .accordion .accordion-body .cuartaFila .card .btn-primary {
+        width: 50%;
+        font-size: 2rem; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   main .tituloSubgrupo h1 {
     display: flex;
     justify-content: center;
-    font-size: 5rem;
-    font-family: 'Playfair Display', serif; }
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 40%;
+    text-align: center; }
   main .table-dark {
     width: 700px;
     height: 800px;
@@ -932,7 +1029,7 @@ footer {
   .containerContacto .tituloContacto {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
     position: relative;
     left: 40%; }
@@ -946,6 +1043,8 @@ footer {
       background-color: plum;
       font-family: "Times New Roman", Times, serif;
       font-size: 1.2rem; }
+    form .form-group .form-check .form-check-label {
+      font-size: 1.8rem; }
     form .form-group .opinion {
       background-color: plum;
       font-family: "Times New Roman", Times, serif;
