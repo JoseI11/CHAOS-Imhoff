@@ -578,9 +578,11 @@ footer {
   footer .contenedorRedes {
     display: flex;
     align-items: center; }
-    footer .contenedorRedes .imagen1 {
-      width: 80px; }
-    footer .contenedorRedes .imagen2 {
+    footer .contenedorRedes .face {
+      margin: 0 30px; }
+      footer .contenedorRedes .face .imagen1 {
+        width: 80px; }
+    footer .contenedorRedes .twitter .imagen2 {
       width: 80px; }
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
