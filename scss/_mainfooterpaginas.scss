@@ -313,30 +313,35 @@
 
      }
 
-     .titulosrohPrimeracolumna {
-         display: map-get($estiloflex, desplegar);
-         flex-direction: map-get($estiloflex, direccion);
-         margin-left: 15%;
+     .accordion {
+         .accordion-body {
+             .titulosrohPrimeracolumna {
+                 display: map-get($estiloflex, desplegar);
+                 flex-direction: map-get($estiloflex, direccion);
+                 margin-left: 15%;
 
-         .card {
+                 .card {
 
-             background-color: $bg-color-card-trofeos;
-             border: transparent;
+                     background-color: $bg-color-card-trofeos;
+                     border: transparent;
+                 }
+
+             }
+
+             .titulosrohSegundacolumna {
+                 display: map-get($estiloflex, desplegar);
+                 flex-direction: map-get($estiloflex, direccion);
+                 margin-left: 15%;
+
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     border: transparent;
+                 }
+
+             }
          }
-
      }
 
-     .titulosrohSegundacolumna {
-         display: map-get($estiloflex, desplegar);
-         flex-direction: map-get($estiloflex, direccion);
-         margin-left: 15%;
-
-         .card {
-             background-color: $bg-color-card-trofeos;
-             border: transparent;
-         }
-
-     }
  }
 
 
@@ -428,7 +433,15 @@
 
                  .card {
                      background-color: black;
-                     width: 15rem;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+                         }
+                     }
 
                      .card-title {
                          font-size: 1.2rem;
@@ -446,7 +459,15 @@
 
                  .card {
                      background-color: black;
-                     width: 15rem;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+                         }
+                     }
 
                      .card-title {
                          font-size: 1.2rem;
@@ -464,7 +485,15 @@
 
                  .card {
                      background-color: black;
-                     width: 15rem;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+                         }
+                     }
 
                      .card-title {
                          font-size: 1.2rem;
@@ -482,7 +511,17 @@
 
                  .card {
                      background-color: black;
-                     width: 15rem;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
 
                      .card-title {
                          font-size: 1.2rem;
@@ -502,74 +541,6 @@
 
  /*************************************************************************************************/
  /*********************************MAIN de la pagina miembros actuales*******************************/
-
- main {
-     .primeraFila {
-         display: flex;
-         flex-direction: row;
-
-         .card {
-             background-color: $bg-color-card;
-             width: 15rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
-
-     .segundaFila {
-         display: flex;
-         flex-direction: row;
-
-         .card {
-             background-color: $bg-color-card;
-             width: 15rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
-
-     .terceraFila {
-         display: flex;
-         flex-direction: row;
-
-         .card {
-             background-color: $bg-color-card;
-             width: 15rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
-
-     .cuartaFila {
-         display: flex;
-         flex-direction: row;
-         width: 15rem;
-
-         .card {
-             background-color: $bg-color-card;
-             width: 15rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
- }
-
  main {
      .tituloGrupoactivo {
          h1 {
@@ -580,78 +551,122 @@
          }
 
      }
-
-     .primeraFila {
-         display: flex;
-         flex-direction: row;
-         position: relative;
-         left: 20px;
-
-         .card {
-             background-color: black;
-             width: 25rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
+     .accordion{
+        .accordion-body{
+            .primeraFila {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 20px;
+       
+                .card {
+                    background-color: black;
+                    width: 25rem;
+       
+                    img {
+                        &:hover {
+       
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+       
+                        }
+                    }
+       
+                    .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+       
+            .segundaFila {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 20px;
+       
+                .card {
+                    background-color: black;
+                    width: 25rem;
+       
+                    img {
+                        &:hover {
+       
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+       
+                        }
+                    }
+       
+                    .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+       
+            .terceraFila {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 20px;
+       
+                .card {
+                    background-color: black;
+                    width: 25rem;
+       
+                    img {
+                        &:hover {
+       
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+       
+                        }
+                    }
+       
+                    .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+       
+            .cuartaFila {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 20px;
+       
+                .card {
+                    background-color: black;
+                    width: 25rem;
+       
+                    img {
+                        &:hover {
+       
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+       
+                        }
+                    }
+       
+                    .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
      }
-
-     .segundaFila {
-         display: flex;
-         flex-direction: row;
-         position: relative;
-         left: 20px;
-
-         .card {
-             background-color: black;
-             width: 25rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
-
-     .terceraFila {
-         display: flex;
-         flex-direction: row;
-         position: relative;
-         left: 20px;
-
-         .card {
-             background-color: black;
-             width: 25rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
-
-     .cuartaFila {
-         display: flex;
-         flex-direction: row;
-         position: relative;
-         left: 20px;
-
-         .card {
-             background-color: black;
-             width: 25rem;
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: white;
-             }
-         }
-     }
+   
  }
 
 
@@ -690,23 +705,7 @@
 
 
 
- audio {
-     display: flex;
-     justify-content: center;
 
-     &::-webkit-media-controls-panel {
-         background-color: #56AEFF;
-     }
-
-     &::-webkit-media-controls-mute-button {
-         background-color: #B1D4E0;
-         border-radius: 50%;
-     }
-
-     &::-webkit-media-controls-play-button:hover {
-         background-color: rgba(177, 212, 224, .7);
-     }
- }
 
  /******************************MAIN la pagina Contacto**********************************************/
  .containerContacto {
@@ -878,11 +877,12 @@
              .imagen1 {
 
                  width: 80px;
-                 
-                }
+
+             }
+
              margin: 0 30px;
          }
-     
+
          .twitter {
              .imagen2 {
                  width: 80px;

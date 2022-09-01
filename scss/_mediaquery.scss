@@ -1,4 +1,4 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
 
     /****************NAVBAR de todos las paginas******************************/
     .menu-bar {
@@ -39,9 +39,10 @@
             font-family: 'Playfair Display', serif;
             position: relative;
             left: 50%;
-   
+
         }
     }
+
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -131,164 +132,166 @@
                 position: relative;
                 left: 40%;
                 font-size: 3rem;
+                text-align: center;
             }
 
         }
-
-        .titulosPrimeracolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-      
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        .accordion{
+            .accordion-button{
+                font-size: 1.2rem;
+            }
+            .accordion-body{
+                .titulosPrimeracolumna {
+                    display: flex;
+                    flex-direction: column;
+           
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
+        
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-
-        }
-
-        .titulosSegundacolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        
+                .titulosSegundacolumna {
+                    display: flex;
+                    flex-direction: column;
+        
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
+        
+        
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-
-
-        }
-
-        .titulosTerceracolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        
+                .titulosTerceracolumna {
+                    display: flex;
+                    flex-direction: column;
+             
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
+        
+        
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-
-
-        }
-
-        .titulosCuartacolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        
+                .titulosCuartacolumna {
+                    display: flex;
+                    flex-direction: column;
+                
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
+        
+        
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-
-
-        }
-
-        .titulosQuintacolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        
+                .titulosQuintacolumna {
+                    display: flex;
+                    flex-direction: column;
+          
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
-                }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
+        
                 }
             }
-
-
         }
+        
+
     }
 
 
@@ -298,73 +301,83 @@
         .titularRoh {
             display: flex;
             justify-content: center;
+      
             position: relative;
             left: 40%;
-            font-size: 3rem;
+  
+            h1{
+                text-align: center;
+                font-size: 3rem;
+            }
         }
-
-        .titulosrohPrimeracolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        .accordion{
+            .accordion-button{
+                font-size: 1.2rem;
+            }
+            .accordion-body{
+                .titulosrohPrimeracolumna {
+                    display: flex;
+                    flex-direction: column;
+            
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
+        
+        
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
+        
+                .titulosrohSegundacolumna {
+                    display: flex;
+                    flex-direction: column;
+              
+        
+                    .card {
+                        border: transparent;
+        
+                        img {
+        
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
+                    }
+        
+        
                 }
             }
-
-
         }
-
-        .titulosrohSegundacolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
-                    }
-                }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-
-
-        }
+      
     }
 
     /***********************************************************************************************/
@@ -378,94 +391,107 @@
             text-align: center;
             font-size: 3rem;
         }
-
-        .titulosOtrosprimeracolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        .accordion{
+            .accordion-button{
+                font-size: 1.2rem;
+            }
+            .accordion-body{
+                .titulosOtrosprimeracolumna {
+                    display: flex;
+                    flex-direction: column;
+                  
+        
+                    .card {
+                        border: transparent;
+                        width: 100%;
+        
+                        img {
+                            width: 100%;
+        
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 60%;
+                            font-size: 2rem;
+        
+                        }
+                    }
+        
+                }
+        
+                .titulosOtrossegundacolumna {
+                    display: flex;
+                    flex-direction: column;
+                   
+        
+                    .card {
+                        border: transparent;
+                        width: 100%;
+        
+                        img {
+                            width: 100%;
+        
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-
-        }
-
-        .titulosOtrossegundacolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
+        
+                .titulosOtrosterceracolumna {
+                    display: flex;
+                    flex-direction: column;
+               
+        
+                    .card {
+                        border: transparent;
+                        width: 100%;
+        
+                        img {
+                            width: 100%;
+        
+                            &:hover {
+                                animation-duration: 3s;
+                                animation-name: efectoimagenestrofeos;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+        
+                        .card-title {
+                            font-size: 2rem;
+                        }
+        
+                        .btn-primary {
+                            width: 50%;
+                            font-size: 2rem;
+        
+                        }
                     }
                 }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
             }
         }
-
-        .titulosOtrosterceracolumna {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            left: 40%;
-
-            .card {
-                border: transparent;
-
-                img {
-                    &:hover {
-                        animation-duration: 3s;
-                        animation-name: efectoimagenestrofeos;
-                        animation-iteration-count: infinite;
-                    }
-                }
-
-                .card-title {
-                    font-size: 2rem;
-                }
-
-                .btn-primary {
-                    width: 50%;
-                    font-size: 2rem;
-
-                }
-            }
-        }
+        
     }
 
     @keyframes efectoimagenestrofeos {
@@ -506,7 +532,9 @@
         .acordeonShinsukenakamura {
             .accordion {
                 width: 45rem;
-
+                .accordion-button{
+                    font-size: 1.2rem;
+                }
                 .accordion-body {
                     .Nacimiento {
                         .imagenNakamura {
@@ -524,7 +552,9 @@
         .acordeonOkada {
             .accordion {
                 width: 45rem;
-
+                .accordion-button{
+                    font-size: 1.2rem;
+                }
                 .accordion-body {
 
                     .Nacimiento {
@@ -586,8 +616,9 @@
         .tituloGrupoantiguo {
             display: inline;
             margin: 0;
+
             h1 {
-                
+
                 font-size: 3rem;
                 font-family: 'Playfair Display', serif;
                 position: relative;
@@ -599,26 +630,29 @@
         .accordion {
             position: relative;
             left: 40%;
-
+            .accordion-button{
+                font-size: 1.2rem;
+            }
             .accordion-body {
                 .contenedor {
 
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-
+                    width: 100%;
 
                     .card {
 
-                        width: 20rem;
+                        width: 100%;
 
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
-                            width: 50%;
+                            width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -627,18 +661,19 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-
+                    width: 100%;
 
                     .card {
-                        width: 20rem;
+                        width: 100%;
 
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
-                            width: 50%;
+                            width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -647,18 +682,19 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-
+                    width: 100%;
 
                     .card {
-                        width: 20rem;
+                        width: 100%;
 
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
-                            width: 50%;
+                            width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -667,24 +703,26 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-
+                    width: 100%;
 
                     .card {
-                        width: 20rem;
+                        width: 100%;
 
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
-                            width: 50%;
+                            width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
             }
         }
 
+        margin-bottom: 5%;
     }
 
 
@@ -702,9 +740,10 @@
                 text-align: center;
             }
         }
-
         .accordion {
-
+            .accordion-button{
+                font-size: 1.2rem;
+            }
             .accordion-body {
                 .primeraFila {
                     display: flex;
@@ -837,7 +876,7 @@
 
     /**************************************************************************************************/
     /**************************MAIN de la pagina Contacto**********************************************/
-    
+
     .containerContacto {
         .tituloContacto {
             display: flex;
@@ -869,11 +908,13 @@
 
 
             }
-            .form-check{
-                .form-check-label{
+
+            .form-check {
+                .form-check-label {
                     font-size: 1.8rem;
                 }
             }
+
             .opinion {
                 background-color: plum;
                 font-family: $letra-campo-formulario;
