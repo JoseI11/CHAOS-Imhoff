@@ -1,3 +1,18 @@
+/* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $bg-color-pagina;
+    background-image: $gradiente;
+
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +99,6 @@ body {
         font-size: 2rem; }
       .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio {
         width: 90%;
-        height: 335px;
         margin: 5px;
         border-radius: 30px; }
         .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio:hover {
@@ -137,8 +151,8 @@ body {
       font-family: 'Mitr', sans-serif;
       font-size: 2rem; }
     .container .iframesGrupo iframe {
-      width: 450px;
-      height: 335px;
+      width: 90%;
+      height: 320px;
       margin: 5px;
       border-radius: 30px;
       border: dotted blueviolet 3px; }
@@ -239,6 +253,7 @@ main .accordion .accordion-body .titulosrohPrimeracolumna {
   flex-direction: row;
   margin-left: 15%; }
   main .accordion .accordion-body .titulosrohPrimeracolumna .card {
+    width: 25rem;
     background-color: transparent;
     border: transparent; }
 
@@ -247,6 +262,7 @@ main .accordion .accordion-body .titulosrohSegundacolumna {
   flex-direction: row;
   margin-left: 15%; }
   main .accordion .accordion-body .titulosrohSegundacolumna .card {
+    width: 25rem;
     background-color: transparent;
     border: transparent; }
 
@@ -562,30 +578,41 @@ footer {
       width: 80px; }
 
 /******************************FIN del FOOTER de todos los HTML*************************************/
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; }
   /****************NAVBAR de todos las paginas******************************/
   .menu-bar {
-    width: 179%; }
-    .menu-bar .navbar .navbar-nav .nav-link {
-      font-size: 2rem; }
-    .menu-bar .navbar .navbar-brand img {
+    width: 100%; }
+    .menu-bar .navbar .navbar-nav {
       width: 100%; }
+      .menu-bar .navbar .navbar-nav .nav-link {
+        width: 100%;
+        font-size: 50%; }
+    .menu-bar .navbar .navbar-brand {
+      width: 90%; }
+      .menu-bar .navbar .navbar-brand img {
+        width: 90%; }
     .menu-bar .dropdown .dropdown-menu .dropdown-item {
       text-align: center;
-      font-size: 2rem; }
+      font-size: 50%;
+      width: 100%; }
       .menu-bar .dropdown .dropdown-menu .dropdown-item:hover {
         background-color: red; }
   /**********************************************************************/
   /*************Container del INDEX*************************************/
   .tituloInicio {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    width: 70%;
+    justify-content: center; }
     .tituloInicio h1 {
-      justify-content: center;
-      font-size: 3rem;
+      font-size: 130%;
       font-family: 'Playfair Display', serif;
       position: relative;
-      left: 50%; }
+      left: 30%; }
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -593,24 +620,33 @@ footer {
     /************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
     /********************+++++++++++++++++++++++++++++++++++++++++++++++*************************/ }
     .container .iframesyImagenesdelgrupo {
-      position: relative;
-      top: 15%;
-      left: 30%;
-      grid-area: iframesyImagenesdelgrupo; }
-      .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio {
-        width: 100%;
-        height: 335px; }
+      display: flex;
+      flex-direction: column; }
+      .container .iframesyImagenesdelgrupo .imagenesGrupo {
+        width: 100%; }
         .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio:hover {
           animation-duration: 3s;
           animation-name: efectoimagenes;
           animation-iteration-count: infinite; }
-      .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2 {
-        width: 100%;
-        height: 335px; }
         .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio2:hover {
           animation-duration: 3s;
           animation-name: efectoimagenes;
           animation-iteration-count: infinite; }
+      .container .iframesyImagenesdelgrupo .tienda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%; }
+        .container .iframesyImagenesdelgrupo .tienda h3 {
+          font-size: 130%;
+          position: relative;
+          left: 5%; }
+        .container .iframesyImagenesdelgrupo .tienda .boton {
+          position: relative;
+          bottom: 20%;
+          left: 5%;
+          width: 80%;
+          font-size: 100%; }
   @keyframes efectoimagenes {
     0% {
       opacity: 0; }
@@ -627,198 +663,203 @@ footer {
       justify-content: center;
       align-items: center;
       position: relative;
-      left: 40%;
-      width: 90%;
+      width: 100%;
       top: 20%; }
+      .container .iframesGrupo .iframe1 {
+        width: 100%;
+        height: 100%; }
+      .container .iframesGrupo .iframe2 {
+        width: 100%;
+        height: 100%; }
   /**********************************************************/
   /************************************MAIN de la pagina NJPW**********************************/
   main .empresaTitulos h1 {
-    position: relative;
-    left: 40%;
-    font-size: 3rem;
+    font-size: 150%;
     text-align: center; }
-  main .accordion .accordion-button {
-    font-size: 1.2rem; }
-  main .accordion .accordion-body .titulosPrimeracolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosPrimeracolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosPrimeracolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosPrimeracolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosPrimeracolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosSegundacolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosSegundacolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosSegundacolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosSegundacolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosSegundacolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosTerceracolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosTerceracolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosTerceracolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosTerceracolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosTerceracolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosCuartacolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosCuartacolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosCuartacolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosCuartacolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosCuartacolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosQuintacolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosQuintacolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosQuintacolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosQuintacolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosQuintacolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
+  main .accordion {
+    width: 100%; }
+    main .accordion .accordion-button {
+      font-size: 1.2rem; }
+    main .accordion .accordion-body .titulosPrimeracolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosPrimeracolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosPrimeracolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosPrimeracolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosPrimeracolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosSegundacolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosSegundacolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosSegundacolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosSegundacolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosSegundacolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosTerceracolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosTerceracolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosTerceracolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosTerceracolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosTerceracolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosCuartacolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosCuartacolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosCuartacolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosCuartacolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosCuartacolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosQuintacolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosQuintacolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosQuintacolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosQuintacolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosQuintacolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina ROH******************************/
   main .titularRoh {
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: 40%; }
+    justify-content: center; }
     main .titularRoh h1 {
       text-align: center;
-      font-size: 3rem; }
-  main .accordion .accordion-button {
-    font-size: 1.2rem; }
-  main .accordion .accordion-body .titulosrohPrimeracolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosrohPrimeracolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosrohPrimeracolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosrohPrimeracolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosrohPrimeracolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosrohSegundacolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosrohSegundacolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosrohSegundacolumna .card img:hover {
-        animation-duration: 3s;
-        animation-name: efectoimagenestrofeos;
-        animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosrohSegundacolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosrohSegundacolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
+      font-size: 150%; }
+  main .accordion {
+    width: 100%; }
+    main .accordion .accordion-button {
+      font-size: 1.2rem; }
+    main .accordion .accordion-body .titulosrohPrimeracolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosrohPrimeracolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosrohPrimeracolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosrohPrimeracolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosrohPrimeracolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosrohSegundacolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosrohSegundacolumna .card {
+        border: transparent;
+        width: 100%; }
+        main .accordion .accordion-body .titulosrohSegundacolumna .card img:hover {
+          animation-duration: 3s;
+          animation-name: efectoimagenestrofeos;
+          animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosrohSegundacolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosrohSegundacolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
   /***********************************************************************************************/
   /*******************MAIN de la pagina otraspromociones******************************************/
   main .titularOtraspromociones {
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: 40%; }
+    justify-content: center; }
     main .titularOtraspromociones h1 {
       text-align: center;
-      font-size: 3rem; }
-  main .accordion .accordion-button {
-    font-size: 1.2rem; }
-  main .accordion .accordion-body .titulosOtrosprimeracolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosOtrosprimeracolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosOtrosprimeracolumna .card img {
+      font-size: 150%; }
+  main .accordion {
+    width: 100%; }
+    main .accordion .accordion-button {
+      font-size: 1.2rem; }
+    main .accordion .accordion-body .titulosOtrosprimeracolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosOtrosprimeracolumna .card {
+        border: transparent;
         width: 100%; }
-        main .accordion .accordion-body .titulosOtrosprimeracolumna .card img:hover {
-          animation-duration: 3s;
-          animation-name: efectoimagenestrofeos;
-          animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosOtrosprimeracolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosOtrosprimeracolumna .card .btn-primary {
-        width: 60%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosOtrossegundacolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosOtrossegundacolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosOtrossegundacolumna .card img {
+        main .accordion .accordion-body .titulosOtrosprimeracolumna .card img {
+          width: 100%; }
+          main .accordion .accordion-body .titulosOtrosprimeracolumna .card img:hover {
+            animation-duration: 3s;
+            animation-name: efectoimagenestrofeos;
+            animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosOtrosprimeracolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosOtrosprimeracolumna .card .btn-primary {
+          width: 60%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosOtrossegundacolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosOtrossegundacolumna .card {
+        border: transparent;
         width: 100%; }
-        main .accordion .accordion-body .titulosOtrossegundacolumna .card img:hover {
-          animation-duration: 3s;
-          animation-name: efectoimagenestrofeos;
-          animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosOtrossegundacolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosOtrossegundacolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .titulosOtrosterceracolumna {
-    display: flex;
-    flex-direction: column; }
-    main .accordion .accordion-body .titulosOtrosterceracolumna .card {
-      border: transparent;
-      width: 100%; }
-      main .accordion .accordion-body .titulosOtrosterceracolumna .card img {
+        main .accordion .accordion-body .titulosOtrossegundacolumna .card img {
+          width: 100%; }
+          main .accordion .accordion-body .titulosOtrossegundacolumna .card img:hover {
+            animation-duration: 3s;
+            animation-name: efectoimagenestrofeos;
+            animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosOtrossegundacolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosOtrossegundacolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .titulosOtrosterceracolumna {
+      display: flex;
+      flex-direction: column; }
+      main .accordion .accordion-body .titulosOtrosterceracolumna .card {
+        border: transparent;
         width: 100%; }
-        main .accordion .accordion-body .titulosOtrosterceracolumna .card img:hover {
-          animation-duration: 3s;
-          animation-name: efectoimagenestrofeos;
-          animation-iteration-count: infinite; }
-      main .accordion .accordion-body .titulosOtrosterceracolumna .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .titulosOtrosterceracolumna .card .btn-primary {
-        width: 50%;
-        font-size: 2rem; }
+        main .accordion .accordion-body .titulosOtrosterceracolumna .card img {
+          width: 100%; }
+          main .accordion .accordion-body .titulosOtrosterceracolumna .card img:hover {
+            animation-duration: 3s;
+            animation-name: efectoimagenestrofeos;
+            animation-iteration-count: infinite; }
+        main .accordion .accordion-body .titulosOtrosterceracolumna .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .titulosOtrosterceracolumna .card .btn-primary {
+          width: 50%;
+          font-size: 2rem; }
   @keyframes efectoimagenestrofeos {
     0% {
       opacity: 0; }
@@ -831,54 +872,49 @@ footer {
   /*******************************MAIN de la pagina Historia**************************************/
   .tituloHistoria {
     display: flex;
-    justify-content: center;
-    position: relative;
-    left: 40%; }
+    justify-content: center; }
     .tituloHistoria h1 {
       text-align: center;
       font-size: 3rem; }
-  .containerHistoria {
-    position: relative;
-    left: 50px; }
-    .containerHistoria p {
-      font-size: 1.5rem; }
-    .containerHistoria .acordeonShinsukenakamura .accordion {
-      width: 100%; }
-      .containerHistoria .acordeonShinsukenakamura .accordion .accordion-button {
-        font-size: 1.2rem; }
-      .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura {
-        width: 100%;
-        position: relative;
-        bottom: 50px;
-        float: none; }
-    .containerHistoria .acordeonOkada .accordion {
-      width: 100%; }
-      .containerHistoria .acordeonOkada .accordion .accordion-button {
-        font-size: 1.2rem; }
-      .containerHistoria .acordeonOkada .accordion .accordion-body .Nacimiento .imagenNakamura {
-        width: 100%;
-        position: relative;
-        bottom: 50px;
-        float: none; }
-      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada {
-        width: 100%;
-        position: relative;
-        bottom: 50px;
-        float: none; }
-      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo {
+  .containerHistoria p {
+    font-size: 1.5rem; }
+  .containerHistoria .acordeonShinsukenakamura .accordion {
+    width: 100%; }
+    .containerHistoria .acordeonShinsukenakamura .accordion .accordion-button {
+      font-size: 1.2rem; }
+    .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura {
+      width: 100%;
+      position: relative;
+      bottom: 50px;
+      float: none; }
+  .containerHistoria .acordeonOkada .accordion {
+    width: 100%; }
+    .containerHistoria .acordeonOkada .accordion .accordion-button {
+      font-size: 1.2rem; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .Nacimiento .imagenNakamura {
+      width: 100%;
+      position: relative;
+      bottom: 50px;
+      float: none; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada {
+      width: 100%;
+      position: relative;
+      bottom: 50px;
+      float: none; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo {
+      width: 100%;
+      margin-bottom: 30px;
+      height: 335px; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill {
+      width: 100%;
+      margin-bottom: 30px;
+      height: 335px; }
+    .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends {
+      height: 90%; }
+      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
         width: 100%;
         margin-bottom: 30px;
-        height: 335px; }
-      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill {
-        width: 100%;
-        margin-bottom: 30px;
-        height: 335px; }
-      .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends {
-        height: 90%; }
-        .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
-          width: 100%;
-          margin-bottom: 30px;
-          height: 300px; }
+        height: 300px; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembrosantiguos****************************/
   main {
@@ -889,12 +925,9 @@ footer {
       main .tituloGrupoantiguo h1 {
         font-size: 3rem;
         font-family: 'Playfair Display', serif;
-        position: relative;
-        left: 40%;
         text-align: center; }
     main .accordion {
-      position: relative;
-      left: 40%; }
+      width: 100%; }
       main .accordion .accordion-button {
         font-size: 1.2rem; }
       main .accordion .accordion-body .contenedor {
@@ -952,55 +985,55 @@ footer {
     justify-content: center;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
-    position: relative;
-    left: 40%;
     text-align: center; }
-  main .accordion .accordion-button {
-    font-size: 1.2rem; }
-  main .accordion .accordion-body .primeraFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    main .accordion .accordion-body .primeraFila .card {
-      width: 100%; }
-      main .accordion .accordion-body .primeraFila .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .primeraFila .card .btn-primary {
-        width: 100%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .segundaFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    main .accordion .accordion-body .segundaFila .card {
-      width: 100%; }
-      main .accordion .accordion-body .segundaFila .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .segundaFila .card .btn-primary {
-        width: 100%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .terceraFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    main .accordion .accordion-body .terceraFila .card {
-      width: 100%; }
-      main .accordion .accordion-body .terceraFila .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .terceraFila .card .btn-primary {
-        width: 100%;
-        font-size: 2rem; }
-  main .accordion .accordion-body .cuartaFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    main .accordion .accordion-body .cuartaFila .card {
-      width: 100%; }
-      main .accordion .accordion-body .cuartaFila .card .card-title {
-        font-size: 2rem; }
-      main .accordion .accordion-body .cuartaFila .card .btn-primary {
-        width: 100%;
-        font-size: 2rem; }
+  main .accordion {
+    width: 100%; }
+    main .accordion .accordion-button {
+      font-size: 1.2rem; }
+    main .accordion .accordion-body .primeraFila {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .primeraFila .card {
+        width: 100%; }
+        main .accordion .accordion-body .primeraFila .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .primeraFila .card .btn-primary {
+          width: 100%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .segundaFila {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .segundaFila .card {
+        width: 100%; }
+        main .accordion .accordion-body .segundaFila .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .segundaFila .card .btn-primary {
+          width: 100%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .terceraFila {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .terceraFila .card {
+        width: 100%; }
+        main .accordion .accordion-body .terceraFila .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .terceraFila .card .btn-primary {
+          width: 100%;
+          font-size: 2rem; }
+    main .accordion .accordion-body .cuartaFila {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .accordion .accordion-body .cuartaFila .card {
+        width: 100%; }
+        main .accordion .accordion-body .cuartaFila .card .card-title {
+          font-size: 2rem; }
+        main .accordion .accordion-body .cuartaFila .card .btn-primary {
+          width: 100%;
+          font-size: 2rem; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   main .tituloSubgrupo h1 {
@@ -1009,56 +1042,64 @@ footer {
     align-items: center;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
-    position: relative;
-    left: 40%;
     text-align: center; }
   main .table-dark {
-    width: 149%;
-    height: 800px;
-    position: relative;
-    left: 20%; }
+    width: 100%;
+    height: 800px; }
     main .table-dark thead th {
-      font-size: 1.6rem; }
+      font-size: 100%; }
     main .table-dark tbody tr td {
-      font-size: 1.4rem; }
+      font-size: 100%; }
       main .table-dark tbody tr td h3 {
-        font-size: 1.4rem; }
+        font-size: 100%; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina Contacto**********************************************/
   .containerContacto .tituloContacto {
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    left: 40%; }
-  form {
-    position: relative;
-    left: 40%; }
-    form .form-group .label {
-      font-size: 2rem; }
-    form .form-group .form-control {
-      margin-bottom: 10px;
-      background-color: plum;
-      font-family: "Times New Roman", Times, serif;
-      font-size: 1.2rem; }
-    form .form-group .form-check .form-check-label {
-      font-size: 1.8rem; }
-    form .form-group .opinion {
-      background-color: plum;
-      font-family: "Times New Roman", Times, serif;
-      font-size: 2rem; }
-    form .btn .btn-primary {
-      width: 50%; }
+    font-family: 'Playfair Display', serif; }
+  form .form-group .label {
+    font-size: 2rem; }
+  form .form-group .form-control {
+    margin-bottom: 10px;
+    background-color: plum;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem; }
+  form .form-group .form-check .form-check-label {
+    font-size: 1.8rem; }
+  form .form-group .opinion {
+    background-color: plum;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem; }
+  form .btn .btn-primary {
+    width: 50%; }
   /**************************************************************************************************/
   /**********************************FOOTER de todos los html*************************************/
+  /*footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 150px;
+        width: 100%;
+
+        .contenedorRedes {
+            position: relative;
+            top: 10px;
+        }
+    }*/
   footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 150px;
-    width: 179%; }
+    width: 100%;
+    height: 50%;
+    margin-top: auto; }
     footer .contenedorRedes {
       position: relative;
       top: 10px; }
+      footer .contenedorRedes .face .imagen1 {
+        width: 50%; }
+      footer .contenedorRedes .twitter .imagen2 {
+        width: 50%; }
   /******************************************************************************************/ }

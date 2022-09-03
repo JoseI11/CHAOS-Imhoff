@@ -1,19 +1,30 @@
-@media screen and (max-width:500px) {
+@media only screen and (max-width:500px) {
+    body {
 
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+       
+    }
+    
     /****************NAVBAR de todos las paginas******************************/
     .menu-bar {
-        width: 179%;
+        width: 100%;
 
         .navbar {
-         
+
             .navbar-nav {
+                width: 100%;
                 .nav-link {
-                    font-size: 2rem;
+                    width: 100%;
+                    font-size: 50%;
                 }
             }
-            .navbar-brand{
-                img{
-                    width: 100%;
+
+            .navbar-brand {
+                width: 90%;
+                img {
+                    width: 90%;
                 }
             }
         }
@@ -23,8 +34,8 @@
 
                 .dropdown-item {
                     text-align: center;
-                    font-size: 2rem;
-
+                    font-size: 50%;
+                    width: 100%;
                     &:hover {
                         background-color: $bg-color-rojo;
                     }
@@ -37,16 +48,17 @@
 
     /*************Container del INDEX*************************************/
     .tituloInicio {
-            display: flex;
-            align-items: center;
-
+        display: flex;
+        align-items: center;
+        width: 70%;
+        justify-content: center;
         h1 {
-        
-            justify-content: center;
-            font-size: 3rem;
+
+            
+            font-size: 130%;
             font-family: 'Playfair Display', serif;
             position: relative;
-            left: 50%;
+            left: 30%;
 
         }
     }
@@ -59,17 +71,13 @@
             "iframesGrupo";
 
         .iframesyImagenesdelgrupo {
-            position: relative;
-            top: 15%;
-            left: 30%;
-            grid-area: iframesyImagenesdelgrupo;
-
+           display: flex;
+           flex-direction: column;
             .imagenesGrupo {
 
-
+                width: 100%;
                 .imagenInicio {
-                    width: 100%;
-                    height: 335px;
+                  
 
                     &:hover {
                         animation-duration: 3s;
@@ -80,8 +88,7 @@
                 }
 
                 .imagenInicio2 {
-                    width: 100%;
-                    height: 335px;
+                 
 
                     &:hover {
                         animation-duration: 3s;
@@ -91,7 +98,24 @@
 
                 }
             }
-
+            .tienda{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                h3{
+                    font-size: 130%;
+                    position: relative;
+                    left: 5%;
+                }
+                .boton{
+                    position: relative;
+                    bottom:20%;
+                    left: 5%;
+                    width: 80%;
+                    font-size: 100%;
+                }
+            }
         }
 
         /************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
@@ -120,10 +144,22 @@
             justify-content: center;
             align-items: center;
             position: relative;
-
-            left: 40%;
-            width: 90%;
+            
+            width: 100%;
             top: 20%;
+            
+            .iframe1{  
+                
+              
+                width: 100%;
+                height: 100%;
+            }
+            .iframe2{
+                
+              
+                width: 100%;
+                height: 100%;
+            }
         }
 
     }
@@ -137,26 +173,29 @@
     main {
         .empresaTitulos {
             h1 {
-                position: relative;
-                left: 40%;
-                font-size: 3rem;
+        
+                font-size: 150%;
                 text-align: center;
             }
 
         }
-        .accordion{
-            .accordion-button{
+
+        .accordion {
+            width: 100%;
+            .accordion-button {
                 font-size: 1.2rem;
             }
-            .accordion-body{
+
+            .accordion-body {
                 .titulosPrimeracolumna {
                     display: flex;
                     flex-direction: column;
-           
-        
+                    
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
                             &:hover {
                                 animation-duration: 3s;
@@ -164,28 +203,29 @@
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
+
                 }
-        
+
                 .titulosSegundacolumna {
                     display: flex;
                     flex-direction: column;
-        
-                    
+
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
                             &:hover {
                                 animation-duration: 3s;
@@ -193,29 +233,30 @@
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
-        
+
+
                 }
-        
+
                 .titulosTerceracolumna {
                     display: flex;
                     flex-direction: column;
-             
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
                             &:hover {
                                 animation-duration: 3s;
@@ -223,29 +264,30 @@
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
-        
+
+
                 }
-        
+
                 .titulosCuartacolumna {
                     display: flex;
                     flex-direction: column;
-                
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
                             &:hover {
                                 animation-duration: 3s;
@@ -253,29 +295,30 @@
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
-        
+
+
                 }
-        
+
                 .titulosQuintacolumna {
                     display: flex;
                     flex-direction: column;
-          
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
                             &:hover {
                                 animation-duration: 3s;
@@ -283,22 +326,22 @@
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
+
                 }
             }
         }
-        
+
 
     }
 
@@ -309,28 +352,31 @@
         .titularRoh {
             display: flex;
             justify-content: center;
-      
-            position: relative;
-            left: 40%;
-  
-            h1{
+
+   
+
+            h1 {
                 text-align: center;
-                font-size: 3rem;
+                font-size: 150%;
             }
         }
-        .accordion{
-            .accordion-button{
+
+        .accordion {
+            width: 100%;
+            .accordion-button {
                 font-size: 1.2rem;
             }
-            .accordion-body{
+
+            .accordion-body {
                 .titulosrohPrimeracolumna {
                     display: flex;
                     flex-direction: column;
-            
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
                             &:hover {
                                 animation-duration: 3s;
@@ -338,171 +384,174 @@
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
-        
+
+
                 }
-        
+
                 .titulosrohSegundacolumna {
                     display: flex;
                     flex-direction: column;
-              
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
+
                         img {
-        
+
                             &:hover {
                                 animation-duration: 3s;
                                 animation-name: efectoimagenestrofeos;
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
-        
+
+
                 }
             }
         }
-      
+
     }
 
     /***********************************************************************************************/
     /*******************MAIN de la pagina otraspromociones******************************************/
     main {
-        .titularOtraspromociones{
+        .titularOtraspromociones {
             display: flex;
             justify-content: center;
-            position: relative;
-            left: 40%;
+      
 
             h1 {
                 text-align: center;
-                font-size: 3rem;
+                font-size: 150%;
             }
         }
-        .accordion{
-            .accordion-button{
+
+        .accordion {
+            width: 100%;
+            .accordion-button {
                 font-size: 1.2rem;
             }
-            .accordion-body{
+
+            .accordion-body {
                 .titulosOtrosprimeracolumna {
                     display: flex;
                     flex-direction: column;
-                  
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
-        
+
                         img {
                             width: 100%;
-        
+
                             &:hover {
                                 animation-duration: 3s;
                                 animation-name: efectoimagenestrofeos;
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 60%;
                             font-size: 2rem;
-        
+
                         }
                     }
-        
+
                 }
-        
+
                 .titulosOtrossegundacolumna {
                     display: flex;
                     flex-direction: column;
-                   
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
-        
+
                         img {
                             width: 100%;
-        
+
                             &:hover {
                                 animation-duration: 3s;
                                 animation-name: efectoimagenestrofeos;
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
-        
+
                 .titulosOtrosterceracolumna {
                     display: flex;
                     flex-direction: column;
-               
-        
+
+
                     .card {
                         border: transparent;
                         width: 100%;
-        
+
                         img {
                             width: 100%;
-        
+
                             &:hover {
                                 animation-duration: 3s;
                                 animation-name: efectoimagenestrofeos;
                                 animation-iteration-count: infinite;
                             }
                         }
-        
+
                         .card-title {
                             font-size: 2rem;
                         }
-        
+
                         .btn-primary {
                             width: 50%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
             }
         }
-        
+
     }
 
     @keyframes efectoimagenestrofeos {
@@ -526,17 +575,16 @@
     .tituloHistoria {
         display: flex;
         justify-content: center;
-        position: relative;
-        left: 40%;
-        h1{
+   
+
+        h1 {
             text-align: center;
             font-size: 3rem;
         }
     }
 
     .containerHistoria {
-        position: relative;
-        left: 50px;
+       
 
         p {
             font-size: 1.5rem;
@@ -545,9 +593,11 @@
         .acordeonShinsukenakamura {
             .accordion {
                 width: 100%;
-                .accordion-button{
+
+                .accordion-button {
                     font-size: 1.2rem;
                 }
+
                 .accordion-body {
                     .Nacimiento {
                         .imagenNakamura {
@@ -564,10 +614,12 @@
 
         .acordeonOkada {
             .accordion {
-               width: 100%;
-                .accordion-button{
+                width: 100%;
+
+                .accordion-button {
                     font-size: 1.2rem;
                 }
+
                 .accordion-body {
 
                     .Nacimiento {
@@ -634,18 +686,17 @@
 
                 font-size: 3rem;
                 font-family: 'Playfair Display', serif;
-                position: relative;
-                left: 40%;
+             
                 text-align: center;
             }
         }
 
         .accordion {
-            position: relative;
-            left: 40%;
-            .accordion-button{
+            width: 100%;
+            .accordion-button {
                 font-size: 1.2rem;
             }
+
             .accordion-body {
                 .contenedor {
 
@@ -748,15 +799,17 @@
                 justify-content: center;
                 font-size: 3rem;
                 font-family: 'Playfair Display', serif;
-                position: relative;
-                left: 40%;
+             
                 text-align: center;
             }
         }
+
         .accordion {
-            .accordion-button{
+            width: 100%;
+            .accordion-button {
                 font-size: 1.2rem;
             }
+
             .accordion-body {
                 .primeraFila {
                     display: flex;
@@ -769,10 +822,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
                             width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -790,10 +844,11 @@
                             font-size: 2rem;
 
                         }
+
                         .btn-primary {
                             width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -810,10 +865,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
                             width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -830,10 +886,11 @@
                         .card-title {
                             font-size: 2rem;
                         }
+
                         .btn-primary {
                             width: 100%;
                             font-size: 2rem;
-        
+
                         }
                     }
                 }
@@ -854,31 +911,29 @@
                 align-items: center;
                 font-size: 3rem;
                 font-family: 'Playfair Display', serif;
-                position: relative;
-                left: 40%;
+        
                 text-align: center;
             }
         }
 
         .table-dark {
-            width: 149%;
+            width: 100%;
             height: 800px;
-            position: relative;
-            left: 20%;
+    
 
             thead {
                 th {
-                    font-size: 1.6rem;
+                    font-size: 100%;
                 }
             }
 
             tbody {
                 tr {
                     td {
-                        font-size: 1.4rem;
+                        font-size: 100%;
 
                         h3 {
-                            font-size: 1.4rem;
+                            font-size: 100%;
                         }
                     }
                 }
@@ -897,16 +952,14 @@
 
             font-size: 3rem;
             font-family: 'Playfair Display', serif;
-            position: relative;
-            left: 40%;
+        
 
         }
     }
 
 
     form {
-        position: relative;
-        left: 40%;
+     
 
         .form-group {
             .label {
@@ -946,19 +999,45 @@
 
     /**************************************************************************************************/
     /**********************************FOOTER de todos los html*************************************/
-    footer {
+    /*footer {
         display: flex;
         flex-direction: column;
         position: relative;
         top: 150px;
-        width: 179%;
+        width: 100%;
 
         .contenedorRedes {
             position: relative;
             top: 10px;
         }
-    }
+    }*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       
+        width: 100%;
+        height: 50%;
+        margin-top: auto;
+        .contenedorRedes {
 
+            position: relative;
+            top: 10px;
+
+            .face {
+                .imagen1 {
+                    width: 50%;
+                }
+            }
+
+            .twitter {
+                .imagen2 {
+                    width: 50%;
+                }
+            }
+
+        }
+    }
 
 
     /******************************************************************************************/
