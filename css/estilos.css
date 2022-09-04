@@ -469,12 +469,15 @@ main .tituloSubgrupo h1 {
   font-size: 5rem;
   font-family: 'Playfair Display', serif; }
 
-table tr {
-  text-align: center; }
-  table tr th {
+table thead .table-primary {
+  text-align: center;
+  vertical-align: middle; }
+  table thead .table-primary th {
     text-align: center; }
-  table tr .prueba {
-    width: 50%; }
+
+table tbody tr {
+  vertical-align: middle;
+  text-align: center; }
 
 /******************************MAIN la pagina Contacto**********************************************/
 .containerContacto {
@@ -485,17 +488,30 @@ table tr {
     justify-content: center;
     font-size: 5rem;
     font-family: 'Playfair Display', serif; }
-  .containerContacto .container form .form-control {
-    margin-bottom: 10px;
-    background-color: plum;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.2rem; }
-  .containerContacto .container form .opinion {
-    background-color: plum;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.2rem; }
-  .containerContacto .container form .btn .btn-primary {
-    width: 50%; }
+  .containerContacto .container {
+    position: relative;
+    left: 22%; }
+    .containerContacto .container form .label {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 1rem; }
+    .containerContacto .container form .form-control {
+      margin-bottom: 10px;
+      background-color: plum;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.2rem; }
+    .containerContacto .container form .form-check .form-check-label {
+      font-family: 'Times New Roman', Times, serif; }
+    .containerContacto .container form .opinion {
+      background-color: plum;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.2rem; }
+    .containerContacto .container form .btn {
+      border-radius: 50%; }
+      .containerContacto .container form .btn .btn-primary {
+        width: 50%; }
+        .containerContacto .container form .btn .btn-primary:hover {
+          opacity: 2; }
 
 /*******************************************************************************************/
 /******************************MAIN de la pagina historia**************************************/
@@ -590,14 +606,20 @@ footer {
       width: 100%; }
       .menu-bar .navbar .navbar-nav .nav-link {
         width: 100%;
-        font-size: 50%; }
+        font-size: 80%; }
     .menu-bar .navbar .navbar-brand {
-      width: 90%; }
+      width: 90%;
+      display: flex;
+      justify-content: center; }
       .menu-bar .navbar .navbar-brand img {
         width: 90%; }
+    .menu-bar .navbar .navbar-toggler {
+      width: 70%;
+      position: relative;
+      left: 15%; }
     .menu-bar .dropdown .dropdown-menu .dropdown-item {
       text-align: center;
-      font-size: 50%;
+      font-size: 80%;
       width: 100%; }
       .menu-bar .dropdown .dropdown-menu .dropdown-item:hover {
         background-color: red; }
@@ -606,13 +628,13 @@ footer {
   .tituloInicio {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 100%;
     justify-content: center; }
     .tituloInicio h1 {
-      font-size: 130%;
-      font-family: 'Playfair Display', serif;
-      position: relative;
-      left: 30%; }
+      text-align: center;
+      /*font-size: 130%;*/
+      font-size: 200%;
+      font-family: 'Playfair Display', serif; }
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -621,7 +643,8 @@ footer {
     /********************+++++++++++++++++++++++++++++++++++++++++++++++*************************/ }
     .container .iframesyImagenesdelgrupo {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 100%; }
       .container .iframesyImagenesdelgrupo .imagenesGrupo {
         width: 100%; }
         .container .iframesyImagenesdelgrupo .imagenesGrupo .imagenInicio:hover {
@@ -674,7 +697,7 @@ footer {
   /**********************************************************/
   /************************************MAIN de la pagina NJPW**********************************/
   main .empresaTitulos h1 {
-    font-size: 150%;
+    font-size: 200%;
     text-align: center; }
   main .accordion {
     width: 100%; }
@@ -691,10 +714,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosPrimeracolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosPrimeracolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosSegundacolumna {
       display: flex;
       flex-direction: column; }
@@ -706,10 +729,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosSegundacolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosSegundacolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosTerceracolumna {
       display: flex;
       flex-direction: column; }
@@ -721,10 +744,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosTerceracolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosTerceracolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosCuartacolumna {
       display: flex;
       flex-direction: column; }
@@ -736,10 +759,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosCuartacolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosCuartacolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosQuintacolumna {
       display: flex;
       flex-direction: column; }
@@ -751,10 +774,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosQuintacolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosQuintacolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
   /***********************************************************************************************/
   /*******************************MAIN de la pagina ROH******************************/
   main .titularRoh {
@@ -762,7 +785,7 @@ footer {
     justify-content: center; }
     main .titularRoh h1 {
       text-align: center;
-      font-size: 150%; }
+      font-size: 200%; }
   main .accordion {
     width: 100%; }
     main .accordion .accordion-button {
@@ -778,10 +801,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosrohPrimeracolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosrohPrimeracolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosrohSegundacolumna {
       display: flex;
       flex-direction: column; }
@@ -793,10 +816,10 @@ footer {
           animation-name: efectoimagenestrofeos;
           animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosrohSegundacolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosrohSegundacolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
   /***********************************************************************************************/
   /*******************MAIN de la pagina otraspromociones******************************************/
   main .titularOtraspromociones {
@@ -804,7 +827,7 @@ footer {
     justify-content: center; }
     main .titularOtraspromociones h1 {
       text-align: center;
-      font-size: 150%; }
+      font-size: 200%; }
   main .accordion {
     width: 100%; }
     main .accordion .accordion-button {
@@ -822,10 +845,10 @@ footer {
             animation-name: efectoimagenestrofeos;
             animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosOtrosprimeracolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosOtrosprimeracolumna .card .btn-primary {
           width: 60%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosOtrossegundacolumna {
       display: flex;
       flex-direction: column; }
@@ -839,10 +862,10 @@ footer {
             animation-name: efectoimagenestrofeos;
             animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosOtrossegundacolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosOtrossegundacolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .titulosOtrosterceracolumna {
       display: flex;
       flex-direction: column; }
@@ -856,10 +879,10 @@ footer {
             animation-name: efectoimagenestrofeos;
             animation-iteration-count: infinite; }
         main .accordion .accordion-body .titulosOtrosterceracolumna .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .titulosOtrosterceracolumna .card .btn-primary {
           width: 50%;
-          font-size: 2rem; }
+          font-size: 120%; }
   @keyframes efectoimagenestrofeos {
     0% {
       opacity: 0; }
@@ -875,7 +898,7 @@ footer {
     justify-content: center; }
     .tituloHistoria h1 {
       text-align: center;
-      font-size: 3rem; }
+      font-size: 200%; }
   .containerHistoria p {
     font-size: 1.5rem; }
   .containerHistoria .acordeonShinsukenakamura .accordion {
@@ -917,75 +940,74 @@ footer {
         height: 300px; }
   /************************************************************************************************/
   /**************************MAIN de la pagina miembrosantiguos****************************/
-  main {
-    margin-bottom: 5%; }
-    main .tituloGrupoantiguo {
-      display: inline;
-      margin: 0; }
-      main .tituloGrupoantiguo h1 {
-        font-size: 3rem;
-        font-family: 'Playfair Display', serif;
-        text-align: center; }
-    main .accordion {
+  main .tituloGrupoantiguo {
+    display: inline;
+    margin: 0; }
+    main .tituloGrupoantiguo h1 {
+      font-size: 200%;
+      font-family: 'Playfair Display', serif;
+      text-align: center; }
+  main .accordion {
+    width: 100%; }
+    main .accordion .accordion-button {
+      font-size: 1.2rem; }
+    main .accordion .accordion-body .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%; }
-      main .accordion .accordion-button {
-        font-size: 1.2rem; }
-      main .accordion .accordion-body .contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      main .accordion .accordion-body .contenedor .card {
         width: 100%; }
-        main .accordion .accordion-body .contenedor .card {
-          width: 100%; }
-          main .accordion .accordion-body .contenedor .card .card-title {
-            font-size: 2rem; }
-          main .accordion .accordion-body .contenedor .card .btn-primary {
-            width: 100%;
-            font-size: 2rem; }
-      main .accordion .accordion-body .contenedor1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        main .accordion .accordion-body .contenedor .card .card-title {
+          font-size: 120%; }
+        main .accordion .accordion-body .contenedor .card .btn-primary {
+          width: 100%;
+          font-size: 120%; }
+    main .accordion .accordion-body .contenedor1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      main .accordion .accordion-body .contenedor1 .card {
         width: 100%; }
-        main .accordion .accordion-body .contenedor1 .card {
-          width: 100%; }
-          main .accordion .accordion-body .contenedor1 .card .card-title {
-            font-size: 2rem; }
-          main .accordion .accordion-body .contenedor1 .card .btn-primary {
-            width: 100%;
-            font-size: 2rem; }
-      main .accordion .accordion-body .contenedor2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        main .accordion .accordion-body .contenedor1 .card .card-title {
+          font-size: 120%; }
+        main .accordion .accordion-body .contenedor1 .card .btn-primary {
+          width: 100%;
+          font-size: 120%; }
+    main .accordion .accordion-body .contenedor2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      main .accordion .accordion-body .contenedor2 .card {
         width: 100%; }
-        main .accordion .accordion-body .contenedor2 .card {
-          width: 100%; }
-          main .accordion .accordion-body .contenedor2 .card .card-title {
-            font-size: 2rem; }
-          main .accordion .accordion-body .contenedor2 .card .btn-primary {
-            width: 100%;
-            font-size: 2rem; }
-      main .accordion .accordion-body .contenedor3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        main .accordion .accordion-body .contenedor2 .card .card-title {
+          font-size: 120%; }
+        main .accordion .accordion-body .contenedor2 .card .btn-primary {
+          width: 100%;
+          font-size: 120%; }
+    main .accordion .accordion-body .contenedor3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      main .accordion .accordion-body .contenedor3 .card {
         width: 100%; }
-        main .accordion .accordion-body .contenedor3 .card {
-          width: 100%; }
-          main .accordion .accordion-body .contenedor3 .card .card-title {
-            font-size: 2rem; }
-          main .accordion .accordion-body .contenedor3 .card .btn-primary {
-            width: 100%;
-            font-size: 2rem; }
+        main .accordion .accordion-body .contenedor3 .card .card-title {
+          font-size: 120%; }
+        main .accordion .accordion-body .contenedor3 .card .btn-primary {
+          width: 100%;
+          font-size: 120%; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina miembros actuales****************************/
-  main .tituloGrupoactivo h1 {
+  main .tituloGrupoactivo {
     display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    text-align: center; }
+    justify-content: center; }
+    main .tituloGrupoactivo h1 {
+      font-size: 200%;
+      font-family: 'Playfair Display', serif;
+      text-align: center; }
   main .accordion {
     width: 100%; }
     main .accordion .accordion-button {
@@ -1036,13 +1058,14 @@ footer {
           font-size: 2rem; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
-  main .tituloSubgrupo h1 {
+  main .tituloSubgrupo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: 'Playfair Display', serif;
-    text-align: center; }
+    justify-content: center; }
+    main .tituloSubgrupo h1 {
+      align-items: center;
+      font-size: 200%;
+      font-family: 'Playfair Display', serif;
+      text-align: center; }
   main .table-dark {
     width: 100%;
     height: 800px; }
@@ -1057,37 +1080,29 @@ footer {
   .containerContacto .tituloContacto {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 200%;
     font-family: 'Playfair Display', serif; }
-  form .form-group .label {
-    font-size: 2rem; }
-  form .form-group .form-control {
-    margin-bottom: 10px;
-    background-color: plum;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.2rem; }
-  form .form-group .form-check .form-check-label {
-    font-size: 1.8rem; }
-  form .form-group .opinion {
-    background-color: plum;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 2rem; }
-  form .btn .btn-primary {
-    width: 50%; }
+  .containerContacto .container {
+    position: relative;
+    left: 0%; }
+    .containerContacto .container form .form-group .label {
+      font-size: 100%; }
+    .containerContacto .container form .form-group .form-control {
+      margin-bottom: 10px;
+      background-color: plum;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.2rem; }
+    .containerContacto .container form .form-group .form-check .form-check-label {
+      font-size: 100%;
+      font-family: 'Times New Roman', Times, serif; }
+    .containerContacto .container form .form-group .opinion {
+      background-color: plum;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 100%; }
+    .containerContacto .container form .btn .btn-primary {
+      width: 50%; }
   /**************************************************************************************************/
   /**********************************FOOTER de todos los html*************************************/
-  /*footer {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 150px;
-        width: 100%;
-
-        .contenedorRedes {
-            position: relative;
-            top: 10px;
-        }
-    }*/
   footer {
     display: flex;
     flex-direction: column;
@@ -1096,10 +1111,17 @@ footer {
     height: 50%;
     margin-top: auto; }
     footer .contenedorRedes {
+      width: 100%;
       position: relative;
       top: 10px; }
-      footer .contenedorRedes .face .imagen1 {
-        width: 50%; }
-      footer .contenedorRedes .twitter .imagen2 {
-        width: 50%; }
+      footer .contenedorRedes .face {
+        width: 100%; }
+        footer .contenedorRedes .face .imagen1 {
+          width: 50%; }
+      footer .contenedorRedes .twitter {
+        width: 100%;
+        position: relative;
+        right: 5%; }
+        footer .contenedorRedes .twitter .imagen2 {
+          width: 50%; }
   /******************************************************************************************/ }

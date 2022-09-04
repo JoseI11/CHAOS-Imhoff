@@ -4,9 +4,9 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-       
+
     }
-    
+
     /****************NAVBAR de todos las paginas******************************/
     .menu-bar {
         width: 100%;
@@ -15,17 +15,29 @@
 
             .navbar-nav {
                 width: 100%;
+
                 .nav-link {
                     width: 100%;
-                    font-size: 50%;
+                    font-size: 80%;
                 }
             }
 
             .navbar-brand {
+
                 width: 90%;
+                display: flex;
+                justify-content: center;
+
                 img {
                     width: 90%;
+
                 }
+            }
+
+            .navbar-toggler {
+                width: 70%;
+                position: relative;
+                left: 15%;
             }
         }
 
@@ -34,8 +46,9 @@
 
                 .dropdown-item {
                     text-align: center;
-                    font-size: 50%;
+                    font-size: 80%;
                     width: 100%;
+
                     &:hover {
                         background-color: $bg-color-rojo;
                     }
@@ -50,15 +63,16 @@
     .tituloInicio {
         display: flex;
         align-items: center;
-        width: 70%;
+        width: 100%;
         justify-content: center;
+
         h1 {
 
-            
-            font-size: 130%;
+            text-align: center;
+            /*font-size: 130%;*/
+            font-size: 200%;
             font-family: 'Playfair Display', serif;
-            position: relative;
-            left: 30%;
+
 
         }
     }
@@ -71,13 +85,16 @@
             "iframesGrupo";
 
         .iframesyImagenesdelgrupo {
-           display: flex;
-           flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
             .imagenesGrupo {
 
                 width: 100%;
+
                 .imagenInicio {
-                  
+
 
                     &:hover {
                         animation-duration: 3s;
@@ -88,7 +105,7 @@
                 }
 
                 .imagenInicio2 {
-                 
+
 
                     &:hover {
                         animation-duration: 3s;
@@ -98,19 +115,22 @@
 
                 }
             }
-            .tienda{
+
+            .tienda {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 width: 90%;
-                h3{
+
+                h3 {
                     font-size: 130%;
                     position: relative;
                     left: 5%;
                 }
-                .boton{
+
+                .boton {
                     position: relative;
-                    bottom:20%;
+                    bottom: 20%;
                     left: 5%;
                     width: 80%;
                     font-size: 100%;
@@ -144,19 +164,20 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            
+
             width: 100%;
             top: 20%;
-            
-            .iframe1{  
-                
-              
+
+            .iframe1 {
+
+
                 width: 100%;
                 height: 100%;
             }
-            .iframe2{
-                
-              
+
+            .iframe2 {
+
+
                 width: 100%;
                 height: 100%;
             }
@@ -173,8 +194,8 @@
     main {
         .empresaTitulos {
             h1 {
-        
-                font-size: 150%;
+
+                font-size: 200%;
                 text-align: center;
             }
 
@@ -182,6 +203,7 @@
 
         .accordion {
             width: 100%;
+
             .accordion-button {
                 font-size: 1.2rem;
             }
@@ -190,7 +212,7 @@
                 .titulosPrimeracolumna {
                     display: flex;
                     flex-direction: column;
-                    
+
 
                     .card {
                         border: transparent;
@@ -205,12 +227,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -235,12 +257,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -266,12 +288,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -297,12 +319,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -328,12 +350,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -353,16 +375,17 @@
             display: flex;
             justify-content: center;
 
-   
+
 
             h1 {
                 text-align: center;
-                font-size: 150%;
+                font-size: 200%;
             }
         }
 
         .accordion {
             width: 100%;
+
             .accordion-button {
                 font-size: 1.2rem;
             }
@@ -386,12 +409,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -418,12 +441,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -441,16 +464,17 @@
         .titularOtraspromociones {
             display: flex;
             justify-content: center;
-      
+
 
             h1 {
                 text-align: center;
-                font-size: 150%;
+                font-size: 200%;
             }
         }
 
         .accordion {
             width: 100%;
+
             .accordion-button {
                 font-size: 1.2rem;
             }
@@ -476,12 +500,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 60%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -508,12 +532,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -539,12 +563,12 @@
                         }
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 50%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -575,16 +599,16 @@
     .tituloHistoria {
         display: flex;
         justify-content: center;
-   
+
 
         h1 {
             text-align: center;
-            font-size: 3rem;
+            font-size: 200%;
         }
     }
 
     .containerHistoria {
-       
+
 
         p {
             font-size: 1.5rem;
@@ -684,15 +708,16 @@
 
             h1 {
 
-                font-size: 3rem;
+                font-size: 200%;
                 font-family: 'Playfair Display', serif;
-             
+
                 text-align: center;
             }
         }
 
         .accordion {
             width: 100%;
+
             .accordion-button {
                 font-size: 1.2rem;
             }
@@ -710,12 +735,12 @@
                         width: 100%;
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 100%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -731,12 +756,12 @@
                         width: 100%;
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 100%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -752,12 +777,12 @@
                         width: 100%;
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 100%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -773,12 +798,12 @@
                         width: 100%;
 
                         .card-title {
-                            font-size: 2rem;
+                            font-size: 120%;
                         }
 
                         .btn-primary {
                             width: 100%;
-                            font-size: 2rem;
+                            font-size: 120%;
 
                         }
                     }
@@ -786,7 +811,7 @@
             }
         }
 
-        margin-bottom: 5%;
+    
     }
 
 
@@ -794,18 +819,21 @@
     /**************************MAIN de la pagina miembros actuales****************************/
     main {
         .tituloGrupoactivo {
+            display: flex;
+            justify-content: center;
+
             h1 {
-                display: flex;
-                justify-content: center;
-                font-size: 3rem;
+
+                font-size: 200%;
                 font-family: 'Playfair Display', serif;
-             
+
                 text-align: center;
             }
         }
 
         .accordion {
             width: 100%;
+
             .accordion-button {
                 font-size: 1.2rem;
             }
@@ -905,13 +933,14 @@
     /**************************MAIN de la pagina subgrupos*********************************/
     main {
         .tituloSubgrupo {
-            h1 {
-                display: flex;
+               display: flex;
                 justify-content: center;
+            h1 {
+             
                 align-items: center;
-                font-size: 3rem;
+                font-size: 200%;
                 font-family: 'Playfair Display', serif;
-        
+
                 text-align: center;
             }
         }
@@ -919,7 +948,7 @@
         .table-dark {
             width: 100%;
             height: 800px;
-    
+
 
             thead {
                 th {
@@ -950,88 +979,91 @@
             display: flex;
             justify-content: center;
 
-            font-size: 3rem;
+            font-size: 200%;
             font-family: 'Playfair Display', serif;
-        
+
 
         }
-    }
+        .container{
+            position: relative;
+            left: 0%;
+            form {
 
 
-    form {
-     
-
-        .form-group {
-            .label {
-                font-size: 2rem;
-            }
-
-            .form-control {
-                margin-bottom: 10px;
-                background-color: plum;
-                font-family: $letra-campo-formulario;
-                font-size: 1.2rem;
-
-
-            }
-
-            .form-check {
-                .form-check-label {
-                    font-size: 1.8rem;
+                .form-group {
+                    .label {
+                        font-size: 100%;
+                    }
+        
+                    .form-control {
+                        margin-bottom: 10px;
+                        background-color: plum;
+                        font-family: $letra-campo-formulario;
+                        font-size: 1.2rem;
+        
+        
+                    }
+        
+                    .form-check {
+                        .form-check-label {
+                            font-size: 100%;
+                            font-family: 'Times New Roman', Times, serif;
+                           
+                        }
+                    }
+        
+                    .opinion {
+                        background-color: plum;
+                        font-family: $letra-campo-formulario;
+                        font-size: 100%;
+        
+                    }
+        
+                }
+        
+                .btn {
+                    .btn-primary {
+                        width: 50%;
+                    }
                 }
             }
-
-            .opinion {
-                background-color: plum;
-                font-family: $letra-campo-formulario;
-                font-size: 2rem;
-
-            }
-
         }
-
-        .btn {
-            .btn-primary {
-                width: 50%;
-            }
-        }
+        
     }
+
+
+    
 
     /**************************************************************************************************/
     /**********************************FOOTER de todos los html*************************************/
-    /*footer {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 150px;
-        width: 100%;
-
-        .contenedorRedes {
-            position: relative;
-            top: 10px;
-        }
-    }*/
+    
     footer {
         display: flex;
         flex-direction: column;
         position: relative;
-       
+
         width: 100%;
         height: 50%;
         margin-top: auto;
-        .contenedorRedes {
 
+        .contenedorRedes {
+            width: 100%;
             position: relative;
             top: 10px;
 
             .face {
-                .imagen1 {
+                width: 100%;
+                .imagen1{
                     width: 50%;
                 }
             }
 
             .twitter {
-                .imagen2 {
+                width: 100%;
+                
+                position: relative;
+                right: 5%;
+                .imagen2{
                     width: 50%;
                 }
             }

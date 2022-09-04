@@ -86,7 +86,7 @@
 
              .imagenInicio {
                  width: 90%;
-                
+
                  margin: 5px;
                  border-radius: 30px;
 
@@ -321,7 +321,7 @@
                  margin-left: 15%;
 
                  .card {
-                    width: 25rem;
+                     width: 25rem;
                      background-color: $bg-color-card-trofeos;
                      border: transparent;
                  }
@@ -334,7 +334,7 @@
                  margin-left: 15%;
 
                  .card {
-                    width: 25rem;
+                     width: 25rem;
                      background-color: $bg-color-card-trofeos;
                      border: transparent;
                  }
@@ -552,122 +552,123 @@
          }
 
      }
-     .accordion{
-        .accordion-body{
-            .primeraFila {
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                left: 20px;
-       
-                .card {
-                    background-color: black;
-                    width: 25rem;
-       
-                    img {
-                        &:hover {
-       
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
-       
-                        }
-                    }
-       
-                    .card-title {
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        color: white;
-                    }
-                }
-            }
-       
-            .segundaFila {
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                left: 20px;
-       
-                .card {
-                    background-color: black;
-                    width: 25rem;
-       
-                    img {
-                        &:hover {
-       
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
-       
-                        }
-                    }
-       
-                    .card-title {
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        color: white;
-                    }
-                }
-            }
-       
-            .terceraFila {
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                left: 20px;
-       
-                .card {
-                    background-color: black;
-                    width: 25rem;
-       
-                    img {
-                        &:hover {
-       
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
-       
-                        }
-                    }
-       
-                    .card-title {
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        color: white;
-                    }
-                }
-            }
-       
-            .cuartaFila {
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                left: 20px;
-       
-                .card {
-                    background-color: black;
-                    width: 25rem;
-       
-                    img {
-                        &:hover {
-       
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
-       
-                        }
-                    }
-       
-                    .card-title {
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        color: white;
-                    }
-                }
-            }
-        }
+
+     .accordion {
+         .accordion-body {
+             .primeraFila {
+                 display: flex;
+                 flex-direction: row;
+                 position: relative;
+                 left: 20px;
+
+                 .card {
+                     background-color: black;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: white;
+                     }
+                 }
+             }
+
+             .segundaFila {
+                 display: flex;
+                 flex-direction: row;
+                 position: relative;
+                 left: 20px;
+
+                 .card {
+                     background-color: black;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: white;
+                     }
+                 }
+             }
+
+             .terceraFila {
+                 display: flex;
+                 flex-direction: row;
+                 position: relative;
+                 left: 20px;
+
+                 .card {
+                     background-color: black;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: white;
+                     }
+                 }
+             }
+
+             .cuartaFila {
+                 display: flex;
+                 flex-direction: row;
+                 position: relative;
+                 left: 20px;
+
+                 .card {
+                     background-color: black;
+                     width: 25rem;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: white;
+                     }
+                 }
+             }
+         }
      }
-   
+
  }
 
 
@@ -689,17 +690,23 @@
 
 
  table {
-
-     tr {
-         text-align: center;
-
-         th {
+     thead {
+         .table-primary {
              text-align: center;
+             vertical-align: middle;
+
+             th {
+                 text-align: center;
+             }
+
          }
 
-         .prueba {
-             width: 50%;
-         }
+     }
+     tbody{
+        tr{
+            vertical-align: middle;
+            text-align: center;
+        }
      }
 
  }
@@ -721,7 +728,16 @@
      }
 
      .container {
+         position: relative;
+         left: 22%;
+
          form {
+             .label {
+                 font-family: Georgia, 'Times New Roman', Times, serif;
+                 font-weight: bold;
+                 font-size: 1rem;
+             }
+
              .form-control {
                  margin-bottom: 10px;
                  background-color: plum;
@@ -731,6 +747,14 @@
 
              }
 
+             .form-check {
+                 .form-check-label {
+
+                     font-family: 'Times New Roman', Times, serif;
+
+                 }
+             }
+
              .opinion {
                  background-color: plum;
                  font-family: $letra-campo-formulario;
@@ -738,8 +762,14 @@
              }
 
              .btn {
+                 border-radius: 50%;
+
                  .btn-primary {
                      width: 50%;
+
+                     &:hover {
+                         opacity: 2;
+                     }
                  }
              }
          }
