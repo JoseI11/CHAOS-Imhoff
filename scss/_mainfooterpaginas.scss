@@ -200,148 +200,150 @@
 
      }
 
-     .titulosPrimeracolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
+     .accordion {
+         .accordion-body {
+             .titulosPrimeracolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
 
-         .card {
+                 .card {
 
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
 
-             img {
-                 &:hover {
+                     img {
+                         &:hover {
 
-                     opacity: 0.5;
-                     cursor: pointer;
-                     border: solid white 3px;
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
+                         }
+                     }
+
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: black;
+                     }
                  }
              }
 
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: black;
-             }
-         }
-     }
+             .titulosSegundacolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
 
-     .titulosSegundacolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
 
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
+                     img {
+                         &:hover {
 
-             img {
-                 &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
-                     opacity: 0.5;
-                     cursor: pointer;
-                     border: solid white 3px;
+                         }
+                     }
 
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: black;
+                     }
                  }
              }
 
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: black;
-             }
-         }
-     }
+             .titulosTerceracolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
 
-     .titulosTerceracolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
 
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
+                     img {
+                         &:hover {
 
-             img {
-                 &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
-                     opacity: 0.5;
-                     cursor: pointer;
-                     border: solid white 3px;
+                         }
+                     }
 
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: black;
+                     }
                  }
              }
 
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: black;
-             }
-         }
-     }
+             .titulosCuartacolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
 
-     .titulosCuartacolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
 
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
+                     img {
+                         &:hover {
 
-             img {
-                 &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
-                     opacity: 0.5;
-                     cursor: pointer;
-                     border: solid white 3px;
+                         }
+                     }
 
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: black;
+                     }
                  }
              }
 
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: black;
-             }
-         }
-     }
+             .titulosQuintacolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
 
-     .titulosQuintacolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
 
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
+                     img {
+                         &:hover {
 
-             img {
-                 &:hover {
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
-                     opacity: 0.5;
-                     cursor: pointer;
-                     border: solid white 3px;
+                         }
+                     }
 
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: black;
+                     }
                  }
              }
-
-             .card-title {
-                 font-size: 1.2rem;
-                 font-weight: bold;
-                 color: black;
-             }
          }
      }
-
-
  }
 
 
@@ -371,15 +373,22 @@
                      width: 25rem;
                      background-color: $bg-color-card-trofeos;
                      border: transparent;
+
                      img {
-                        &:hover {
+                         &:hover {
 
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
-                        }
-                    }
+                         }
+                     }
+
+                     .card-title {
+                         font-size: 1.2rem;
+                         font-weight: bold;
+                         color: black;
+                     }
                  }
 
              }
@@ -393,14 +402,20 @@
                      width: 25rem;
                      background-color: $bg-color-card-trofeos;
                      border: transparent;
+
                      img {
-                        &:hover {
+                         &:hover {
 
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
 
-                        }
+                         }
+                     }
+                     .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: black;
                     }
                  }
 
@@ -425,77 +440,90 @@
          }
 
      }
-     .accordion{
-        .accordion-body{
-            .titulosOtrosprimeracolumna {
-                display: flex;
-                flex-direction: row;
-                margin-left: 15%;
-       
-                .card {
-                    background-color: $bg-color-card-trofeos;
-                    width: 25rem;
-                    border: transparent;
-       
-                    img {
-                        &:hover {
-       
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
-       
-                        }
-                    }
-       
-                }
-            }
-       
-            .titulosOtrossegundacolumna {
-                display: flex;
-                flex-direction: row;
-                margin-left: 15%;
-       
-                .card {
-                    background-color: $bg-color-card-trofeos;
-                    width: 25rem;
-                    border: transparent;
-       
-                    img {
-                        &:hover {
-       
-                            opacity: 0.5;
-                            cursor: pointer;
-                            border: solid white 3px;
-       
-                        }
-                    }
-                }
-            }
-            .titulosOtrosterceracolumna {
-                display: flex;
-                flex-direction: row;
-                margin-left: 15%;
-       
-                .card {
-                    background-color: $bg-color-card-trofeos;
-                    width: 25rem;
-                    border: transparent;
-                    img {
-                       &:hover {
-       
-                           opacity: 0.5;
-                           cursor: pointer;
-                           border: solid white 3px;
-       
-                       }
-                   }
-                }
-            }
-        }
-     }
-     
 
-     
+     .accordion {
+         .accordion-body {
+             .titulosOtrosprimeracolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
+
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+                     .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: black;
+                    }
+
+                 }
+             }
+
+             .titulosOtrossegundacolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
+
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+                 }
+             }
+
+             .titulosOtrosterceracolumna {
+                 display: flex;
+                 flex-direction: row;
+                 margin-left: 15%;
+
+                 .card {
+                     background-color: $bg-color-card-trofeos;
+                     width: 25rem;
+                     border: transparent;
+
+                     img {
+                         &:hover {
+
+                             opacity: 0.5;
+                             cursor: pointer;
+                             border: solid white 3px;
+
+                         }
+                     }
+                     .card-title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: black;
+                    }
+                 }
+             }
+         }
+     }
+
+
+
  }
 
 

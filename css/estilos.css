@@ -173,87 +173,87 @@ main .empresaTitulos h1 {
   font-size: 5rem;
   font-family: 'Playfair Display', serif; }
 
-main .titulosPrimeracolumna {
+main .accordion .accordion-body .titulosPrimeracolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosPrimeracolumna .card {
+  main .accordion .accordion-body .titulosPrimeracolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
-    main .titulosPrimeracolumna .card img:hover {
+    main .accordion .accordion-body .titulosPrimeracolumna .card img:hover {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
-    main .titulosPrimeracolumna .card .card-title {
+    main .accordion .accordion-body .titulosPrimeracolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: black; }
 
-main .titulosSegundacolumna {
+main .accordion .accordion-body .titulosSegundacolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosSegundacolumna .card {
+  main .accordion .accordion-body .titulosSegundacolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
-    main .titulosSegundacolumna .card img:hover {
+    main .accordion .accordion-body .titulosSegundacolumna .card img:hover {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
-    main .titulosSegundacolumna .card .card-title {
+    main .accordion .accordion-body .titulosSegundacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: black; }
 
-main .titulosTerceracolumna {
+main .accordion .accordion-body .titulosTerceracolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosTerceracolumna .card {
+  main .accordion .accordion-body .titulosTerceracolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
-    main .titulosTerceracolumna .card img:hover {
+    main .accordion .accordion-body .titulosTerceracolumna .card img:hover {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
-    main .titulosTerceracolumna .card .card-title {
+    main .accordion .accordion-body .titulosTerceracolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: black; }
 
-main .titulosCuartacolumna {
+main .accordion .accordion-body .titulosCuartacolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosCuartacolumna .card {
+  main .accordion .accordion-body .titulosCuartacolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
-    main .titulosCuartacolumna .card img:hover {
+    main .accordion .accordion-body .titulosCuartacolumna .card img:hover {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
-    main .titulosCuartacolumna .card .card-title {
+    main .accordion .accordion-body .titulosCuartacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: black; }
 
-main .titulosQuintacolumna {
+main .accordion .accordion-body .titulosQuintacolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosQuintacolumna .card {
+  main .accordion .accordion-body .titulosQuintacolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
-    main .titulosQuintacolumna .card img:hover {
+    main .accordion .accordion-body .titulosQuintacolumna .card img:hover {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
-    main .titulosQuintacolumna .card .card-title {
+    main .accordion .accordion-body .titulosQuintacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
       color: black; }
@@ -278,6 +278,10 @@ main .accordion .accordion-body .titulosrohPrimeracolumna {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
+    main .accordion .accordion-body .titulosrohPrimeracolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
 
 main .accordion .accordion-body .titulosrohSegundacolumna {
   display: flex;
@@ -291,6 +295,10 @@ main .accordion .accordion-body .titulosrohSegundacolumna {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
+    main .accordion .accordion-body .titulosrohSegundacolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
 
 /***************************************************************/
 /*************************MAIN de la pagina otras promociones************************/
@@ -313,6 +321,10 @@ main .accordion .accordion-body .titulosOtrosprimeracolumna {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
+    main .accordion .accordion-body .titulosOtrosprimeracolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
 
 main .accordion .accordion-body .titulosOtrossegundacolumna {
   display: flex;
@@ -339,6 +351,10 @@ main .accordion .accordion-body .titulosOtrosterceracolumna {
       opacity: 0.5;
       cursor: pointer;
       border: solid white 3px; }
+    main .accordion .accordion-body .titulosOtrosterceracolumna .card .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black; }
 
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembros antiguos**********************************************/
