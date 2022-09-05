@@ -46,7 +46,7 @@ body {
         background-color: red; }
 
 /*******************************************************/
-.bordesiframes, .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
+.bordesiframes, .container .iframesGrupo iframe, main .contenedorVideosgrupos .primeraListasubgrupos iframe, main .contenedorVideosgrupos .segundaListasubgrupos iframe, .containerHistoria .acordeonShinsukenakamura .accordion .accordion-body .Nacimiento .imagenNakamura, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionSalida .liderOkada, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionJay .iframeJaygedo, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionWill .iframeWill, .containerHistoria .acordeonOkada .accordion .accordion-body .accordionBestfriends .iframeBestfriends {
   border-radius: 30px;
   border: dotted blueviolet 3px; }
 
@@ -153,9 +153,7 @@ body {
     .container .iframesGrupo iframe {
       width: 90%;
       height: 320px;
-      margin: 5px;
-      border-radius: 30px;
-      border: dotted blueviolet 3px; }
+      margin: 5px; }
 
 /************************++++++++++KEYFRAME MAIN del INDEX+++++++++*****************************************/
 @keyframes efectoimagenes {
@@ -183,6 +181,10 @@ main .titulosPrimeracolumna {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .titulosPrimeracolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
     main .titulosPrimeracolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -196,6 +198,10 @@ main .titulosSegundacolumna {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .titulosSegundacolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
     main .titulosSegundacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -209,6 +215,10 @@ main .titulosTerceracolumna {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .titulosTerceracolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
     main .titulosTerceracolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -222,6 +232,10 @@ main .titulosCuartacolumna {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .titulosCuartacolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
     main .titulosCuartacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -235,6 +249,10 @@ main .titulosQuintacolumna {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .titulosQuintacolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
     main .titulosQuintacolumna .card .card-title {
       font-size: 1.2rem;
       font-weight: bold;
@@ -256,6 +274,10 @@ main .accordion .accordion-body .titulosrohPrimeracolumna {
     width: 25rem;
     background-color: transparent;
     border: transparent; }
+    main .accordion .accordion-body .titulosrohPrimeracolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
 
 main .accordion .accordion-body .titulosrohSegundacolumna {
   display: flex;
@@ -265,6 +287,10 @@ main .accordion .accordion-body .titulosrohSegundacolumna {
     width: 25rem;
     background-color: transparent;
     border: transparent; }
+    main .accordion .accordion-body .titulosrohSegundacolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
 
 /***************************************************************/
 /*************************MAIN de la pagina otras promociones************************/
@@ -275,32 +301,44 @@ main .titularOtraspromociones {
     font-size: 5rem;
     font-family: 'Playfair Display', serif; }
 
-main .titulosOtrosprimeracolumna {
+main .accordion .accordion-body .titulosOtrosprimeracolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosOtrosprimeracolumna .card {
+  main .accordion .accordion-body .titulosOtrosprimeracolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .accordion .accordion-body .titulosOtrosprimeracolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
 
-main .titulosOtrossegundacolumna {
+main .accordion .accordion-body .titulosOtrossegundacolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosOtrossegundacolumna .card {
+  main .accordion .accordion-body .titulosOtrossegundacolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .accordion .accordion-body .titulosOtrossegundacolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
 
-main .titulosOtrosterceracolumna {
+main .accordion .accordion-body .titulosOtrosterceracolumna {
   display: flex;
   flex-direction: row;
   margin-left: 15%; }
-  main .titulosOtrosterceracolumna .card {
+  main .accordion .accordion-body .titulosOtrosterceracolumna .card {
     background-color: transparent;
     width: 25rem;
     border: transparent; }
+    main .accordion .accordion-body .titulosOtrosterceracolumna .card img:hover {
+      opacity: 0.5;
+      cursor: pointer;
+      border: solid white 3px; }
 
 /*******************************************************************************************/
 /******************************MAIN la pagina Miembros antiguos**********************************************/
@@ -469,15 +507,48 @@ main .tituloSubgrupo h1 {
   font-size: 5rem;
   font-family: 'Playfair Display', serif; }
 
-table thead .table-primary {
-  text-align: center;
-  vertical-align: middle; }
-  table thead .table-primary th {
+main .table {
+  background-color: bisque;
+  border-collapse: collapse;
+  border: 5px solid red; }
+  main .table thead .table-primary {
+    text-align: center;
+    vertical-align: middle; }
+    main .table thead .table-primary th {
+      text-align: center; }
+  main .table tbody tr {
+    vertical-align: middle;
     text-align: center; }
+    main .table tbody tr:hover {
+      background-color: #f00;
+      color: white;
+      cursor: pointer; }
+    main .table tbody tr td h3 {
+      font-size: 1rem; }
 
-table tbody tr {
-  vertical-align: middle;
-  text-align: center; }
+main .subtituloVideos {
+  display: flex;
+  justify-content: center; }
+  main .subtituloVideos h2 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #f00 solid; }
+
+main .contenedorVideosgrupos {
+  margin: auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "primeraListasubgrupos" "segundaListasubgrupos"; }
+  main .contenedorVideosgrupos .primeraListasubgrupos iframe {
+    width: 90%;
+    height: 320px;
+    margin: 5px; }
+  main .contenedorVideosgrupos .segundaListasubgrupos iframe {
+    width: 90%;
+    height: 320px;
+    margin: 5px; }
 
 /******************************MAIN la pagina Contacto**********************************************/
 .containerContacto {
@@ -687,13 +758,14 @@ footer {
       align-items: center;
       position: relative;
       width: 100%;
-      top: 20%; }
+      top: 20%;
+      margin: auto; }
       .container .iframesGrupo .iframe1 {
         width: 100%;
-        height: 100%; }
+        height: 220px; }
       .container .iframesGrupo .iframe2 {
         width: 100%;
-        height: 100%; }
+        height: 220px; }
   /**********************************************************/
   /************************************MAIN de la pagina NJPW**********************************/
   main .empresaTitulos h1 {
@@ -1019,10 +1091,10 @@ footer {
       main .accordion .accordion-body .primeraFila .card {
         width: 100%; }
         main .accordion .accordion-body .primeraFila .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .primeraFila .card .btn-primary {
           width: 100%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .segundaFila {
       display: flex;
       flex-direction: column;
@@ -1030,10 +1102,10 @@ footer {
       main .accordion .accordion-body .segundaFila .card {
         width: 100%; }
         main .accordion .accordion-body .segundaFila .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .segundaFila .card .btn-primary {
           width: 100%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .terceraFila {
       display: flex;
       flex-direction: column;
@@ -1041,10 +1113,10 @@ footer {
       main .accordion .accordion-body .terceraFila .card {
         width: 100%; }
         main .accordion .accordion-body .terceraFila .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .terceraFila .card .btn-primary {
           width: 100%;
-          font-size: 2rem; }
+          font-size: 120%; }
     main .accordion .accordion-body .cuartaFila {
       display: flex;
       flex-direction: column;
@@ -1052,10 +1124,10 @@ footer {
       main .accordion .accordion-body .cuartaFila .card {
         width: 100%; }
         main .accordion .accordion-body .cuartaFila .card .card-title {
-          font-size: 2rem; }
+          font-size: 120%; }
         main .accordion .accordion-body .cuartaFila .card .btn-primary {
           width: 100%;
-          font-size: 2rem; }
+          font-size: 120%; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina subgrupos*********************************/
   main .tituloSubgrupo {
@@ -1066,15 +1138,29 @@ footer {
       font-size: 200%;
       font-family: 'Playfair Display', serif;
       text-align: center; }
-  main .table-dark {
+  main .table {
     width: 100%;
     height: 800px; }
-    main .table-dark thead th {
+    main .table thead th {
       font-size: 100%; }
-    main .table-dark tbody tr td {
+    main .table tbody tr td {
       font-size: 100%; }
-      main .table-dark tbody tr td h3 {
+      main .table tbody tr td h3 {
         font-size: 100%; }
+  main .contenedorVideosgrupos {
+    margin: auto;
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "primeraListasubgrupos" "segundaListasubgrupos";
+    position: relative;
+    left: 5%; }
+    main .contenedorVideosgrupos .primeraListasubgrupos iframe {
+      width: 80%;
+      height: 240px; }
+    main .contenedorVideosgrupos .segundaListasubgrupos iframe {
+      width: 80%;
+      height: 240px; }
   /**************************************************************************************************/
   /**************************MAIN de la pagina Contacto**********************************************/
   .containerContacto .tituloContacto {

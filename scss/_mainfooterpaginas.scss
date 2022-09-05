@@ -3,8 +3,6 @@
      height: 270px;
      margin: 5px;
      float: right;
-
-
  }
 
  $estiloflex: (
@@ -166,8 +164,7 @@
              width: 90%;
              height: 320px;
              margin: 5px;
-             border-radius: 30px;
-             border: dotted blueviolet 3px;
+             @extend .bordesiframes;
          }
      }
  }
@@ -214,6 +211,16 @@
              width: 25rem;
              border: transparent;
 
+             img {
+                 &:hover {
+
+                     opacity: 0.5;
+                     cursor: pointer;
+                     border: solid white 3px;
+
+                 }
+             }
+
              .card-title {
                  font-size: 1.2rem;
                  font-weight: bold;
@@ -231,6 +238,16 @@
              background-color: $bg-color-card-trofeos;
              width: 25rem;
              border: transparent;
+
+             img {
+                 &:hover {
+
+                     opacity: 0.5;
+                     cursor: pointer;
+                     border: solid white 3px;
+
+                 }
+             }
 
              .card-title {
                  font-size: 1.2rem;
@@ -250,6 +267,16 @@
              width: 25rem;
              border: transparent;
 
+             img {
+                 &:hover {
+
+                     opacity: 0.5;
+                     cursor: pointer;
+                     border: solid white 3px;
+
+                 }
+             }
+
              .card-title {
                  font-size: 1.2rem;
                  font-weight: bold;
@@ -268,6 +295,16 @@
              width: 25rem;
              border: transparent;
 
+             img {
+                 &:hover {
+
+                     opacity: 0.5;
+                     cursor: pointer;
+                     border: solid white 3px;
+
+                 }
+             }
+
              .card-title {
                  font-size: 1.2rem;
                  font-weight: bold;
@@ -285,6 +322,16 @@
              background-color: $bg-color-card-trofeos;
              width: 25rem;
              border: transparent;
+
+             img {
+                 &:hover {
+
+                     opacity: 0.5;
+                     cursor: pointer;
+                     border: solid white 3px;
+
+                 }
+             }
 
              .card-title {
                  font-size: 1.2rem;
@@ -324,6 +371,15 @@
                      width: 25rem;
                      background-color: $bg-color-card-trofeos;
                      border: transparent;
+                     img {
+                        &:hover {
+
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+
+                        }
+                    }
                  }
 
              }
@@ -337,6 +393,15 @@
                      width: 25rem;
                      background-color: $bg-color-card-trofeos;
                      border: transparent;
+                     img {
+                        &:hover {
+
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+
+                        }
+                    }
                  }
 
              }
@@ -360,44 +425,77 @@
          }
 
      }
-
-     .titulosOtrosprimeracolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
-
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
-
-
-         }
+     .accordion{
+        .accordion-body{
+            .titulosOtrosprimeracolumna {
+                display: flex;
+                flex-direction: row;
+                margin-left: 15%;
+       
+                .card {
+                    background-color: $bg-color-card-trofeos;
+                    width: 25rem;
+                    border: transparent;
+       
+                    img {
+                        &:hover {
+       
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+       
+                        }
+                    }
+       
+                }
+            }
+       
+            .titulosOtrossegundacolumna {
+                display: flex;
+                flex-direction: row;
+                margin-left: 15%;
+       
+                .card {
+                    background-color: $bg-color-card-trofeos;
+                    width: 25rem;
+                    border: transparent;
+       
+                    img {
+                        &:hover {
+       
+                            opacity: 0.5;
+                            cursor: pointer;
+                            border: solid white 3px;
+       
+                        }
+                    }
+                }
+            }
+            .titulosOtrosterceracolumna {
+                display: flex;
+                flex-direction: row;
+                margin-left: 15%;
+       
+                .card {
+                    background-color: $bg-color-card-trofeos;
+                    width: 25rem;
+                    border: transparent;
+                    img {
+                       &:hover {
+       
+                           opacity: 0.5;
+                           cursor: pointer;
+                           border: solid white 3px;
+       
+                       }
+                   }
+                }
+            }
+        }
      }
+     
 
-     .titulosOtrossegundacolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
-
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
-         }
-     }
-
-     .titulosOtrosterceracolumna {
-         display: flex;
-         flex-direction: row;
-         margin-left: 15%;
-
-         .card {
-             background-color: $bg-color-card-trofeos;
-             width: 25rem;
-             border: transparent;
-         }
-     }
+     
  }
 
 
@@ -686,30 +784,92 @@
              font-family: 'Playfair Display', serif;
          }
      }
- }
 
+     .table {
+         background-color: bisque;
+         border-collapse: collapse;
+         border: 5px solid red;
 
- table {
-     thead {
-         .table-primary {
-             text-align: center;
-             vertical-align: middle;
-
-             th {
+         thead {
+             .table-primary {
                  text-align: center;
+                 vertical-align: middle;
+
+                 th {
+                     text-align: center;
+                 }
+
              }
 
          }
 
+         tbody {
+             tr {
+                 vertical-align: middle;
+                 text-align: center;
+
+                 &:hover {
+                     background-color: #f00;
+                     color: white;
+                     cursor: pointer;
+                 }
+
+                 td {
+                     h3 {
+                         font-size: 1rem;
+                     }
+                 }
+             }
+         }
+
      }
-     tbody{
-        tr{
-            vertical-align: middle;
-            text-align: center;
-        }
+
+     .subtituloVideos {
+         display: flex;
+         justify-content: center;
+
+         h2 {
+             font-size: 2rem;
+             font-family: Arial, Helvetica, sans-serif;
+             border: #f00 solid;
+         }
+     }
+
+     .contenedorVideosgrupos {
+         margin: auto;
+         width: 95%;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: auto;
+         grid-template-areas:
+
+             "primeraListasubgrupos""segundaListasubgrupos";
+
+         .primeraListasubgrupos {
+             iframe {
+                 width: 90%;
+                 height: 320px;
+                 margin: 5px;
+                 @extend .bordesiframes;
+             }
+
+         }
+
+         .segundaListasubgrupos {
+             iframe {
+                 width: 90%;
+                 height: 320px;
+                 margin: 5px;
+                 @extend .bordesiframes;
+             }
+
+         }
      }
 
  }
+
+
+
 
 
 
